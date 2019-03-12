@@ -94,3 +94,4 @@ f30-backgrounds
 compton-tryone-git
 rofi
 telegram-desktop
+pass
