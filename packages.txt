@@ -79,3 +79,5 @@ xterm
 termite
 stow
 i3status
+zsh
+zsh-completions
