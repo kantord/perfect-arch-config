@@ -81,3 +81,9 @@ stow
 i3status
 zsh
 zsh-completions
+pulseaudio-alsa
+pulseaudio-bluetooth
+bluez
+bluez-libs
+bluez-utils
+pavucontrol

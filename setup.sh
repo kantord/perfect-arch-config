@@ -6,3 +6,7 @@ setxkbmap custom intl-unicode -option caps:escape
 # dotfiles
 ./setup_dotfiles.sh
 
+
+# Set up bluetooth
+systemctl enable bluetooth.service
+systemctl start bluetooth.service
