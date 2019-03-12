@@ -172,3 +172,6 @@ bar {
 
 gaps inner 10
 smart_gaps on
+
+exec compton --config ~/repos/perfect-arch-config/dotfiles/compton/.config/compton/compton.conf &
+
