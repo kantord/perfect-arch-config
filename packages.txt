@@ -92,3 +92,4 @@ htop
 nitrogen
 f30-backgrounds
 compton-tryone-git
+rofi
