@@ -87,3 +87,4 @@ bluez
 bluez-libs
 bluez-utils
 pavucontrol
+oh-my-zsh-git
