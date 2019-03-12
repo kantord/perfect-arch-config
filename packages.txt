@@ -89,3 +89,5 @@ bluez-utils
 pavucontrol
 oh-my-zsh-git
 htop
+nitrogen
+f30-backgrounds
