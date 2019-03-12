@@ -102,3 +102,4 @@ python2
 npm
 git-cola
 thunderbird
+betterlockscreen
