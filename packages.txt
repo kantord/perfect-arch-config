@@ -99,3 +99,4 @@ nodejs
 yarn
 python
 python2
+npm

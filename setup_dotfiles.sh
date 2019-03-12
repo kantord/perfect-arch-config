@@ -2,3 +2,4 @@
 ./stow.sh i3
 ./stow.sh zsh
 ./stow.sh compton
+./stow.sh termite
