@@ -100,3 +100,4 @@ yarn
 python
 python2
 npm
+git-cola
