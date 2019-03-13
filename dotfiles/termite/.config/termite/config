@@ -4,7 +4,7 @@
 #bold_is_bright = true
 #clickable_url = true
 #dynamic_title = true
-font = Monospace 9
+font = Source Code Pro 10
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
@@ -81,6 +81,5 @@ color15 = #ffffff
 #padding = 2
 #border = #3f3f3f
 #border_width = 0.5
-#roundness = 2.0
-
+#roundness = 2.0 
 # vim: ft=dosini cms=#%s

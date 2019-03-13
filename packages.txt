@@ -105,3 +105,5 @@ thunderbird
 betterlockscreen
 slack-desktop
 google-chrome
+ttf-emojione-color
+adobe-source-code-pro-fonts

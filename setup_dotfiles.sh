@@ -4,3 +4,4 @@
 ./stow.sh compton
 ./stow.sh termite
 ./stow.sh vim
+./stow.sh fontconfig
