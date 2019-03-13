@@ -3,3 +3,4 @@
 ./stow.sh zsh
 ./stow.sh compton
 ./stow.sh termite
+./stow.sh vim
