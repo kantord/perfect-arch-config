@@ -5,3 +5,4 @@
 ./stow.sh termite
 ./stow.sh vim
 ./stow.sh fontconfig
+./stow.sh autostart

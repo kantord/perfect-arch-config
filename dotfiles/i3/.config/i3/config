@@ -180,4 +180,5 @@ new_window none
 new_float pixel 0
 
 exec compton --config ~/repos/perfect-arch-config/dotfiles/compton/.config/compton/compton.conf &
-
+exec dex -ae i3
+exec ~/repos/perfect-arch-config/custom_keyboard.sh

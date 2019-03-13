@@ -1,7 +1,7 @@
-# custom keyboard layout
+#! bash
+
 echo "Setting custom keyboard layout"
-sudo cp ~/repos/perfect-arch-config/keyboard/custom /usr/share/X11/xkb/symbols/
-setxkbmap custom intl-unicode -option caps:escape
+./custom_keyboard.sh
 
 # dotfiles
 ./setup_dotfiles.sh
