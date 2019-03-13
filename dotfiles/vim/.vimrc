@@ -20,3 +20,4 @@ if has('nvim')
     nmap <BS> <C-W>h
 endif
 
+set mouse=a
