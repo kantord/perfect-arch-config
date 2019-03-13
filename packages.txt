@@ -103,3 +103,5 @@ npm
 git-cola
 thunderbird
 betterlockscreen
+slack-desktop
+google-chrome
