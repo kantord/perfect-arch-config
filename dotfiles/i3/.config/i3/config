@@ -174,7 +174,7 @@ bar {
 }
 
 
-gaps inner 10
+gaps inner 30
 smart_gaps on
 new_window none
 new_float pixel 0
