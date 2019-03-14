@@ -122,3 +122,4 @@ gnome
 noto-fonts-emoji
 steam
 lib32-nvidia-utils
+nvm
