@@ -6,3 +6,4 @@
 ./stow.sh vim
 ./stow.sh fontconfig
 ./stow.sh autostart
+./stow.sh git

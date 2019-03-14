@@ -1,0 +1,22 @@
+[user]
+	email = git@daniel-kantor.com
+	name = Dániel Kántor
+[cola]
+	spellcheck = false
+
+[alias]
+	siglog = log --show-signature
+	st = status
+	sts = status --short
+	co = checkout
+	br = branch
+	ci = commit
+	ca = commit -a
+	cam = commit --amend
+	last = log -1 HEAD
+	ls = log --pretty=format:\"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]\" --show-signature --decorate
+	g = log --pretty=format:\"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]\" --show-signature --decorate --graph
+	ri = rebase -i
+	rc = rebase --continue
+	ra = rebase --abort
+	cp = cherry-pick

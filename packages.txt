@@ -125,3 +125,5 @@ lib32-nvidia-utils
 nvm
 jq
 ledger
+firefox-ublock-origin
+cheese
