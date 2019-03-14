@@ -41,3 +41,6 @@ set mouse=a
 
 " Run prettier automatically
 autocmd BufWritePost *.js,*.jsx call prettier#run(1)
+
+" System clipboard
+set clipboard+=unnamedplus
