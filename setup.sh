@@ -13,3 +13,5 @@ systemctl start bluetooth.service
 
 # Set up images for lockscreen
 betterlockscreen -u /usr/share/backgrounds/f30/extras/
+
+sudo npm install -g prettier-eslint-cli
