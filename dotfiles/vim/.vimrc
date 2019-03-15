@@ -9,6 +9,28 @@ Plug 'scrooloose/nerdtree'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plug 'ivalkeen/vim-ctrlp-tjump'
 Plug 'heavenshell/vim-prettier'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'mattn/emmet-vim'
+Plug 'w0rp/ale'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+Plug 'wokalski/autocomplete-flow'
+Plug 'Shougo/neosnippet'
+Plug 'Shougo/neosnippet-snippets'
+
+Plug 'steelsojka/deoplete-flow'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'vim-scripts/AutoComplPop'
 
 call plug#end()
 
@@ -44,3 +66,19 @@ autocmd BufWritePost *.js,*.jsx call prettier#run(1)
 
 " System clipboard
 set clipboard+=unnamedplus
+
+" Emmet stuff
+let g:user_emmet_settings = {
+  \  'javascript.jsx' : {
+    \      'extends' : 'jsx',
+    \  },
+  \}
+
+" Fix linting in flow files
+let g:ale_linters = { 
+\'javascript': ['flow', 'eslint'],
+\}
+
+
+let g:deoplete#enable_at_startup = 1
+let g:neosnippet#enable_completed_snippet = 1

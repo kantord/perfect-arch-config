@@ -129,3 +129,8 @@ firefox-ublock-origin
 cheese
 the_silver_searcher
 feh
+wpgtk-git
+python-pip
+python2-pip
+python-greenlet
+python2-greenlet

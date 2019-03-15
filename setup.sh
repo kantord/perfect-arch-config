@@ -15,3 +15,7 @@ systemctl start bluetooth.service
 betterlockscreen -u /usr/share/backgrounds/f30/extras/
 
 sudo npm install -g prettier-eslint-cli
+
+# Needed for deoplete
+pip2 install --user --no-binary :all: pynvim
+pip install --user --no-binary :all: pynvim
