@@ -134,3 +134,4 @@ python-pip
 python2-pip
 python-greenlet
 python2-greenlet
+nautilus
