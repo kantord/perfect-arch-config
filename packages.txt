@@ -128,3 +128,4 @@ ledger
 firefox-ublock-origin
 cheese
 the_silver_searcher
+feh
