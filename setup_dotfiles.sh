@@ -7,3 +7,4 @@
 ./stow.sh fontconfig
 ./stow.sh autostart
 ./stow.sh git
+./stow.sh wpgtk
