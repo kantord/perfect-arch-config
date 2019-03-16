@@ -8,3 +8,4 @@
 ./stow.sh autostart
 ./stow.sh git
 ./stow.sh wpgtk
+./stow.sh rofi
