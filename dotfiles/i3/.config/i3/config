@@ -196,3 +196,10 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute alsa_input.p
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+
+
+# Fancy stuff
+client.focused          #bb096BAA #bb096BAA #ffffff #00DA8E
+client.focused_inactive #77096BAA #77096BAA #ffffff #484e50
+client.unfocused        #00000000 #00000000 #ffffff #292d2e
+client.urgent           #C10004 #900000 #ffffff #900000
