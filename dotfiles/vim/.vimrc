@@ -1,4 +1,5 @@
 set encoding=utf8
+
 call plug#begin('~/.vim/plugged')
 
 "
@@ -31,6 +32,8 @@ Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'vim-scripts/AutoComplPop'
+Plug 'jeffkreeftmeijer/vim-dim'
+
 
 call plug#end()
 
@@ -82,3 +85,12 @@ let g:ale_linters = {
 
 let g:deoplete#enable_at_startup = 1
 let g:neosnippet#enable_completed_snippet = 1
+
+" Transparent background
+colorscheme default-light
+hi Normal guibg=NONE ctermbg=NONE
+
+set cursorline
+hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE
+
+let g:ctrlp_show_hidden = 1
