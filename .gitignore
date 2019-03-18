@@ -7,3 +7,5 @@ dotfiles/wpgtk/.config/wpg/sequences
 dotfiles/wpgtk/.config/wpg/.current
 /dotfiles/termite/.config/termite/config
 /dotfiles/rofi/.config/rofi/config
+/dotfiles/i3/.config/i3/config.bak
+/dotfiles/i3/.config/i3/config.save

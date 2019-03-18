@@ -12,7 +12,7 @@
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
+# is used in the bar {{}} block below.
 font pango:Source Code Pro Bold 9
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -144,7 +144,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
-mode "resize" {
+mode "resize" {{
         # These bindings trigger as soon as you enter the resize mode
 
         # Pressing left will shrink the window’s width.
@@ -166,15 +166,15 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
-}
+}}
 
 bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
+bar {{
         status_command i3status
-}
+}}
 
 
 gaps inner 30
@@ -199,7 +199,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightne
 
 
 # Fancy stuff
-client.focused          #120100C7 #120100C7 #ffeddc #00DA8E
-client.focused_inactive        #120100C7 #120100C7 #ffeddc #292d2e
-client.unfocused        #12010000 #12010000 #ffeddc #292d2e
-client.urgent          #9C4230CC #9C4230CC #120100 #00DA8E
+client.focused          #{color0.strip}C7 #{color0.strip}C7 {color15} #00DA8E
+client.focused_inactive        #{color0.strip}C7 #{color0.strip}C7 {color15} #292d2e
+client.unfocused        #{color0.strip}00 #{color0.strip}00 {color15} #292d2e
+client.urgent          #{color2.strip}CC #{color2.strip}CC {color0} #00DA8E
