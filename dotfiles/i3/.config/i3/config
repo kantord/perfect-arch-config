@@ -185,6 +185,7 @@ new_float pixel 0
 exec compton --config ~/repos/perfect-arch-config/dotfiles/compton/.config/compton/compton.conf &
 exec dex -ae i3
 exec ~/repos/perfect-arch-config/custom_keyboard.sh
+exec redshift -l geoclue2 &
 
 
 # Pulse Audio controls
@@ -199,7 +200,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightne
 
 
 # Fancy stuff
-client.focused          #120100C7 #120100C7 #ffeddc #00DA8E
-client.focused_inactive        #120100C7 #120100C7 #ffeddc #292d2e
-client.unfocused        #12010000 #12010000 #ffeddc #292d2e
-client.urgent          #9C4230CC #9C4230CC #120100 #00DA8E
+client.focused          #111115C7 #111115C7 #dcffff #00DA8E
+client.focused_inactive        #111115C7 #111115C7 #dcffff #292d2e
+client.unfocused        #11111500 #11111500 #dcffff #292d2e
+client.urgent          #3F80A3CC #3F80A3CC #111115 #00DA8E

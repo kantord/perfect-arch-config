@@ -137,3 +137,4 @@ python2-greenlet
 nautilus
 xorg-xev
 dunst
+redshift
