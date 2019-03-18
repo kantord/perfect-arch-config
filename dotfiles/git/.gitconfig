@@ -20,3 +20,5 @@
 	rc = rebase --continue
 	ra = rebase --abort
 	cp = cherry-pick
+[core]
+	excludesfile = /home/kdani/.gitignore_global
