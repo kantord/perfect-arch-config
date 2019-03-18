@@ -135,3 +135,5 @@ python2-pip
 python-greenlet
 python2-greenlet
 nautilus
+xorg-xev
+dunst
