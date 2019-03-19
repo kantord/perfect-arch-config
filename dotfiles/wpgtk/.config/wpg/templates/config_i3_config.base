@@ -181,6 +181,10 @@ exec ~/repos/perfect-arch-config/custom_keyboard.sh
 exec redshift -l geoclue2 &
 exec polybar -r example &
 
+# Screenshots
+bindsym --release $mod+Print exec scrot -s -e 'mv $f ~/pics/screenshots'
+bindsym $mod+Shift+Print exec scrot -u -e 'mv $f ~/pics/screenshots'
+
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume

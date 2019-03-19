@@ -1,5 +1,8 @@
 #! bash
 
+echo "Creating screenshot directory"
+mkdir -p ~/pics/screenshots/
+
 echo "Setting custom keyboard layout"
 ./custom_keyboard.sh
 
