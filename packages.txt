@@ -138,3 +138,5 @@ nautilus
 xorg-xev
 dunst
 redshift
+polybar
+jsoncpp

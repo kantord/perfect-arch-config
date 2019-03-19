@@ -9,3 +9,6 @@ dotfiles/wpgtk/.config/wpg/.current
 /dotfiles/rofi/.config/rofi/config
 /dotfiles/i3/.config/i3/config.bak
 /dotfiles/i3/.config/i3/config.save
+/dotfiles/polybar/.config/polybar/config
+/dotfiles/i3/.config/i3/config
+/dotfiles/wpgtk/.config/wpg/wp_init.sh
