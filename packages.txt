@@ -140,3 +140,4 @@ dunst
 redshift
 polybar
 jsoncpp
+ipython

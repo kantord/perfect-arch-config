@@ -181,6 +181,10 @@ exec ~/repos/perfect-arch-config/custom_keyboard.sh
 exec redshift -l geoclue2 &
 exec polybar -r example &
 
+# Floating Calculator
+bindsym $mod+Shift+P exec termite --class "Floating Calculator" -e "ipython" &
+for_window [class="^Floating Calculator$"] floating enable
+
 # Screenshots
 bindsym --release $mod+Print exec scrot -s -e 'mv $f ~/pics/screenshots'
 bindsym $mod+Shift+Print exec scrot -u -e 'mv $f ~/pics/screenshots'
