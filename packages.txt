@@ -143,3 +143,4 @@ jsoncpp
 ipython
 gimp
 qt5-styleplugins
+rofimoji-git

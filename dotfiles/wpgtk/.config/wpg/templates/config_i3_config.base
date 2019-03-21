@@ -34,6 +34,7 @@ bindsym $mod+Escape exec i3-dmenu-desktop --dmenu='rofi -i -dmenu'
 bindsym $mod+F5 exec bash -c 'wpg -s `wpg -l | rofi -dmenu` && killall -USR1 termite'
 bindsym $mod+F6 exec bash -c 'wpg -m && killall -USR1 termite'
 bindsym $mod+Return exec termite
+bindsym $mod+q exec rofimoji
 bindsym $mod+Insert exec ~/repos/perfect-arch-config/password-management/rofipassmenu.sh
 
 bindsym $mod+n exec betterlockscreen -l
