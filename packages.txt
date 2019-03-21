@@ -141,3 +141,5 @@ redshift
 polybar
 jsoncpp
 ipython
+gimp
+qt5-styleplugins
