@@ -33,7 +33,8 @@ floating_modifier $mod
 bindsym $mod+Escape exec i3-dmenu-desktop --dmenu='rofi -i -dmenu'
 bindsym $mod+F5 exec bash -c 'wpg -s `wpg -l | rofi -dmenu` && killall -USR1 termite'
 bindsym $mod+F6 exec bash -c 'wpg -m && killall -USR1 termite'
-bindsym $mod+Return exec termite
+bindsym $mod+minus exec ~/repos/i3-env/i3-env ~/repos/i3-yarn/i3-yarn
+bindsym $mod+Return exec ~/repos/i3-env/i3-env termite
 bindsym $mod+q exec rofimoji
 bindsym $mod+Insert exec ~/repos/perfect-arch-config/password-management/rofipassmenu.sh
 bindsym $mod+Shift+w exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
