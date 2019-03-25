@@ -68,7 +68,6 @@ texinfo
 usbutils
 util-linux
 vi
-vim
 which
 wpa_supplicant
 xfsprogs
@@ -144,3 +143,4 @@ ipython
 gimp
 qt5-styleplugins
 rofimoji-git
+gvim

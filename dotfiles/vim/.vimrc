@@ -67,8 +67,8 @@ set mouse=a
 " Run prettier automatically
 autocmd BufWritePost *.js,*.jsx call prettier#run(1)
 
-" System clipboard
-set clipboard+=unnamedplus
+" Use system clipboard for
+set clipboard=unnamedplus
 
 " Emmet stuff
 let g:user_emmet_settings = {
