@@ -144,3 +144,4 @@ gimp
 qt5-styleplugins
 rofimoji-git
 gvim
+passff-host
