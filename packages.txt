@@ -141,7 +141,8 @@ polybar
 jsoncpp
 ipython
 gimp
-qt5-styleplugins
+qt5-styleplugins-git
 rofimoji-git
 gvim
 passff-host
+cloc
