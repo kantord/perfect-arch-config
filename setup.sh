@@ -1,5 +1,8 @@
 #! bash
 
+echo "Installing packages"
+yay -Syu - < ./packages.txt
+
 echo "Creating screenshot directory"
 mkdir -p ~/pics/screenshots/
 
