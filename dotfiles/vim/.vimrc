@@ -33,6 +33,7 @@ Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'vim-scripts/AutoComplPop'
 Plug 'jeffkreeftmeijer/vim-dim'
+Plug 'yegappan/greplace'
 
 
 call plug#end()
