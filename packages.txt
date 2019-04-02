@@ -146,3 +146,5 @@ rofimoji-git
 gvim
 passff-host
 cloc
+meld
+wget
