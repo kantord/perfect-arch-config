@@ -25,3 +25,6 @@ sudo npm install -g prettier-eslint-cli
 # Needed for deoplete
 pip2 install --user --no-binary :all: pynvim
 pip install --user --no-binary :all: pynvim
+
+# Auto connect to available network
+systemctl enable netctl-auto@
