@@ -148,3 +148,4 @@ passff-host
 cloc
 meld
 wget
+dmenu-pango-imlib

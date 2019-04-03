@@ -31,7 +31,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Escape exec i3-dmenu-desktop --dmenu='rofi -i -dmenu'
-bindsym $mod+F5 exec bash -c 'wpg -s `wpg -l | rofi -dmenu` && killall -USR1 termite'
+bindsym $mod+F5 exec ~/repos/perfect-arch-config/wallpaper_picker.sh
 bindsym $mod+F6 exec bash -c 'wpg -m && killall -USR1 termite'
 bindsym $mod+minus exec ~/repos/i3-env/i3-env ~/repos/i3-yarn/i3-yarn
 bindsym $mod+Return exec ~/repos/i3-env/i3-env termite
