@@ -1,5 +1,17 @@
 #! bash
 
+echo "Creating dummy config files"
+# This is required because some applications don't install config files so wpgtk won't work otherwise
+mkdir -p dotfiles/rofi/.config/rofi
+touch dotfiles/rofi/.config/rofi/config
+
+mkdir -p dotfiles/polybar/.config/polybar
+touch dotfiles/polybar/.config/polybar/config
+
+mkdir -p dotfiles/i3/.config/i3
+touch dotfiles/i3/.config/i3/config
+
+
 echo "Installing packages"
 yay -Syu - < ./packages.txt
 
