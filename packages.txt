@@ -119,8 +119,6 @@ gnome-control-center
 gedit
 gnome
 noto-fonts-emoji
-steam
-lib32-nvidia-utils
 nvm
 jq
 ledger
@@ -146,3 +144,11 @@ rofimoji-git
 gvim
 passff-host
 cloc
+xorg-server
+xorg-xinit
+rsync
+grsync
+xorg-xbacklight
+xf86-input-evdev
+mesa
+task
