@@ -34,6 +34,7 @@ Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'vim-scripts/AutoComplPop'
 Plug 'jeffkreeftmeijer/vim-dim'
 Plug 'yegappan/greplace'
+Plug 'wakatime/vim-wakatime'
 
 
 call plug#end()
