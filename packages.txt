@@ -151,3 +151,4 @@ xterm
 yarn
 zsh
 zsh-completions
+gitlab-runner

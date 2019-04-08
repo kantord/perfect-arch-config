@@ -4,3 +4,4 @@ spotify
 lmms
 openttd
 zoom
+docker
