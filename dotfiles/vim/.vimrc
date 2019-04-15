@@ -35,6 +35,7 @@ Plug 'jeffkreeftmeijer/vim-dim'
 Plug 'yegappan/greplace'
 Plug 'wakatime/vim-wakatime'
 Plug 'airblade/vim-gitgutter'
+Plug 'tmhedberg/matchit' " The '%' now matches more k?
 
 call plug#end()
 
