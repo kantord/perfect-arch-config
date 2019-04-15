@@ -130,3 +130,14 @@ hi VertSplit ctermbg=NONE
 hi CursorLineNr ctermbg=NONE ctermfg=7
 
 
+"--- Searching ---"
+
+" Search as characters are entered
+set incsearch
+
+" Highlight matches
+set hlsearch
+
+" Better searching
+set ignorecase
+set smartcase
