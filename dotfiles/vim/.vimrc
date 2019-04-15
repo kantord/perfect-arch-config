@@ -140,3 +140,25 @@ set hlsearch
 " Better searching
 set ignorecase
 set smartcase
+
+let g:NERDTreeWinSize = 28
+let g:NERDTreeMinimalUI = 1
+
+
+set scrolloff=8 " The screen will only scroll when the cursor is 8 characters from the top/bottom.
+set ffs=unix,dos,mac " Prioritize unix as the standard file type.
+set wildmenu " Enable the 'autocomplete' menu when in command mode (':').
+
+set showmatch " Will highlight matching brackets.
+set mat=2 " How long the highlight will last.
+set ttyfast " Will send characters over a terminal connection faster. We do have fast connections after all.
+set ruler " Always show current cursor position, which might be needed for the character column location.
+set hidden " Abandon buffer when closed, which is usually what we want to do in this case.
+set lazyredraw " Good performance boost when executing macros, redraw the screen only on certain commands.
+set backspace=2 " Used for making backspace work like in most other editors (e.g. removing a single indent).
+
+set undodir=~/.vim_undos " Where do we store all this awesomeness?!?!
+set undofile " Persistent undos are completely freaking awesome!!!
+set noswapfile " Don't create swap files, nowadays we should have enough memory to store a text file.
+set nowritebackup " If Vim crashes often then turn backups on again, look at docs for more information.
+set autoread " Reload file when it has been changed externally.
