@@ -152,3 +152,7 @@ yarn
 zsh
 zsh-completions
 gitlab-runner
+firefox-vim-vixen
+libreoffice
+nvm
+arandr
