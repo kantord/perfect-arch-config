@@ -178,3 +178,11 @@ set statusline+=%#LineNr#
 set statusline+=\ %f
 set statusline+=%#VertSplit#
 set statusline+=\ ─\ %p%%\ 
+
+let g:ale_sign_error = '✗'
+let g:ale_sign_warning = '✗'
+highlight clear ALEErrorSign
+highlight clear ALEWarningSign
+hi ALEErrorSign ctermfg=Red
+highlight ALEWarning cterm=bold ctermbg=Black ctermfg=Red
+highlight ALEError cterm=bold ctermbg=Black ctermfg=Red
