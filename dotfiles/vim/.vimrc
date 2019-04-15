@@ -35,7 +35,8 @@ Plug 'jeffkreeftmeijer/vim-dim'
 Plug 'yegappan/greplace'
 Plug 'wakatime/vim-wakatime'
 Plug 'airblade/vim-gitgutter'
-Plug 'tmhedberg/matchit' " The '%' now matches more k?
+Plug 'tmhedberg/matchit'
+Plug 'miyakogi/conoline.vim'
 
 call plug#end()
 
@@ -92,8 +93,8 @@ let g:neosnippet#enable_completed_snippet = 1
 colorscheme default-light
 hi Normal guibg=NONE ctermbg=NONE
 
-set cursorline
-hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE
+"set cursorline
+"hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE
 
 let g:ctrlp_show_hidden = 1
 
@@ -131,7 +132,6 @@ hi CursorLineNr ctermbg=NONE ctermfg=7
 
 
 "--- Searching ---"
-
 " Search as characters are entered
 set incsearch
 
@@ -173,7 +173,7 @@ hi VertSplit cterm=NONE
 hi StatusLine ctermbg=NONE cterm=NONE guibg=red
 hi StatusLineNC ctermbg=NONE cterm=NONE guibg=green
 
-set statusline=
+set statusline=────
 set statusline+=%#LineNr#
 set statusline+=\ %f
 set statusline+=%#VertSplit#
