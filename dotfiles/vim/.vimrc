@@ -35,7 +35,7 @@ Plug 'vim-scripts/AutoComplPop'
 Plug 'jeffkreeftmeijer/vim-dim'
 Plug 'yegappan/greplace'
 Plug 'wakatime/vim-wakatime'
-
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -96,3 +96,37 @@ set cursorline
 hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE
 
 let g:ctrlp_show_hidden = 1
+
+:set number relativenumber
+
+" Line numbers
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+:  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+:augroup END
+
+
+"- Git-Gutter -"
+" stolen from here https://gitlab.com/Sacules/dotfiles/blob/master/nvim/.config/nvim/init.vim
+" Better glyphs
+let g:gitgutter_sign_added='┃'
+let g:gitgutter_sign_modified='┃'
+let g:gitgutter_sign_removed='◢'
+let g:gitgutter_sign_removed_first_line='◥'
+let g:gitgutter_sign_modified_removed='◢'
+let g:gitgutter_override_sign_column_highlight = 0
+
+" Removing background for a e s t h e t i c s
+hi! GitGutterAdd ctermbg=NONE
+hi! GitGutterChange ctermbg=NONE
+hi! GitGutterDelete ctermbg=NONE
+hi! GitGutterChangeDelete ctermbg=NONE
+
+" Remove background
+hi LineNr ctermbg=NONE
+hi SignColumn ctermbg=NONE
+hi VertSplit ctermbg=NONE
+hi CursorLineNr ctermbg=NONE ctermfg=7
+
+
