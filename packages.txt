@@ -156,3 +156,4 @@ firefox-vim-vixen
 libreoffice
 nvm
 arandr
+gsimplecal
