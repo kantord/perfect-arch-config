@@ -163,3 +163,18 @@ set undofile " Persistent undos are completely freaking awesome!!!
 set noswapfile " Don't create swap files, nowadays we should have enough memory to store a text file.
 set nowritebackup " If Vim crashes often then turn backups on again, look at docs for more information.
 set autoread " Reload file when it has been changed externally.
+
+
+" Custom built status-bar
+set fillchars+=vert:│,
+set fillchars+=stl:─,stlnc:─
+autocmd ColorScheme * highlight VertSplit cterm=NONE ctermfg=Green ctermbg=NONE
+hi VertSplit cterm=NONE
+hi StatusLine ctermbg=NONE cterm=NONE guibg=red
+hi StatusLineNC ctermbg=NONE cterm=NONE guibg=green
+
+set statusline=
+set statusline+=%#LineNr#
+set statusline+=\ %f
+set statusline+=%#VertSplit#
+set statusline+=\ ─\ %p%%\ 
