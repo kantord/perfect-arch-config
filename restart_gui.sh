@@ -4,4 +4,7 @@ killall compton
 killall polybar
 i3-msg reload
 exec compton --config ~/repos/perfect-arch-config/dotfiles/compton/.config/compton/compton.conf &
-exec polybar -r example &
+
+for m in $(polybar --list-monitors | cut -d":" -f1); do
+    MONITOR=$m polybar --reload example &
+done
