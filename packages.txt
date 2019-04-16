@@ -157,3 +157,4 @@ libreoffice
 nvm
 arandr
 gsimplecal
+i3-env
