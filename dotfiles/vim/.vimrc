@@ -159,7 +159,7 @@ set hidden " Abandon buffer when closed, which is usually what we want to do in 
 set lazyredraw " Good performance boost when executing macros, redraw the screen only on certain commands.
 set backspace=2 " Used for making backspace work like in most other editors (e.g. removing a single indent).
 
-set undodir=~/.vim_undos " Where do we store all this awesomeness?!?!
+set undodir=~/.vim/undodir " Where do we store all this awesomeness?!?!
 set undofile " Persistent undos are completely freaking awesome!!!
 set noswapfile " Don't create swap files, nowadays we should have enough memory to store a text file.
 set nowritebackup " If Vim crashes often then turn backups on again, look at docs for more information.

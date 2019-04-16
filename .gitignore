@@ -1,4 +1,5 @@
 dotfiles/vim/.vim/plugged/
+dotfiles/vim/.vim/undodir/
 dotfiles/wpgtk/.config/wpg/wallpapers
 dotfiles/wpgtk/.config/wpg/formats
 dotfiles/wpgtk/.config/wpg/schemes
