@@ -44,6 +44,12 @@ bindsym $mod+n exec betterlockscreen -l
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# Pomodoro shortcuts
+bindsym $mod+F9 exec  "i3-gnome-pomodoro start"
+bindsym $mod+F10 exec "i3-gnome-pomodoro toggle"
+bindsym $mod+F11 exec "i3-gnome-pomodoro skip"
+bindsym $mod+F12 exec "i3-gnome-pomodoro stop"
+
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications

@@ -58,7 +58,7 @@ font-2 = "Source Code Pro:pixelsize=9;1"
 
 modules-left = bspwm i3
 modules-center = 
-modules-right = pulseaudio wlan battery temperature date
+modules-right = pomodoro pulseaudio wlan battery temperature date
 
 tray-position = right
 tray-padding = 2
@@ -419,4 +419,7 @@ screenchange-reload = true
 margin-top = 5
 margin-bottom = 5
 
-; vim:ft=dosini
+[module/pomodoro]
+type = custom/script
+exec = i3-gnome-pomodoro status
+interval = 1
