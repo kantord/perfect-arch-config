@@ -194,3 +194,9 @@ let &t_EI = "\<Esc>[2 q"
 
 let mapleader = "\<Space>"
 map <Leader> <Plug>(easymotion-prefix)
+
+" Disable arrow movement, resize splits instead.
+nnoremap <Up>    :resize +2<CR>
+nnoremap <Down>  :resize -2<CR>
+nnoremap <Left>  :vertical resize +2<CR>
+nnoremap <Right> :vertical resize -2<CR>
