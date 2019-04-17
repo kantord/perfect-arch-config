@@ -42,3 +42,6 @@ pip install --user --no-binary :all: pynvim
 
 # Auto connect to available network
 systemctl enable netctl-auto@
+
+# Install GTK theme
+wpg-install.sh -g
