@@ -7,3 +7,4 @@ zoom
 docker
 zoom
 igdm
+spotify
