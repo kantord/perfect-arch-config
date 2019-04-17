@@ -33,6 +33,7 @@ floating_modifier $mod
 bindsym $mod+Escape exec i3-dmenu-desktop --dmenu='rofi -i -dmenu'
 bindsym $mod+F5 exec ~/repos/perfect-arch-config/wallpaper_picker.sh
 bindsym $mod+F6 exec bash -c 'wpg -m && killall -USR1 termite'
+bindsym $mod+F7 exec ~/repos/perfect-arch-config/monitor_mode_picker.sh
 bindsym $mod+minus exec ~/repos/i3-env/i3-env ~/repos/i3-yarn/i3-yarn
 bindsym $mod+Return exec ~/repos/i3-env/i3-env termite
 bindsym $mod+q exec rofimoji
