@@ -160,3 +160,5 @@ gsimplecal
 i3-env
 i3-gnome-pomodoro-git
 autorandr
+xorg-xkill
+xorg-xprop
