@@ -60,7 +60,7 @@ modules-left = bspwm i3
 modules-center = 
 modules-right = pomodoro pulseaudio wlan battery temperature date
 
-tray-position = right
+tray-position = none
 tray-padding = 2
 ;tray-background = #0063ff
 
