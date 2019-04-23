@@ -162,3 +162,4 @@ autorandr
 xorg-xkill
 xorg-xprop
 twmn-git
+battery-monitor
