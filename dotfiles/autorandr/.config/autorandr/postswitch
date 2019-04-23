@@ -1,0 +1,3 @@
+#! /usr/bin/env bash
+
+~/repos/perfect-arch-config/restart_gui.sh

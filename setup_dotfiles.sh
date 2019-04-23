@@ -11,3 +11,4 @@
 ./stow.sh rofi
 ./stow.sh polybar
 ./stow.sh i3-env
+./stow.sh autorandr
