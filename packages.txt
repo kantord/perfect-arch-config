@@ -20,7 +20,6 @@ dhcpcd
 dialog
 diffutils
 dmenu-pango-imlib
-dunst
 e2fsprogs
 efibootmgr
 f30-backgrounds
@@ -162,3 +161,4 @@ i3-gnome-pomodoro-git
 autorandr
 xorg-xkill
 xorg-xprop
+twmn-git

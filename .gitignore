@@ -13,3 +13,4 @@ dotfiles/wpgtk/.config/wpg/.current
 /dotfiles/polybar/.config/polybar/config
 /dotfiles/i3/.config/i3/config
 /dotfiles/wpgtk/.config/wpg/wp_init.sh
+/dotfiles/twmn/.config/twmn/twmn.conf

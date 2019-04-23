@@ -12,3 +12,4 @@
 ./stow.sh polybar
 ./stow.sh i3-env
 ./stow.sh autorandr
+./stow.sh twmn
