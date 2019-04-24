@@ -37,6 +37,7 @@ bindsym $mod+F7 exec ~/repos/perfect-arch-config/monitor_mode_picker.sh
 bindsym $mod+minus exec ~/repos/i3-env/i3-env ~/repos/i3-yarn/i3-yarn
 bindsym $mod+Return exec ~/repos/i3-env/i3-env termite
 bindsym $mod+q exec rofimoji
+bindsym $mod+m exec ~/repos/perfect-arch-config/i3_msg_rofi.sh
 bindsym $mod+Insert exec ~/repos/perfect-arch-config/password-management/rofipassmenu.sh
 bindsym $mod+Shift+w exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
 
