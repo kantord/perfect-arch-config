@@ -1,6 +1,9 @@
 #! /usr/bin/env bash
 
-message=`~/repos/perfect-arch-config/list_active_displays.sh | sed "s/^/move workspace to output /" | rofi -dmenu`
+current_display=`i3-msg -t get_workspaces | emuto 'filter ($ => $.focused) | $[0].output | [$]' -o=raw`
+active_displays=`~/repos/perfect-arch-config/list_active_displays.sh`
+available_displays=`echo $active_displays | sed "s/ /\n/g" | grep -v $current_display`
+message=`echo $available_displays | sed "s/ /\n/g" | sed "s/^/move workspace to output /" | rofi -dmenu`
 
 if [ -z "$message" ]
 then
