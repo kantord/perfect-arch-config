@@ -45,3 +45,4 @@ systemctl enable netctl-auto@
 
 # Install GTK theme
 wpg-install.sh -g
+wpg-install.sh -i
