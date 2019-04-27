@@ -11,6 +11,9 @@ touch dotfiles/polybar/.config/polybar/config
 mkdir -p dotfiles/i3/.config/i3
 touch dotfiles/i3/.config/i3/config
 
+mkdir -p dotfiles/twmn/.config/twmn
+touch dotfiles/i3/.config/i3/config
+
 echo "Creating vim undo directory"
 mkdir -p ~/.vim/undodir
 
