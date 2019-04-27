@@ -15,7 +15,7 @@ echo "Creating vim undo directory"
 mkdir -p ~/.vim/undodir
 
 echo "Installing packages"
-yay -Syu - < ./packages.txt
+yay -Syu --needed - < ./packages.txt
 
 echo "Creating screenshot directory"
 mkdir -p ~/pics/screenshots/
