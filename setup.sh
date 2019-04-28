@@ -24,10 +24,10 @@ echo "Creating screenshot directory"
 mkdir -p ~/pics/screenshots/
 
 echo "Setting custom keyboard layout"
-./custom_keyboard.sh
+./tools/custom_keyboard.sh
 
 # dotfiles
-./setup_dotfiles.sh
+./tools/setup_dotfiles.sh
 
 
 # Set up bluetooth
