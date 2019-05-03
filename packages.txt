@@ -107,7 +107,7 @@ python2-greenlet
 python2-pip
 python-greenlet
 python-pip
-qt5-styleplugins-git
+qt5-styleplugins
 redshift
 reiserfsprogs
 rofi
@@ -166,3 +166,4 @@ battery-monitor
 glava
 ranger
 signal-desktop
+screen
