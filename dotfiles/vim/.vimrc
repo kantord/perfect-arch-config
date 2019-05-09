@@ -38,6 +38,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tmhedberg/matchit'
 Plug 'miyakogi/conoline.vim'
 Plug 'easymotion/vim-easymotion'
+Plug 'takac/vim-hardtime'
 Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
