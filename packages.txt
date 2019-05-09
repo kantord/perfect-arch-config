@@ -166,3 +166,6 @@ battery-monitor
 glava
 ranger
 signal-desktop
+qbittorrent
+transmission-gtk
+vlc
