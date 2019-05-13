@@ -168,3 +168,4 @@ ranger
 signal-desktop
 screen
 gitstats-git
+unclutter
