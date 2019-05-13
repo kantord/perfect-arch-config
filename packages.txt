@@ -167,3 +167,4 @@ glava
 ranger
 signal-desktop
 screen
+gitstats-git
