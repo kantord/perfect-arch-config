@@ -58,7 +58,7 @@ font-2 = "Source Code Pro:pixelsize=9;1"
 
 modules-left = bspwm i3
 modules-center = 
-modules-right = pomodoro pulseaudio wlan battery temperature date
+modules-right = pomodoro pulseaudio wlan battery temperature ibus date
 
 tray-position = none
 tray-padding = 2
@@ -423,3 +423,8 @@ margin-bottom = 5
 type = custom/script
 exec = i3-gnome-pomodoro status
 interval = 1
+
+[module/ibus]
+type = custom/script
+exec = bash -c 'ibus engine | cut -d":" -f2'
+interval = 0.3

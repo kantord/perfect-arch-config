@@ -1,0 +1,11 @@
+[general]
+engines-order=['xkb:us:altgr-intl:eng', 'm17n:hi:itrans']
+preload-engines=['xkb:us:altgr-intl:eng', 'm17n:hi:itrans']
+use-system-keyboard-layout=true
+version='1.5.20'
+
+[general/hotkey]
+triggers=['<Super>Tab']
+
+[panel/emoji]
+favorites=['😁']

@@ -188,11 +188,11 @@ smart_gaps on
 new_window none
 new_float pixel 0
 
-exec compton --config $tools/dotfiles/compton/.config/compton/compton.conf &
-exec dex -ae i3
-exec $tools/custom_keyboard.sh
-exec redshift -l geoclue2 &
-exec polybar -r example &
+exec --no-startup-id compton --config $tools/dotfiles/compton/.config/compton/compton.conf &
+exec --no-startup-id dex -ae i3
+exec --no-startup-id $tools/custom_keyboard.sh
+exec --no-startup-id redshift -l geoclue2 &
+exec --no-startup-id polybar -r example &
 
 # Floating Calculator
 bindsym $mod+Shift+P exec termite --class "Floating Calculator" -e "ipython" &
@@ -220,4 +220,7 @@ client.focused_inactive        #{color0.strip}C7 #{color0.strip}C7 {color15} #29
 client.unfocused        #{color0.strip}00 #{color0.strip}00 {color15} #292d2e
 client.urgent          #{color2.strip}CC #{color2.strip}CC {color0} #00DA8E
 
-exec $tools/dotfiles/wpgtk/.config/wpg/wp_init.sh &
+exec --no-startup-id $tools/dotfiles/wpgtk/.config/wpg/wp_init.sh &
+exec --no-startup-id $tools/load_dconf.sh
+exec --no-startup-id ibus-daemon -d -r &
+

@@ -171,3 +171,5 @@ xterm
 yarn
 zsh
 zsh-completions
+ibus
+ibus-m17n
