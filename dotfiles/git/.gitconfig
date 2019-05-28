@@ -26,3 +26,5 @@
 
 [rebase]
     instructionFormat = %s [%an]
+[rerere]
+	enabled = 1
