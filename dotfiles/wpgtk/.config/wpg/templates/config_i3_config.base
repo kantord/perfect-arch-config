@@ -36,6 +36,7 @@ bindsym $mod+F5 exec $tools/wallpaper_picker.sh
 bindsym $mod+F6 exec bash -c 'wpg -m && killall -USR1 termite'
 bindsym $mod+F7 exec $tools/monitor_mode_picker.sh
 bindsym $mod+minus exec ~/repos/i3-env/i3-env ~/repos/i3-yarn/i3-yarn
+bindsym $mod+p exec i3-env-rofi
 bindsym $mod+Return exec ~/repos/i3-env/i3-env termite
 bindsym $mod+q exec rofimoji
 bindsym $mod+m exec $tools/i3_msg_rofi.sh
