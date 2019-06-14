@@ -8,3 +8,5 @@ docker
 zoom
 igdm
 spotify
+virtualbox
+keybase

@@ -171,5 +171,7 @@ xterm
 yarn
 zsh
 zsh-completions
+keybase-gui
 ibus
 ibus-m17n
+virtualbox-guest-utils
