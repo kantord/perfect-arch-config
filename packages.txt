@@ -52,6 +52,7 @@ gnome-control-center
 gnome-settings-daemon
 gnome-terminal
 google-chrome
+gpointing-device-settings
 grep
 groff
 grsync
@@ -63,6 +64,8 @@ i3-env
 i3-gaps
 i3-gnome-pomodoro-git
 i3status
+ibus
+ibus-m17n
 inetutils
 iproute2
 iputils
@@ -71,6 +74,7 @@ iw
 jfsutils
 jq
 jsoncpp
+keybase-gui
 ledger
 less
 libreoffice
@@ -154,6 +158,7 @@ unclutter
 usbutils
 util-linux
 vi
+virtualbox-guest-utils
 vlc
 wget
 which
@@ -171,7 +176,3 @@ xterm
 yarn
 zsh
 zsh-completions
-keybase-gui
-ibus
-ibus-m17n
-virtualbox-guest-utils
