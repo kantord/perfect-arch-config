@@ -176,3 +176,5 @@ xterm
 yarn
 zsh
 zsh-completions
+yubico-pam
+libu2f-host
