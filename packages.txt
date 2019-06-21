@@ -71,6 +71,8 @@ iproute2
 iputils
 ipython
 iw
+jcloisterzone
+jdk9
 jfsutils
 jq
 jsoncpp
@@ -79,6 +81,7 @@ ledger
 less
 libreoffice
 libtool
+libu2f-host
 licenses
 linux
 linux-firmware
@@ -174,7 +177,6 @@ xorg-xkill
 xorg-xprop
 xterm
 yarn
+yubico-pam
 zsh
 zsh-completions
-yubico-pam
-libu2f-host
