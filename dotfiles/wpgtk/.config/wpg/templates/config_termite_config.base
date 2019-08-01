@@ -4,7 +4,7 @@
 #bold_is_bright = true
 #clickable_url = true
 #dynamic_title = true
-font = Source Code Pro 10
+font = Iosevka Light 10
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
