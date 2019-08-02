@@ -40,6 +40,9 @@ Plug 'miyakogi/conoline.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'takac/vim-hardtime'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'vim-scripts/indentpython.vim'
+" Plug 'Valloric/YouCompleteMe'
+Plug 'nvie/vim-flake8'
 
 call plug#end()
 
@@ -202,3 +205,29 @@ nnoremap <Up>    :resize +2<CR>
 nnoremap <Down>  :resize -2<CR>
 nnoremap <Left>  :vertical resize +2<CR>
 nnoremap <Right> :vertical resize -2<CR>
+
+" Proper PEP8 indentation
+au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
+" Proper indentation for web languages
+au BufNewFile,BufRead *.js, *.html, *.css, *.jsx
+    \ set tabstop=2
+    \ set softtabstop=2
+    \ set shiftwidth=2
+
+" Flag useless whitespace
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+" YouCompleteMe autoclose preview
+" let g:ycm_autoclose_preview_window_after_completion=1
+
+" YouCompleteMe go to definition
+" map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
