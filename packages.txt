@@ -86,6 +86,7 @@ licenses
 linux
 linux-firmware
 logrotate
+lsdesktopf
 lvm2
 lxappearance
 m4
@@ -144,6 +145,7 @@ stow
 sudo
 sysfsutils
 systemd
+systemd-swap
 systemd-sysvcompat
 tar
 task
@@ -155,6 +157,7 @@ thunderbird
 tig
 transmission-gtk
 ttf-dejavu
+ttf-iosevka
 ttf-liberation
 twmn-git
 unclutter
@@ -180,5 +183,3 @@ yarn
 yubico-pam
 zsh
 zsh-completions
-systemd-swap
-lsdesktopf
