@@ -181,3 +181,4 @@ yubico-pam
 zsh
 zsh-completions
 systemd-swap
+lsdesktopf

@@ -31,7 +31,7 @@ font pango:Source Code Pro Bold 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Escape exec i3-dmenu-desktop --dmenu='rofi -i -dmenu'
+bindsym $mod+Escape exec $tools/i3-env-desktop.sh
 bindsym $mod+F5 exec $tools/wallpaper_picker.sh
 bindsym $mod+F6 exec bash -c 'wpg -m && killall -USR1 termite'
 bindsym $mod+F7 exec $tools/monitor_mode_picker.sh
