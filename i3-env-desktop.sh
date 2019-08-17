@@ -14,7 +14,7 @@ then
 	echo "No application was selected"
 else
 	echo "Selected $to_run"
-	command=`list_desktop_files | sort | grep "$to_run" | cut -f2 -d'~' | head -n1`
+	command=`list_desktop_files | sort | grep "$to_run" | cut -f2 -d'~' | head -n1 | sed 's %[fFuU]  g'`
 	command=`echo $command | sed 's/git-cola --prompt/git-cola/'`
 	echo "Running command: $command"
 	i3-env $command
