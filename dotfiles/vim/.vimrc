@@ -117,11 +117,11 @@ let g:ctrlp_show_hidden = 1
 "- Git-Gutter -"
 " stolen from here https://gitlab.com/Sacules/dotfiles/blob/master/nvim/.config/nvim/init.vim
 " Better glyphs
-let g:gitgutter_sign_added='╞'
-let g:gitgutter_sign_modified='├'
-let g:gitgutter_sign_removed='◢'
-let g:gitgutter_sign_removed_first_line='◥'
-let g:gitgutter_sign_modified_removed='◢'
+let g:gitgutter_sign_added='➕'
+let g:gitgutter_sign_modified='✍️'
+let g:gitgutter_sign_removed='🚮'
+let g:gitgutter_sign_removed_first_line='🚮'
+let g:gitgutter_sign_modified_removed='✍️'
 let g:gitgutter_override_sign_column_highlight = 0
 
 " Removing background for a e s t h e t i c s
@@ -206,21 +206,10 @@ nnoremap <Down>  :resize -2<CR>
 nnoremap <Left>  :vertical resize +2<CR>
 nnoremap <Right> :vertical resize -2<CR>
 
-" Proper PEP8 indentation
-au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
-
-" Proper indentation for web languages
-au BufNewFile,BufRead *.js, *.html, *.css, *.jsx
-    \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 noexpandtab
+autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 
 " Flag useless whitespace
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
