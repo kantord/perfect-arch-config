@@ -183,3 +183,6 @@ yarn
 yubico-pam
 zsh
 zsh-completions
+audacity
+
+alsa-tools
