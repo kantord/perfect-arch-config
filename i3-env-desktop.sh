@@ -6,8 +6,12 @@ find  ~/Desktop /usr/share/applications ~/games ~/.local/share/applications ~/.l
 
 
 
-to_run=`list_desktop_files | cut -f1 -d'~' | sort | uniq | rofi -dmenu -no-custom -i`
+to_run=`list_desktop_files | sed 's/ *%[fFuU] *//g' | sed 's/~/ (/g;s/$/)/g;s/(..............*)//g' |  sort | uniq | rofi -dmenu -no-custom -i`
 
+
+echo "$to_run"
+to_run=$(echo "$to_run" | sed 's/ *(.*) *//;s/^ *//;s/ *$//;')
+echo "$to_run"
 
 if [ -z "$to_run" ]
 then
