@@ -40,7 +40,7 @@ Plug 'miyakogi/conoline.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'takac/vim-hardtime'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'vim-scripts/indentpython.vim'
+"Plug 'vim-scripts/indentpython.vim'
 " Plug 'Valloric/YouCompleteMe'
 Plug 'nvie/vim-flake8'
 
