@@ -1,5 +1,7 @@
 adobe-source-code-pro-fonts
+alsa-tools
 arandr
+audacity
 autoconf
 automake
 autorandr
@@ -183,6 +185,3 @@ yarn
 yubico-pam
 zsh
 zsh-completions
-audacity
-
-alsa-tools
