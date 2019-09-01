@@ -61,7 +61,7 @@ font-2 = "Source Code Pro:pixelsize=9;1"
 
 modules-left = bspwm i3
 modules-center = 
-modules-right = calendar pomodoro pulseaudio wlan battery temperature ibus date
+modules-right = calendar_and_notification pomodoro pulseaudio wlan battery temperature ibus date
 
 tray-position = none
 tray-padding = 2
@@ -428,10 +428,10 @@ type = custom/script
 exec = i3-gnome-pomodoro status
 interval = 1
 
-[module/calendar]
+[module/calendar_and_notification]
 type = custom/script
 exec = ~/repos/perfect-arch-config/calendar/get_next_event.sh
-interval = 10
+interval = 0.5
 
 [module/ibus]
 type = custom/script

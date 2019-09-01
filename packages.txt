@@ -146,6 +146,7 @@ shadow
 signal-desktop
 slack-desktop
 s-nail
+statnot
 stow
 sudo
 sysfsutils
@@ -164,7 +165,6 @@ transmission-gtk
 ttf-dejavu
 ttf-iosevka
 ttf-liberation
-twmn-git
 unclutter
 usbutils
 util-linux
@@ -184,6 +184,7 @@ xorg-xev
 xorg-xinit
 xorg-xkill
 xorg-xprop
+xorg-xsetroot
 xterm
 yarn
 yubico-pam
