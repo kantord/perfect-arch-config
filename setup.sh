@@ -52,3 +52,8 @@ wpg-install.sh -i
 
 # Load dconf
 ./load_dconf.sh
+
+# Setup crontabs
+crontab ./crontab
+systemctl enable cronie.service
+systemctl start cronie.service

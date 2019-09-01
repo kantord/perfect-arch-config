@@ -1,0 +1,2 @@
+*/60 * * * * vdirsyncer discover > /dev/null
+*/3 * * * * vdirsyncer sync > /dev/null

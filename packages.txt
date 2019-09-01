@@ -18,6 +18,7 @@ cheese
 cloc
 compton-tryone-git
 coreutils
+cronie
 cryptsetup
 device-mapper
 dex
@@ -79,6 +80,7 @@ jfsutils
 jq
 jsoncpp
 keybase-gui
+khal
 ledger
 less
 libreoffice
@@ -128,6 +130,7 @@ python2-greenlet
 python2-pip
 python-greenlet
 python-pip
+python-requests-oauthlib
 qbittorrent
 qt5-styleplugins
 ranger
@@ -165,6 +168,7 @@ twmn-git
 unclutter
 usbutils
 util-linux
+vdirsyncer
 vi
 virtualbox-guest-utils
 vlc
