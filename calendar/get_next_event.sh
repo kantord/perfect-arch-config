@@ -9,5 +9,6 @@ time_difference=$(($next_event_time - $now_time))
 time_difference_minutes=$(($time_difference / 60))
 time_difference_hours=$(($time_difference_minutes / 60))
 time_difference_minutes_adjusted=$(($time_difference_minutes - ($time_difference_hours * 60) ))
+time_difference_formatted=`echo "$time_difference_hours"h "$time_difference_minutes_adjusted"m | sed 's/0h //'`
 
-echo "Next event:" $next_event_title - "$time_difference_hours"h "$time_difference_minutes_adjusted"m"  "
+echo "Next event:" $next_event_title - $time_difference_formatted"  "

@@ -431,7 +431,7 @@ interval = 1
 [module/calendar]
 type = custom/script
 exec = ~/repos/perfect-arch-config/calendar/get_next_event.sh
-interval = 30
+interval = 10
 
 [module/ibus]
 type = custom/script
