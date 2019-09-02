@@ -60,8 +60,8 @@ font-1 = "Source Code Pro:pixelsize=9;1"
 font-2 = "Source Code Pro:pixelsize=9;1"
 
 modules-left = bspwm i3
-modules-center = 
-modules-right = calendar_and_notification pomodoro pulseaudio wlan battery temperature ibus date
+modules-center = calendar_and_notification
+modules-right = pomodoro pulseaudio wlan battery temperature ibus date
 
 tray-position = none
 tray-padding = 2
