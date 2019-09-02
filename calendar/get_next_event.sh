@@ -14,5 +14,6 @@ time_difference_formatted=`echo "$time_difference_hours"h "$time_difference_minu
 now_line=`khal at -f "{start-date};={start-time};{title}" | grep = | grep -v ";=;" | head -n1 | sed 's ;= ; ' | sed 's/;/ /' | sed 's/\[regular\]$//'`
 now_title=`echo $now_line | cut -f2 -d";" | cut -c -30 | sed 's/$/  /' | sed 's/^/Now:/' | sed 's/Now: *//'`
 
-calendar_summary=`echo "$now_title""In $time_difference_formatted:" $next_event_title`
+next_summary=`echo "In $time_difference_formatted:" $next_event_title | sed 's/.*[0-9][0-9]\+h.*//'`
+calendar_summary=`echo "$now_title""$next_summary"`
 cat <(echo $calendar_summary) /tmp/last_notification.txt | grep -v '^$' | tail -n1
