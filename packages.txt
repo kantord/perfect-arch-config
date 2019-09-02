@@ -137,7 +137,6 @@ ranger
 redshift
 reiserfsprogs
 rofi
-rofimoji-git
 rsync
 screen
 scrot
@@ -146,6 +145,7 @@ shadow
 signal-desktop
 slack-desktop
 s-nail
+splatmoji-git
 statnot
 stow
 sudo
