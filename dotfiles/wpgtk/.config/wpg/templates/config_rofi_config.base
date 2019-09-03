@@ -10,7 +10,7 @@ rofi.color-window:                   argb:cc{color0.strip}, {active}, {inactive}
 rofi.bw:                             0
 rofi.eh:                             1
 rofi.location:                       0
-rofi.padding:                        300
+rofi.padding:                        30
 rofi.yoffset:                        0
 rofi.xoffset:                        0
 rofi.fixed-num-lines:                true
@@ -29,5 +29,5 @@ rofi.kb-row-down:                    Down,Control+n,Alt+j
 rofi.show-icons: 		     true
 rofi.hide-scrollbar: 		     true
 !rofi.separator-style: 		     solid
-rofi.columns: 			     2
-rofi.fullscreen: 		     true
+rofi.columns: 			     1
+rofi.fullscreen: 		     false
