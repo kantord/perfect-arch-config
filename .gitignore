@@ -15,3 +15,4 @@ dotfiles/wpgtk/.config/wpg/.current
 /dotfiles/wpgtk/.config/wpg/wp_init.sh
 /dotfiles/autostart/.config/autostart/keybase_autostart.desktop
 /notifications/statnot_conf.pyc
+/shortcuts/shortcuts.txt
