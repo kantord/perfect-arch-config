@@ -222,7 +222,7 @@ client.focused_inactive        #{color0.strip}C7 #{color0.strip}C7 {color15} #29
 client.unfocused        #{color0.strip}00 #{color0.strip}00 {color15} #292d2e
 client.urgent          #{color2.strip}CC #{color2.strip}CC {color0} #00DA8E
 
-exec --no-startup-id $tools/dotfiles/wpgtk/.config/wpg/wp_init.sh &
+exec --no-startup-id $tools/wp_init.sh &
 exec --no-startup-id $tools/load_dconf.sh
 exec --no-startup-id ibus-daemon -d -r &
 
