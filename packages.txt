@@ -102,6 +102,7 @@ meld
 mesa
 nano
 nautilus
+nerd-fonts-iosevka
 netctl
 nitrogen
 nodejs

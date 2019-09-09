@@ -43,6 +43,7 @@ Plug 'terryma/vim-multiple-cursors'
 "Plug 'vim-scripts/indentpython.vim'
 " Plug 'Valloric/YouCompleteMe'
 Plug 'nvie/vim-flake8'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
