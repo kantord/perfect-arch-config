@@ -44,6 +44,7 @@ Plug 'terryma/vim-multiple-cursors'
 " Plug 'Valloric/YouCompleteMe'
 Plug 'nvie/vim-flake8'
 Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 call plug#end()
 
