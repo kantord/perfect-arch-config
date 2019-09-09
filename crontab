@@ -1,3 +1,2 @@
 */60 * * * * vdirsyncer discover > /dev/null
 */3 * * * * vdirsyncer sync > /dev/null
-*/15 * * * * ~/repos/perfect-arch-config/set_lockscreen.sh
