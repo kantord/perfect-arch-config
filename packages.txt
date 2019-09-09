@@ -7,7 +7,7 @@ automake
 autorandr
 bash
 battery-monitor
-betterlockscreen
+betterlockscreen-noeffects
 binutils
 bison
 bluez
