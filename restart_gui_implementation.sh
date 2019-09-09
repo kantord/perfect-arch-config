@@ -14,5 +14,3 @@ exec statnot ~/repos/perfect-arch-config/notifications/statnot_conf.py &
 exec unclutter &
 
 exec ./start_polybar.sh 0 &
-
-wallpaper_file=$(cat ~/repos/perfect-arch-config/dotfiles/wpgtk/.config/wpg/wp_init.sh | grep wpg | sed "s/wpg -rsL '//;s/'.*$//")
