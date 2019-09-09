@@ -16,4 +16,4 @@ now_title=`echo $now_line | cut -f2 -d";" | cut -c -30 | sed 's/$/  /' | sed 's/
 
 next_summary=`echo "In $time_difference_formatted:" $next_event_title | sed 's/.*[0-9][0-9]\+h.*//' | grep -v "\-[0-9']\+h"`
 calendar_summary=`echo "$now_title""$next_summary"`
-cat <(cat <(echo $calendar_summary) /tmp/last_notification.txt | grep -v '^$' | tail -n1) <(echo "") | head -n1
+cat <(cat <(echo $calendar_summary) <(cat /tmp/last_notification.txt | sed 's/$/\n/') <(i3-gnome-pomodoro status) | grep -v '^$' | tail -n1) <(echo "") | head -n1

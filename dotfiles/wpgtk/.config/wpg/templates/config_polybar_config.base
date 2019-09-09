@@ -61,7 +61,7 @@ font-2 = "Source Code Pro:pixelsize=9;1"
 
 modules-left = bspwm i3
 modules-center = calendar_and_notification
-modules-right = pomodoro pulseaudio wlan battery temperature ibus date
+modules-right = pulseaudio wlan battery temperature ibus date
 
 tray-position = none
 tray-padding = 2
@@ -422,11 +422,6 @@ screenchange-reload = true
 [global/wm]
 margin-top = 5
 margin-bottom = 5
-
-[module/pomodoro]
-type = custom/script
-exec = i3-gnome-pomodoro status
-interval = 1
 
 [module/calendar_and_notification]
 type = custom/script
