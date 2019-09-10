@@ -93,7 +93,6 @@ linux-firmware
 logrotate
 lsdesktopf
 lvm2
-lxappearance
 lxappearance-gtk3
 m4
 make
