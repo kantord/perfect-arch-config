@@ -60,6 +60,7 @@ grep
 groff
 grsync
 gsimplecal
+gtk-chtheme
 gvim
 gzip
 htop
@@ -93,6 +94,7 @@ logrotate
 lsdesktopf
 lvm2
 lxappearance
+lxappearance-gtk3
 m4
 make
 man-db
