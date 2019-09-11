@@ -224,3 +224,28 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 " YouCompleteMe go to definition
 " map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
+
+hi default CocUnderline    cterm=underline 
+hi default CocErrorSign    ctermfg=LightRed     
+hi default CocWarningSign  ctermfg=LightRed   
+hi default CocInfoSign     ctermfg=LightRed  
+hi default CocHintSign     ctermfg=LightRed    
+hi default CocSelectedText ctermfg=Red     
+hi default CocCodeLens     ctermfg=Gray    
+hi default link CocErrorFloat       CocErrorSign
+hi default link CocWarningFloat     CocWarningSign
+hi default link CocInfoFloat        CocInfoSign
+hi default link CocHintFloat        CocHintSign
+hi default link CocErrorHighlight   CocUnderline
+hi default link CocWarningHighlight CocUnderline
+hi default link CocInfoHighlight    CocUnderline
+hi default link CocHintHighlight    CocUnderline
+hi default link CocListMode ModeMsg
+hi default link CocListPath Comment
+hi CocFloating ctermbg=DarkGray
+hi default link CocHighlightText  CursorColumn
+
+hi default link CocHoverRange     Search
+hi default link CocCursorRange    Search
+hi default link CocHighlightRead  CocHighlightText
+hi default link CocHighlightWrite CocHighlightText
