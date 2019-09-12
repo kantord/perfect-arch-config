@@ -54,3 +54,7 @@ wpg-install.sh -i
 crontab ./crontab
 systemctl enable cronie.service
 systemctl start cronie.service
+
+
+# Setup vim
+./vim_setup.sh
