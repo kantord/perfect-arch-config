@@ -18,10 +18,10 @@
 
 [colors]
 ;background = ${{xrdb:color0:#222}}
-background = #CC{color0.strip}
+background = #55{color0.strip}
 background-alt = #444
 ;foreground = ${{xrdb:color7:#222}}
-foreground = #dfdfdf
+foreground = {color2}
 foreground-alt = #555
 primary = #ffb52a
 secondary = #e60053
@@ -115,8 +115,8 @@ label-unmounted-foreground = ${{colors.foreground-alt}}
 type = internal/bspwm
 
 label-focused = %index%
-label-focused-foreground = #ff{color0.strip}
-label-focused-background = #22{color1.strip}
+label-focused-foreground = ${{colors.foreground}}
+label-focused-background = #bb{color0.strip}
 label-focused-underline= ${{colors.primary}}
 label-focused-padding = 1
 
@@ -150,6 +150,7 @@ label-mode-background = ${{colors.primary}}
 ; focused = Active workspace on focused monitor
 label-focused = %name%
 label-focused-background = ${{module/bspwm.label-focused-background}}
+label-focused-foreground = ${{module/bspwm.label-focused-foreground}}
 label-focused-underline = ${{module/bspwm.label-focused-underline}}
 label-focused-padding = ${{module/bspwm.label-focused-padding}}
 

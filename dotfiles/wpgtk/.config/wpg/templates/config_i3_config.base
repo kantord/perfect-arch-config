@@ -185,8 +185,7 @@ mode "resize" {{
 
 bindsym $mod+r mode "resize"
 
-gaps inner 30
-smart_gaps on
+gaps inner 20
 new_window none
 new_float pixel 0
 
