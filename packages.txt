@@ -18,6 +18,7 @@ cheese
 cloc
 compton-tryone-git
 coreutils
+cowsay
 cronie
 cryptsetup
 device-mapper
@@ -47,6 +48,7 @@ gimp
 git
 git-cola
 gitlab-runner
+git-quick-stats
 gitstats-git
 glava
 glibc
@@ -163,6 +165,7 @@ texinfo
 the_silver_searcher
 thunderbird
 tig
+tk
 transmission-gtk
 ttf-dejavu
 ttf-iosevka
