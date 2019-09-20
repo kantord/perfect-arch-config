@@ -21,7 +21,7 @@
 background = #55{color0.strip}
 background-alt = #444
 ;foreground = ${{xrdb:color7:#222}}
-foreground = {color2}
+foreground = {color15}
 foreground-alt = #555
 primary = #ffb52a
 secondary = #e60053
@@ -115,8 +115,8 @@ label-unmounted-foreground = ${{colors.foreground-alt}}
 type = internal/bspwm
 
 label-focused = %index%
-label-focused-foreground = ${{colors.foreground}}
-label-focused-background = #bb{color0.strip}
+label-focused-foreground = {color0}
+label-focused-background = #88{color15.strip}
 label-focused-underline= ${{colors.primary}}
 label-focused-padding = 1
 

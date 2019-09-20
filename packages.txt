@@ -121,6 +121,7 @@ passff-host
 patch
 pavucontrol
 pciutils
+peek
 perl
 pkgconf
 polybar
@@ -190,6 +191,7 @@ xorg-xinit
 xorg-xkill
 xorg-xprop
 xorg-xsetroot
+xorg-xwininfo
 xterm
 yarn
 yubico-pam
