@@ -189,6 +189,7 @@ gaps inner 20
 new_window none
 new_window pixel 1
 new_float pixel 1
+smart_borders on
 
 exec --no-startup-id compton --config $tools/dotfiles/compton/.config/compton/compton.conf &
 exec --no-startup-id dex -ae i3
