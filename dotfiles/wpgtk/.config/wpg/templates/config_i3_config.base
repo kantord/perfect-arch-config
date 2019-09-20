@@ -187,7 +187,8 @@ bindsym $mod+r mode "resize"
 
 gaps inner 20
 new_window none
-new_float pixel 0
+new_window pixel 1
+new_float pixel 1
 
 exec --no-startup-id compton --config $tools/dotfiles/compton/.config/compton/compton.conf &
 exec --no-startup-id dex -ae i3
@@ -216,10 +217,10 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightne
 
 
 # Fancy stuff
-client.focused          #{color0.strip}C7 #{color0.strip}C7 {color15} #00DA8E
-client.focused_inactive        #{color0.strip}C7 #{color0.strip}C7 {color15} #292d2e
-client.unfocused        #{color0.strip}00 #{color0.strip}00 {color15} #292d2e
-client.urgent          #{color2.strip}CC #{color2.strip}CC {color0} #00DA8E
+client.focused          #{color1.strip} #{color0.strip}C7 {color15} #00DA8E #{color1.strip}
+client.focused_inactive        #{color0.strip}88 #{color0.strip}00 {color15} #292d2e #{color0.strip}88
+client.unfocused        #{color1.strip} #{color0.strip}00 {color15} #292d2e #{color0.strip}88
+client.urgent          #{color2.strip} #{color2.strip}CC {color0} #00DA8E #{color2.strip}
 
 exec --no-startup-id $tools/load_dconf.sh &
 exec --no-startup-id $tools/start_polybar.sh &
