@@ -1,4 +1,4 @@
-#! bash
+#! /usr/bin/env bash
 
 echo "Installing vim plugins"
 vim -E -c PlugInstall -c qa
