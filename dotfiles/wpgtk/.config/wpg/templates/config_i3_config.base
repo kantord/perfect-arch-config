@@ -219,10 +219,10 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightne
 
 
 # Fancy stuff
-client.focused          #{color1.strip} #{color0.strip}C7 {color15} #00DA8E #{color1.strip}
-client.focused_inactive        #{color0.strip}88 #{color0.strip}00 {color15} #292d2e #{color0.strip}88
-client.unfocused        #{color1.strip} #{color0.strip}00 {color15} #292d2e #{color0.strip}88
-client.urgent          #{color2.strip} #{color2.strip}CC {color0} #00DA8E #{color2.strip}
+client.focused          #{color1.strip} #{color8.strip}C7 {color15} #00DA8E #{color1.strip}
+client.focused_inactive        #{color8.strip}88 #{color8.strip}00 {color15} #292d2e #{color8.strip}88
+client.unfocused        #{color1.strip} #{color8.strip}00 {color15} #292d2e #{color8.strip}88
+client.urgent          #{color2.strip} #{color2.strip}CC {color8} #00DA8E #{color2.strip}
 
 exec --no-startup-id $tools/load_dconf.sh &
 exec --no-startup-id $tools/start_polybar.sh &
