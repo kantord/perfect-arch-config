@@ -1,3 +1,4 @@
+
 adobe-source-code-pro-fonts
 alsa-tools
 arandr
@@ -63,6 +64,7 @@ groff
 grsync
 gsimplecal
 gtk-chtheme
+gtk-engine-murrine
 gvim
 gzip
 htop
@@ -192,6 +194,7 @@ xorg-xkill
 xorg-xprop
 xorg-xsetroot
 xorg-xwininfo
+xsettingsd
 xterm
 yarn
 yubico-pam
