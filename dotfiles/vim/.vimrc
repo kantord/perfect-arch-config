@@ -215,6 +215,11 @@ autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 noexpandtab
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 
+
+" Color scheme fixes
+hi LineNr ctermfg=Gray
+hi CursorLineNr ctermfg=White
+
 " Flag useless whitespace
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
