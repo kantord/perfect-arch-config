@@ -50,8 +50,19 @@ Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
+
 " NERDTree settings
-map <C-K><C-B> :NERDTreeToggle<CR>
+" Open NERDTree in the directory of the current file (or /home if no file is open)
+function! NERDTreeToggleInCurDir()
+  " If NERDTree is open in the current buffer
+  if (exists("t:NERDTreeBufName") && bufwinnr(t:NERDTreeBufName) != -1)
+    exe ":NERDTreeClose"
+  else
+    exe ":NERDTreeFind"
+  endif
+endfunction
+
+map <C-K><C-B> :call NERDTreeToggleInCurDir()<cr>
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', '\.cache', '__pycache__', '.git', 'env', 'env2', 'env3', 'venv', 'node_modules']
 
