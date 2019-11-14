@@ -46,12 +46,14 @@ Plug 'nvie/vim-flake8'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'sheerun/vim-polyglot'
+Plug 'evanleck/vim-svelte'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
 
 " NERDTree settings
+let NERDTreeShowLineNumbers=1
 " Open NERDTree in the directory of the current file (or /home if no file is open)
 function! NERDTreeToggleInCurDir()
   " If NERDTree is open in the current buffer
