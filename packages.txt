@@ -150,6 +150,7 @@ screen
 scrot
 sed
 shadow
+shotwell
 signal-desktop
 slack-desktop
 s-nail
