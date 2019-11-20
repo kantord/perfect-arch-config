@@ -271,5 +271,6 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 
 
+hi Directory cterm=bold
 hi CurrentWord cterm=bold
 hi CurrentWordTwins cterm=bold
