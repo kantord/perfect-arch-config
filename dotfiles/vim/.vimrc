@@ -1,7 +1,6 @@
 set encoding=utf8
 
-call plug#begin('~/.vim/plugged')
-
+call plug#begin('~/.vim/plugged') 
 "
 " Install plugins here
 "
@@ -49,6 +48,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'evanleck/vim-svelte'
 Plug 'dominikduda/vim_current_word'
 Plug 'ap/vim-css-color'
+Plug 'justincampbell/vim-eighties'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
@@ -275,3 +275,6 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 hi Directory cterm=bold
 hi CurrentWord cterm=bold
 hi CurrentWordTwins cterm=bold
+
+let g:eighties_enabled = 1
+let g:eighties_minimum_width = 80
