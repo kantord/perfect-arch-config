@@ -1,5 +1,6 @@
 
 adobe-source-code-pro-fonts
+adobe-source-han-sans-jp-fonts
 alsa-tools
 arandr
 audacity
