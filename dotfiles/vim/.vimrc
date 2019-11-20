@@ -48,6 +48,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'sheerun/vim-polyglot'
 Plug 'evanleck/vim-svelte'
 Plug 'dominikduda/vim_current_word'
+Plug 'ap/vim-css-color'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
