@@ -118,6 +118,7 @@ noto-fonts-emoji
 npm
 nvm
 oh-my-zsh-git
+openfortivpn
 openssh
 pacman
 pass
