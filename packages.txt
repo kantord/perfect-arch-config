@@ -24,6 +24,7 @@ coreutils
 cowsay
 cronie
 cryptsetup
+deja-dup
 device-mapper
 dex
 dhcpcd
@@ -76,6 +77,7 @@ i3-gnome-pomodoro-git
 i3status
 ibus
 ibus-m17n
+imagemagick
 inetutils
 inkscape
 iproute2
@@ -85,6 +87,7 @@ iw
 jcloisterzone
 jdk9
 jfsutils
+jpegoptim
 jq
 jsoncpp
 keybase-gui
@@ -99,6 +102,7 @@ linux
 linux-firmware
 logrotate
 lsdesktopf
+lshw
 lvm2
 lxappearance-gtk3
 m4
