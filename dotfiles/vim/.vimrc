@@ -93,7 +93,7 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 set mouse=a
 
 " Run prettier automatically
-autocmd BufWritePost *.js,*.jsx call prettier#run(1)
+autocmd BufWritePost *.js,*.jsx,*.svelte call prettier#run(1)
 
 " Use system clipboard for
 set clipboard=unnamedplus
