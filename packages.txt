@@ -24,6 +24,7 @@ coreutils
 cowsay
 cronie
 cryptsetup
+darktable
 deja-dup
 device-mapper
 dex
