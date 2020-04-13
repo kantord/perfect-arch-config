@@ -49,6 +49,7 @@ Plug 'evanleck/vim-svelte'
 Plug 'dominikduda/vim_current_word'
 Plug 'ap/vim-css-color'
 Plug 'justincampbell/vim-eighties'
+Plug 'tell-k/vim-autopep8'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
@@ -278,3 +279,4 @@ hi CurrentWordTwins cterm=bold
 
 let g:eighties_enabled = 1
 let g:eighties_minimum_width = 80
+set nofoldenable
