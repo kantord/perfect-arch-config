@@ -123,8 +123,10 @@ noto-fonts
 noto-fonts-emoji
 npm
 nvm
+obs-studio
 oh-my-zsh-git
 openfortivpn
+openshot
 openssh
 pacman
 pass
@@ -146,6 +148,7 @@ python2-greenlet
 python2-pip
 python-greenlet
 python-pip
+python-pipenv
 python-requests-oauthlib
 qbittorrent
 qt5-styleplugins
@@ -154,6 +157,7 @@ redshift
 reiserfsprogs
 rofi
 rsync
+ruby
 screen
 scrot
 sed
