@@ -13,3 +13,4 @@
 ./stow.sh i3-env
 ./stow.sh autorandr
 ./stow.sh splatmoji
+./stow.sh profile
