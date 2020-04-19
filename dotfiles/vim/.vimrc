@@ -13,24 +13,22 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
-Plug 'Shougo/deoplete.nvim'
-Plug 'wokalski/autocomplete-flow'
-Plug 'Shougo/neosnippet'
-Plug 'Shougo/neosnippet-snippets'
+"Plug 'wokalski/autocomplete-flow'
+"Plug 'Shougo/neosnippet'
+"Plug 'Shougo/neosnippet-snippets'
 
-Plug 'steelsojka/deoplete-flow'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
+"Plug 'SirVer/ultisnips'
+"Plug 'honza/vim-snippets'
+"Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'jeffkreeftmeijer/vim-dim'
 Plug 'yegappan/greplace'
 Plug 'wakatime/vim-wakatime'
 Plug 'airblade/vim-gitgutter'
 Plug 'tmhedberg/matchit'
-Plug 'miyakogi/conoline.vim'
+"Plug 'miyakogi/conoline.vim'
 Plug 'easymotion/vim-easymotion'
-Plug 'takac/vim-hardtime'
-Plug 'terryma/vim-multiple-cursors'
+"Plug 'takac/vim-hardtime'
+"Plug 'terryma/vim-multiple-cursors'
 "Plug 'vim-scripts/indentpython.vim'
 " Plug 'Valloric/YouCompleteMe'
 Plug 'nvie/vim-flake8'
@@ -40,7 +38,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'evanleck/vim-svelte'
 Plug 'dominikduda/vim_current_word'
 Plug 'ap/vim-css-color'
-Plug 'justincampbell/vim-eighties'
+"Plug 'justincampbell/vim-eighties'
 Plug 'tell-k/vim-autopep8'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -104,7 +102,6 @@ let g:ale_linters = {
 \}
 
 
-let g:deoplete#enable_at_startup = 1
 let g:neosnippet#enable_completed_snippet = 1
 
 " Transparent background
