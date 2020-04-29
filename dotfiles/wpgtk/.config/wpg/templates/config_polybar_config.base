@@ -303,32 +303,40 @@ label = %time%
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
-label-volume-foreground = ${{root.foreground}}
+format-background = #ff{color8.strip}
+format-volume-padding = 1
+format-muted-padding = 1
+format-muted-background = #ff{color8.strip}
+format-volume-background = #ff{color8.strip}
 
-label-muted = 🔇 muted
-label-muted-foreground = #666
+format-volume = <bar-volume>
+label-volume = 
+label-volume-foreground = #99{color15.strip}
+
+label-muted = ( muted! )
+label-muted-foreground = #99{color15.strip}
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
+bar-volume-foreground-0 = #99{color15.strip}
+bar-volume-foreground-1 = #99{color15.strip}
+bar-volume-foreground-2 = #99{color15.strip}
+bar-volume-foreground-3 = #99{color15.strip}
+bar-volume-foreground-4 = #99{color15.strip}
+bar-volume-foreground-5 = #99{color15.strip}
+bar-volume-foreground-6 = #99{color15.strip}
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-font = 2
 bar-volume-fill = ─
 bar-volume-fill-font = 2
-bar-volume-empty = ─
+bar-volume-empty = ·
 bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${{colors.foreground-alt}}
+bar-volume-empty-foreground = #99{color15.strip}
 
 [module/alsa]
 type = internal/alsa
+
+
 
 format-volume = <label-volume> <bar-volume>
 label-volume = VOL
