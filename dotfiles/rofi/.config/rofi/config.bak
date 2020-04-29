@@ -3,10 +3,10 @@ rofi.width:                          80
 rofi.lines:                          8
 rofi.columns:                        2
 rofi.font:                           Source Code Pro 9
-rofi.color-normal:                   argb:00{color0.strip}, {color15}, argb:00{color0.strip}, argb:55{active.strip}, {color15}
-rofi.color-urgent:                   argb:00{color0.strip}, #d6b48d, argb:00{color0.strip}, #d6b48d, {color15}
-rofi.color-active:                   argb:00{color0.strip}, {color14}, argb:00{color0.strip}, {color14}, {color0}
-rofi.color-window:                   argb:cc{color0.strip}, {active}, {inactive}
+rofi.color-normal:                   argb:000B1F21, #ffffd3, argb:000B1F21, argb:55af4b24, #ffffd3
+rofi.color-urgent:                   argb:000B1F21, #d6b48d, argb:000B1F21, #d6b48d, #ffffd3
+rofi.color-active:                   argb:000B1F21, #d5351c, argb:000B1F21, #d5351c, #0B1F21
+rofi.color-window:                   argb:cc0B1F21, #af4b24, #783319
 rofi.bw:                             0
 rofi.eh:                             1
 rofi.location:                       0
@@ -16,8 +16,8 @@ rofi.xoffset:                        0
 rofi.fixed-num-lines:                true
 rofi.terminal:                       rofi-sensible-terminal
 rofi.ssh-client:                     ssh
-rofi.ssh-command:                    {{terminal}} -e {{ssh-client}} {{host}}
-rofi.run-command:                    {{cmd}}
+rofi.ssh-command:                    {terminal} -e {ssh-client} {host}
+rofi.run-command:                    {cmd}
 rofi.parse-hosts:                    true
 rofi.matching:                       normal
 rofi.separator-style:                none
