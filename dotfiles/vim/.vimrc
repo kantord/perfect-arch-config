@@ -82,12 +82,6 @@ let g:user_emmet_settings = {
     \  },
   \}
 
-" Fix linting in flow files
-let g:ale_linters = { 
-\'javascript': ['flow', 'eslint'],
-\}
-
-
 let g:neosnippet#enable_completed_snippet = 1
 
 " Transparent background
@@ -255,3 +249,12 @@ hi CurrentWordTwins cterm=bold
 let g:eighties_enabled = 1
 let g:eighties_minimum_width = 80
 set nofoldenable
+
+
+let g:ale_linter_aliases = {'svelte': ['css', 'javascript']}
+let g:ale_linters = {'svelte': ['stylelint', 'eslint'], 'javascript': ['eslint'], 'python': ['flake8', 'pylint']}
+let g:ale_fixers = {'svelte': ['eslint', 'prettier', 'prettier_standard'], 'javascript': ['prettier', 'eslint'], 'python': ['autopep8', 'yapf'], 'json': ['jq'], 'typescript': ['eslint']}
+let g:ale_lint_on_save = 1
+let g:ale_fix_on_save = 1
+let g:ale_lint_on_enter = 1
+let g:ale_lint_on_text_changed = 'never'

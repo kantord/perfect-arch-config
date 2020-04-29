@@ -186,6 +186,7 @@ mode "resize" {{
 bindsym $mod+r mode "resize"
 
 gaps inner 20
+gaps bottom 20
 new_window none
 new_window pixel 1
 new_float pixel 1

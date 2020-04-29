@@ -46,6 +46,7 @@ firefox-vim-vixen
 flex
 gawk
 gcc
+gcc-fortran
 gcc-libs
 gedit
 gettext
@@ -71,6 +72,7 @@ gtk-chtheme
 gtk-engine-murrine
 gvim
 gzip
+hercules-analysis-git
 htop
 i3-env
 i3-gaps
