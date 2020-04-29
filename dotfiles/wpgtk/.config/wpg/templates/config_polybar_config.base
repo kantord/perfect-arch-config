@@ -18,7 +18,7 @@
 
 [colors]
 ;background = ${{xrdb:color0:#222}}
-background = #44{color0.strip}
+background = #00{color0.strip}
 background-alt = #444
 ;foreground = ${{xrdb:color7:#222}}
 foreground = {color15}
@@ -368,7 +368,13 @@ format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${{self.format-charging-underline}}
 
 format-full-prefix = " "
-format-full-prefix-foreground = ${{colors.foreground-alt}}
+format-full-prefix-foreground = #ff{color8.strip}
+format-full-background = #ff{color8.strip}
+format-discharging-background = #ff{color8.strip}
+format-discharging-padding = 1
+format-charging-background = #ff{color8.strip}
+format-charging-padding = 1
+format-full-padding = 1
 format-full-underline = ${{self.format-charging-underline}}
 
 ramp-capacity-0 = 
@@ -379,13 +385,14 @@ ramp-capacity-foreground = ${{colors.foreground-alt}}
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
-animation-charging-foreground = ${{colors.foreground-alt}}
+animation-charging-foreground = #ff{color8.strip}
 animation-charging-framerate = 750
 
 animation-discharging-0 = 
 animation-discharging-1 = 
 animation-discharging-2 = 
-animation-discharging-foreground = ${{colors.foreground-alt}}
+animation-discharging-foreground = #ff{color8.strip}
+label-background = #ff{color8.strip}
 animation-discharging-framerate = 750
 
 [module/temperature]
@@ -449,6 +456,8 @@ margin-top = 5
 margin-bottom = 5
 
 [module/calendar_and_notification]
+label-background = #ff{color8.strip}
+label-padding = 1
 type = custom/script
 exec = ~/repos/perfect-arch-config/calendar/get_next_event.sh
 interval = 0.5
