@@ -16,3 +16,4 @@ dotfiles/wpgtk/.config/wpg/.current
 /dotfiles/autostart/.config/autostart/keybase_autostart.desktop
 /notifications/statnot_conf.pyc
 /shortcuts/shortcuts.txt
+/dotfiles/rofi/.config/rofi/theme.rasi

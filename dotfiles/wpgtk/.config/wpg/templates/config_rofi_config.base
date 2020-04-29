@@ -32,4 +32,4 @@ rofi.hide-scrollbar: 		     true
 rofi.columns: 			     1
 rofi.fullscreen: 		     false
 rofi.fake-transparency:		     true
-rofi.theme: /home/kdani/repos/perfect-arch-config/templates/rofi-theme.rasi
+rofi.theme: /home/kdani/.config/rofi/theme.rasi
