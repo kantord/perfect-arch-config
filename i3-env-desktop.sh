@@ -6,7 +6,7 @@ find  ~/Desktop /usr/share/applications ~/games ~/.local/share/applications ~/.l
 
 
 
-to_run=`list_desktop_files | sed 's/ *%[fFuU] *//g' | sed 's/~/ (/g;s/$/)/g;s/(..............*)//g' |  sort | uniq | rofi -dmenu -no-custom -i`
+to_run=`list_desktop_files | sed 's/ *%[fFuU] *//g' | sed 's/~/ (/g;s/$/)/g;s/(..............*)//g' |  sort | uniq | rofi -dmenu -no-custom -i -show-icons`
 
 
 echo "$to_run"
