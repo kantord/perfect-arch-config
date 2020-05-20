@@ -22,7 +22,7 @@ calendar_summary=`echo "$now_title""$next_summary"`
 #day_summary="🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🧟🟩🟩🟥🟩🟩🟩🟩🟩🟩"
 day_summary=""
 
-EVENTS_TODAY=`khal list today -f "{start-date};={start-time};{end-time}" | sed '/Tomorrow/q' | grep "=" | cut -f2 -d"="`
+EVENTS_TODAY=`khal list today -f "{start-date};={start-time};{end-time};{title}" | sed '/Tomorrow/q' | grep "=" | cut -f2 -d"=" | grep -v "No meetings day /blocker/"`
 let FIRST_HOUR=7
 let LAST_HOUR=23
 let START="2*FIRST_HOUR"
