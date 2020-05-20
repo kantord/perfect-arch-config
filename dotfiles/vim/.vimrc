@@ -258,3 +258,23 @@ let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 let g:ale_lint_on_enter = 1
 let g:ale_lint_on_text_changed = 'never'
+
+
+
+
+command! -nargs=+ Silent
+\   execute 'silent <args>'
+\ | redraw!
+
+function! g:Blame()
+    :Silent :!tig blame %
+endfunction
+
+function! g:Status()
+    :Silent :!tig status %
+endfunction
+
+
+map <C-a> :call Blame()<CR>
+map <C-s> :call Status()<CR>
+:Silent :!stty -ixon -ixoff
