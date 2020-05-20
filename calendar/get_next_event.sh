@@ -17,11 +17,7 @@ now_title=`echo $now_line | cut -f2 -d";" | cut -c -30 | sed 's/$/  /' | sed 's/
 next_summary=`echo "📅 In $time_difference_formatted:" $next_event_title | sed 's/.*[0-9][0-9]\+h.*//' | grep -v "\-[0-9']\+h"`
 calendar_summary=`echo "$now_title""$next_summary"`
 
-#day_summary="────────────────────^─────➤···██····$········"
-#day_summary="🟥🟦🟧🟨🟩🟪"
-#day_summary="🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🧟🟩🟩🟥🟩🟩🟩🟩🟩🟩"
 day_summary=""
-
 EVENTS_TODAY=`khal list today -f "{start-date};={start-time};{end-time};{title}" | sed '/Tomorrow/q' | grep "=" | cut -f2 -d"=" | grep -v "No meetings day /blocker/"`
 let FIRST_HOUR=7
 let LAST_HOUR=23
@@ -29,6 +25,8 @@ let START="2*FIRST_HOUR"
 let END="2*LAST_HOUR"
 let WORK_START="2*10"
 let WORK_END="2*18"
+let LUNCH_BREAK_START="2*13"
+let LUNCH_BREAK_END="LUNCH_BREAK_START + 2"
 HOUR=`date +"%H"`
 MINUTE=`date +"%M"`
 let CURRENT_TIME="2*HOUR+1"
@@ -44,6 +42,11 @@ do
 	fi
 	if [ "$i" -gt "$WORK_START" ]; then
 		time_symbol="🟦"
+	fi
+	if [ "$i" -ge "$LUNCH_BREAK_START" ]; then
+		if [ "$i" -lt "$LUNCH_BREAK_END" ]; then
+			time_symbol="🍴"
+		fi
 	fi
 	if [ "$i" -gt "$WORK_END" ]; then
 		time_symbol="🟩"
