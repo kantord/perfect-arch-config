@@ -274,7 +274,13 @@ function! g:Status()
     :Silent :!tig status %
 endfunction
 
+function! g:Commit()
+    :Silent :!git-cz
+endfunction
+
+
 
 map <C-a> :call Blame()<CR>
 map <C-s> :call Status()<CR>
+map <C-d> :call Commit()<CR>
 :Silent :!stty -ixon -ixoff
