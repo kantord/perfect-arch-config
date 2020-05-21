@@ -1,5 +1,7 @@
 #! /usr/bin/env bash
 
+show_index=1
+
 next_event_line=`khal list --notstarted now -f "{start-date};={start-time};{title}"  | grep -v "No meetings day /blocker/" | grep = | grep -v ";=;" | head -n1 | sed 's ;= ; ' | sed 's/;/ /'`
 next_event_datetime=`echo $next_event_line | cut -f1 -d";"`
 next_event_title=`echo $next_event_line | sed 's/\[regular\]$//' | cut -f2 -d";" | cut -c -30`
@@ -89,4 +91,4 @@ do
 	day_summary="$day_summary$time_symbol"
 done
 
-cat <(cat <(echo $day_summary) <(echo $calendar_summary) <(cat /tmp/last_notification.txt | sed 's/$/\n/' | sed 's/^/🔔 /' | grep -v '^🔔 $') <(i3-gnome-pomodoro status | sed 's/^/🍅 /' | grep -v "^🍅 $") | grep -v '^$' | tail -n1) <(echo "") | head -n1
+cat <(cat <(echo $day_summary) <(echo $calendar_summary) <(cat /tmp/last_notification.txt | sed 's/$/\n/' | sed 's/^/🔔 /' | grep -v '^🔔 $') <(i3-gnome-pomodoro status | sed 's/^/🍅 /' | grep -v "^🍅 $") | grep -v '^$' | tail -n $show_index) <(echo "") | head -n1

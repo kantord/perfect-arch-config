@@ -216,3 +216,4 @@ yarn
 yubico-pam
 zsh
 zsh-completions
+ttf-joypixels

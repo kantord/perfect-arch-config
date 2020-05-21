@@ -27,6 +27,8 @@ Plug 'evanleck/vim-svelte'
 Plug 'dominikduda/vim_current_word'
 Plug 'ap/vim-css-color'
 Plug 'tell-k/vim-autopep8'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -284,3 +286,6 @@ map <C-a> :call Blame()<CR>
 map <C-s> :call Status()<CR>
 map <C-c> :call Commit()<CR>
 :Silent :!stty -ixon -ixoff
+
+
+let g:fzf_preview_window = 'right:25%'
