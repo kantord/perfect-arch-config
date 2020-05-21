@@ -27,8 +27,8 @@ let WORK_START="2*10"
 let WORK_END="2*18"
 let LUNCH_BREAK_START="2*13"
 let LUNCH_BREAK_END="LUNCH_BREAK_START + 2"
-HOUR=`date +"%H"`
-MINUTE=`date +"%M"`
+HOUR=`date +"%H" | sed 's/^0//'`
+MINUTE=`date +"%M" |sed  's/^0//'`
 let CURRENT_TIME="2*HOUR+1"
 if [ "$MINUTE" -gt "30" ]; then
 	let CURRENT_TIME="1+CURRENT_TIME"
