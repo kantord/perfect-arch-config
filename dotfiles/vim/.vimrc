@@ -282,5 +282,5 @@ endfunction
 
 map <C-a> :call Blame()<CR>
 map <C-s> :call Status()<CR>
-map <C-d> :call Commit()<CR>
+map <C-c> :call Commit()<CR>
 :Silent :!stty -ixon -ixoff
