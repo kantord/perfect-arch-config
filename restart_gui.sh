@@ -1,3 +1,3 @@
 #! /usr/bin/env bash
 
-exec ./restart_gui_implementation.sh
+exec ~/repos/perfect-arch-config/restart_gui_implementation.sh $1

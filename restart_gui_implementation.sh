@@ -9,8 +9,13 @@ killall -q unclutter
 while pgrep -u $UID -x polybar >/dev/null; do sleep 0.3; done
 
 i3-msg reload
-exec compton --config ~/repos/perfect-arch-config/dotfiles/compton/.config/compton/compton.conf &
+if [ "$1" == "grayscale" ]; then
+   exec compton --config ~/repos/perfect-arch-config/dotfiles/compton/.config/compton/compton.conf --glx-fshader-win "$(cat ~/repos/perfect-arch-config/grayscale.glsl)" &
+   hsetroot
+else
+   exec compton --config ~/repos/perfect-arch-config/dotfiles/compton/.config/compton/compton.conf &
+fi
 exec statnot ~/repos/perfect-arch-config/notifications/statnot_conf.py &
 exec unclutter &
 
-exec ./start_polybar.sh 0 &
+exec ~/repos/perfect-arch-config/start_polybar.sh 0 &

@@ -73,6 +73,7 @@ gtk-engine-murrine
 gvim
 gzip
 hercules-analysis-git
+hsetroot
 htop
 i3-env
 i3-gaps
@@ -188,6 +189,7 @@ tk
 transmission-gtk
 ttf-dejavu
 ttf-iosevka
+ttf-joypixels
 ttf-liberation
 unclutter
 usbutils
@@ -216,4 +218,3 @@ yarn
 yubico-pam
 zsh
 zsh-completions
-ttf-joypixels
