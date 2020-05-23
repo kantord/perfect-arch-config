@@ -60,6 +60,10 @@ do
 		time_symbol="💤"
 	fi
 	while IFS= read -r meeting; do
+		if test -z "$meeting" 
+		then
+		      continue
+		fi
 		meeting_start=`echo $meeting | cut -f1 -d';'`
 		meeting_end=`echo $meeting | cut -f2 -d';'`
 		SEC1=`date +%s -d ${meeting_start}`
