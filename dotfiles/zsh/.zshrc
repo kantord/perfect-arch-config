@@ -105,3 +105,6 @@ source $ZSH/oh-my-zsh.sh
 
 source /usr/share/nvm/init-nvm.sh
 
+
+alias tl="task list"
+alias td="task done"
