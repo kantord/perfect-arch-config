@@ -33,7 +33,6 @@ diffutils
 dmenu-pango-imlib
 e2fsprogs
 efibootmgr
-f30-backgrounds
 fakeroot
 feh
 file
@@ -87,7 +86,6 @@ iputils
 ipython
 iw
 jcloisterzone
-jdk9
 jfsutils
 jpegoptim
 jq
