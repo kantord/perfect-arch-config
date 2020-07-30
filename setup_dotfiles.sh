@@ -14,3 +14,4 @@
 ./stow.sh autorandr
 ./stow.sh splatmoji
 ./stow.sh profile
+./stow.sh ctags

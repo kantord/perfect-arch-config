@@ -23,6 +23,7 @@ coreutils
 cowsay
 cronie
 cryptsetup
+ctags
 darktable
 deja-dup
 device-mapper
