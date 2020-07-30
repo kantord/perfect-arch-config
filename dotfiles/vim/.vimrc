@@ -29,6 +29,7 @@ Plug 'ap/vim-css-color'
 Plug 'tell-k/vim-autopep8'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
 
