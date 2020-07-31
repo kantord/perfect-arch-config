@@ -156,6 +156,7 @@ qt5-styleplugins
 ranger
 redshift
 reiserfsprogs
+ripgrep
 rofi
 rsync
 ruby
