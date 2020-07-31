@@ -6,8 +6,6 @@ call plug#begin('~/.vim/plugged')
 "
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
-Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
-Plug 'ivalkeen/vim-ctrlp-tjump'
 Plug 'heavenshell/vim-prettier'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
@@ -289,4 +287,7 @@ map <C-c> :call Commit()<CR>
 :Silent :!stty -ixon -ixoff
 
 
-let g:fzf_preview_window = 'right:25%'
+let g:fzf_preview_window = 'right:35%'
+nmap <silent> <leader>m :History<CR>
+nmap <silent> <C-P> :GFiles<CR>
+nmap <silent> <leader>p :GFiles?<CR>
