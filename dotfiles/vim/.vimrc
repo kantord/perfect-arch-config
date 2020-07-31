@@ -296,4 +296,12 @@ nmap <silent> <leader>m :History<CR>
 nmap <silent> <C-P> :GFiles<CR>
 nmap <silent> <leader>p :GFiles?<CR>
 nmap <silent> <leader>c :Commits<CR>
+
+" Ranger for file navigation
 nmap <leader>g :Rg 
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
