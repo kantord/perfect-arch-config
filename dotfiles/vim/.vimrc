@@ -299,7 +299,7 @@ nmap <silent> <leader>g :GFiles?<CR>
 nmap <silent> <leader>c :Commits<CR>
 nmap <silent> <leader>o :Tags<CR>
 
-" Ranger for file navigation
+" ACTION: File manager
 nmap <leader>g :Rg 
 
 " ACTION: Go to: Definition
@@ -323,3 +323,30 @@ nmap <leader>rn <Plug>(coc-rename)
 
 " Generate ~/.vim_actions
 :call system('/home/kdani/repos/perfect-arch-config/dotfiles/vim/generate_vim_actions.sh')
+
+let s:TYPE = {'dict': type({}), 'funcref': type(function('call')), 'string': type(''), 'list': type([])}
+
+if v:version >= 704
+  function! s:function(name)
+    return function(a:name)
+  endfunction
+else
+  function! s:function(name)
+    " By Ingo Karkat
+    return function(substitute(a:name, '^s:', matchstr(expand('<sfile>'), '<SNR>\d\+_\zefunction$'), ''))
+  endfunction
+endif
+
+function! s:run_action(line)
+  let key = matchstr(a:line, '\t.*$')
+  redraw
+  "call normal(key)
+  execute "normal ".key
+endfunction
+
+function! VimActions(...)
+  let input = readfile('/home/kdani/.vim_actions')
+  call fzf#run(fzf#wrap({'source': input, 'sink':    s:function('s:run_action')}))
+endfunction
+
+command! -bar -bang VimActions                           call VimActions(<bang>0)
