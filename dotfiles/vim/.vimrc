@@ -294,14 +294,32 @@ map <C-c> :call Commit()<CR>
 let g:fzf_preview_window = 'right:35%'
 nmap <silent> <leader>m :History<CR>
 nmap <silent> <C-P> :GFiles<CR>
-nmap <silent> <leader>p :GFiles?<CR>
+nmap <silent> <leader>p :GFiles<CR>
+nmap <silent> <leader>g :GFiles?<CR>
 nmap <silent> <leader>c :Commits<CR>
+nmap <silent> <leader>o :Tags<CR>
 
 " Ranger for file navigation
 nmap <leader>g :Rg 
 
-" GoTo code navigation.
+" ACTION: Go to: Definition
 nmap <silent> gd <Plug>(coc-definition)
+
+" ACTION: Go to: Type definition
 nmap <silent> gy <Plug>(coc-type-definition)
+
+" ACTION: Go to: Implementation
 nmap <silent> gi <Plug>(coc-implementation)
+
+" ACTION: Go to: References
 nmap <silent> gr <Plug>(coc-references)
+
+" Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Symbol renaming.
+nmap <leader>rn <Plug>(coc-rename)
+
+
+" Generate ~/.vim_actions
+:call system('/home/kdani/repos/perfect-arch-config/dotfiles/vim/generate_vim_actions.sh')

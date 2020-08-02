@@ -15,3 +15,4 @@
 ./stow.sh splatmoji
 ./stow.sh profile
 ./stow.sh ctags
+./stow.sh ranger
