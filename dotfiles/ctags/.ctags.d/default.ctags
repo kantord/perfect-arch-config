@@ -19,5 +19,6 @@
 --exclude=.sln
 --exclude=.swp
 --exclude=.tmp
+--exclude=__sapper__
 
 --sort=no
