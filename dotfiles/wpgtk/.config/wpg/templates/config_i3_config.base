@@ -403,6 +403,8 @@ exec --no-startup-id polybar -r example &
 # Floating Calculator
 bindsym $mod+Shift+P exec termite --class "Floating Calculator" -e "ipython" &
 for_window [class="^Floating Calculator$"] floating enable
+for_window [class="Gvim"] floating enable
+for_window [tiling] move position center
 for_window [class="^Peek"] floating enable
 
 # Screenshots

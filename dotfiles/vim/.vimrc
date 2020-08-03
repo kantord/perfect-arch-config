@@ -292,7 +292,7 @@ map <C-c> :call Commit()<CR>
 
 
 let g:fzf_preview_window = 'right:35%'
-nmap <silent> <leader>m :History<CR>
+nmap <silent> <leader>h :History<CR>
 nmap <silent> <C-P> :GFiles<CR>
 nmap <silent> <leader>p :GFiles<CR>
 nmap <silent> <leader>g :GFiles?<CR>

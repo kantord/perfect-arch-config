@@ -43,6 +43,8 @@ file
 filesystem
 findutils
 firefox
+firefox-extension-textern-native-git
+firefox-tridactyl
 firefox-ublock-origin
 firefox-vim-vixen
 flex
