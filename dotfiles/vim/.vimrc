@@ -31,7 +31,8 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'tpope/vim-fugitive'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'francoiscabrol/ranger.vim'
-
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
@@ -298,6 +299,7 @@ nmap <silent> <leader>p :GFiles<CR>
 nmap <silent> <leader>g :GFiles?<CR>
 nmap <silent> <leader>c :Commits<CR>
 nmap <silent> <leader>o :Tags<CR>
+nmap <silent> <leader>s :Snippets<CR>
 
 " ACTION: File manager
 nmap <leader>g :Rg 
