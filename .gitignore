@@ -18,3 +18,4 @@ dotfiles/wpgtk/.config/wpg/.current
 /shortcuts/shortcuts.txt
 /dotfiles/rofi/.config/rofi/theme.rasi
 /yay/
+*.pyc
