@@ -69,6 +69,7 @@ grsync
 gsimplecal
 gtk-chtheme
 gtk-engine-murrine
+gvim
 gzip
 hercules-analysis-git
 hsetroot
