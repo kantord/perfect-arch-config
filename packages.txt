@@ -34,8 +34,11 @@ diffutils
 dmenu-pango-imlib
 e2fsprogs
 efibootmgr
+espeak
 fakeroot
 feh
+festival
+festival-us
 file
 filesystem
 findutils
