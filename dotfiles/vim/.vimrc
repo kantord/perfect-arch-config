@@ -39,6 +39,7 @@ Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'dkarter/bullets.vim'
 Plug 'wellle/context.vim'
+Plug 'majutsushi/tagbar'
 
 call plug#end()
 
@@ -361,3 +362,6 @@ command! -bar -bang VimActions                           call VimActions(<bang>0
 let g:rainbow_active = 1
 
 let g:tagalong_verbose = 1
+
+
+nmap <F8> :TagbarToggle<CR>
