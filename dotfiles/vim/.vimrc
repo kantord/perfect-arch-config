@@ -36,6 +36,7 @@ Plug 'honza/vim-snippets'
 Plug 'frazrepo/vim-rainbow'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
+Plug 'AndrewRadev/tagalong.vim'
 
 call plug#end()
 
