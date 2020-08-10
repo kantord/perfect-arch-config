@@ -301,6 +301,7 @@ nmap <silent> <leader>c :Commits<CR>
 nmap <silent> <leader>o :Tags<CR>
 nmap <silent> <leader>s :Snippets<CR>
 nmap <leader>g :Rg<CR>
+nmap <leader>* :Rg <C-R><C-W><CR>
 
 " ACTION: Go to: Definition
 nmap <silent> gd <Plug>(coc-definition)
