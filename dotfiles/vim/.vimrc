@@ -303,6 +303,9 @@ nmap <silent> <leader>s :Snippets<CR>
 nmap <leader>g :Rg<CR>
 nmap <leader>* :Rg <C-R><C-W><CR>
 
+" ACTION: Find: Usages of tag under the cursor	
+nmap <leader>u :Tags ^<C-R><C-W><CR>
+
 " ACTION: Go to: Definition
 nmap <silent> gd <Plug>(coc-definition)
 
