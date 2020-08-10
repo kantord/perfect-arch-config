@@ -57,6 +57,7 @@ gettext
 gimp
 git
 git-cola
+github-cli
 gitlab-runner
 git-quick-stats
 gitstats-git
