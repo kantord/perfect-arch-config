@@ -69,6 +69,7 @@ gnome-settings-daemon
 gnome-terminal
 google-chrome
 gpointing-device-settings
+greenclip
 grep
 groff
 grsync
@@ -165,6 +166,7 @@ redshift
 reiserfsprogs
 ripgrep
 rofi
+rofi-calc
 rsync
 ruby
 screen
@@ -187,6 +189,7 @@ tar
 task
 telegram-desktop
 termite
+termite-terminfo
 texinfo
 the_silver_searcher
 thunderbird

@@ -39,6 +39,7 @@ bindsym $mod+F4 exec --no-startup-id "$tools/restart_gui.sh grayscale &>> /tmp/d
 bindsym $mod+F7 exec $tools/monitor_mode_picker.sh
 bindsym $mod+minus exec ~/repos/i3-env/i3-env ~/repos/i3-yarn/i3-yarn
 bindsym $mod+p exec i3-env-rofi
+bindsym $mod+c exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 bindsym $mod+Return exec ~/repos/i3-env/i3-env termite
 bindsym $mod+q exec splatmoji type
 bindsym $mod+m exec $tools/i3_msg_rofi.sh
@@ -434,4 +435,4 @@ exec --no-startup-id $tools/start_polybar.sh &
 exec --no-startup-id $tools/restart_gui.sh &
 exec --no-startup-id sleep 1.2; $tools/wp_init.sh &
 exec --no-startup-id ibus-daemon -d -r &
-
+exec --no-startup-id greenclip daemon &

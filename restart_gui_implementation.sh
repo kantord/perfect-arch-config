@@ -2,6 +2,7 @@
 
 killall -q compton
 killall -q polybar
+killall -q greenclip
 pkill -f python2\ /usr/bin/statnot
 killall -q unclutter
 
