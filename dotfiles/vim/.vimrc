@@ -34,6 +34,7 @@ Plug 'francoiscabrol/ranger.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'frazrepo/vim-rainbow'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
@@ -352,3 +353,5 @@ function! VimActions(...)
 endfunction
 
 command! -bar -bang VimActions                           call VimActions(<bang>0)
+
+let g:rainbow_active = 1
