@@ -37,6 +37,8 @@ Plug 'frazrepo/vim-rainbow'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/tagalong.vim'
+Plug 'dkarter/bullets.vim'
+Plug 'wellle/context.vim'
 
 call plug#end()
 
