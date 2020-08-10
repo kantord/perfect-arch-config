@@ -27,7 +27,7 @@ Plug 'ap/vim-css-color'
 Plug 'tell-k/vim-autopep8'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'ludovicchabant/vim-gutentags'
+"Plug 'ludovicchabant/vim-gutentags'
 Plug 'tpope/vim-fugitive'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'francoiscabrol/ranger.vim'
@@ -300,9 +300,7 @@ nmap <silent> <leader>g :GFiles?<CR>
 nmap <silent> <leader>c :Commits<CR>
 nmap <silent> <leader>o :Tags<CR>
 nmap <silent> <leader>s :Snippets<CR>
-
-" ACTION: File manager
-nmap <leader>g :Rg 
+nmap <leader>g :Rg<CR>
 
 " ACTION: Go to: Definition
 nmap <silent> gd <Plug>(coc-definition)
