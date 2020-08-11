@@ -364,3 +364,7 @@ let g:tagalong_verbose = 1
 
 
 nmap <F8> :TagbarToggle<CR>
+
+let g:context_presenter = 'vim-popup'
+let g:context_border_char = '─'
+let g:context_max_height = 2
