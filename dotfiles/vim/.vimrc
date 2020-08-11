@@ -33,7 +33,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'francoiscabrol/ranger.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'frazrepo/vim-rainbow'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/tagalong.vim'
