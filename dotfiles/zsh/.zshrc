@@ -108,3 +108,5 @@ source /usr/share/nvm/init-nvm.sh
 
 alias tl="task list"
 alias td="task done"
+
+export BAT_THEME="ansi-dark"

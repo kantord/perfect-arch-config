@@ -227,30 +227,30 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 " map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 
-"hi default CocUnderline    cterm=underline 
-"hi default CocErrorSign    ctermfg=LightRed     
-"hi default CocWarningSign  ctermfg=LightRed   
-"hi default CocInfoSign     ctermfg=LightRed  
-"hi default CocHintSign     ctermfg=LightRed    
-"hi default CocSelectedText ctermfg=Red     
-"hi default CocCodeLens     ctermfg=Gray    
-"hi default link CocErrorFloat       CocErrorSign
-"hi default link CocWarningFloat     CocWarningSign
-"hi default link CocInfoFloat        CocInfoSign
-"hi default link CocHintFloat        CocHintSign
-"hi default link CocErrorHighlight   CocUnderline
-"hi default link CocWarningHighlight CocUnderline
-"hi default link CocInfoHighlight    CocUnderline
-"hi default link CocHintHighlight    CocUnderline
-"hi default link CocListMode ModeMsg
-"hi default link CocListPath Comment
-"hi CocFloating ctermbg=DarkGray
-"hi default link CocHighlightText  CursorColumn
+hi default CocUnderline    cterm=underline 
+hi default CocErrorSign    ctermfg=LightRed     
+hi default CocWarningSign  ctermfg=LightRed   
+hi default CocInfoSign     ctermfg=LightRed  
+hi default CocHintSign     ctermfg=LightRed    
+hi default CocSelectedText ctermfg=Red     
+hi default CocCodeLens     ctermfg=Black    
+hi default link CocErrorFloat       CocErrorSign
+hi default link CocWarningFloat     CocWarningSign
+hi default link CocInfoFloat        CocInfoSign
+hi default link CocHintFloat        CocHintSign
+hi default link CocErrorHighlight   CocUnderline
+hi default link CocWarningHighlight CocUnderline
+hi default link CocInfoHighlight    CocUnderline
+hi default link CocHintHighlight    CocUnderline
+hi default link CocListMode ModeMsg
+hi default link CocListPath Comment
+hi CocFloating ctermbg=Black
+hi default link CocHighlightText  CursorColumn
 
-"hi default link CocHoverRange     Search
-"hi default link CocCursorRange    Search
-"hi default link CocHighlightRead  CocHighlightText
-"hi default link CocHighlightWrite CocHighlightText
+hi default link CocHoverRange     Search
+hi default link CocCursorRange    Search
+hi default link CocHighlightRead  CocHighlightText
+hi default link CocHighlightWrite CocHighlightText
 
 
 
@@ -368,3 +368,81 @@ nmap <F8> :TagbarToggle<CR>
 let g:context_presenter = 'vim-popup'
 let g:context_border_char = '─'
 let g:context_max_height = 2
+
+
+" Give more space for displaying messages.
+set cmdheight=2
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+if has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
+
+" Use tab for trigger completion with characters ahead and navigate.
+" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
+" other plugin before putting this into your config.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use <c-space> to trigger completion.
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
+
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
+" position. Coc only does snippet and additional edit on confirm.
+" <cr> could be remapped by other vim plugin, try `:verbose imap <CR>`.
+if exists('*complete_info')
+  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+else
+  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+endif
+
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
+" Apply AutoFix to problem on the current line.
+nmap <leader>qf  <Plug>(coc-fix-current)
+
+" Show commands.
+nnoremap <silent><nowait> <space>a  :<C-u>CocList commands<cr>
+
+inoremap <silent><expr> <NUL> coc#refresh()
+
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+let $FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --layout reverse --margin=1,4 --preview 'bat --color=always --theme base16 --style=header,grid --line-range :300 {}'"
+
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9 } }

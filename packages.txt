@@ -8,6 +8,7 @@ autoconf
 automake
 autorandr
 bash
+bat
 betterlockscreen-noeffects
 bind-tools
 binutils
@@ -156,6 +157,7 @@ python2
 python2-greenlet
 python2-pip
 python-greenlet
+python-jedi
 python-pip
 python-pipenv
 python-requests-oauthlib
@@ -207,6 +209,7 @@ vdirsyncer
 vi
 virtualbox-guest-utils
 vlc
+w3m
 wget
 which
 wpa_supplicant
