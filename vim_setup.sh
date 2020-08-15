@@ -12,5 +12,6 @@ vim -E -c "CocInstall coc-json" -c qa
 vim -E -c "CocInstall coc-python" -c qa
 vim -E -c "CocInstall coc-vimlsp" -c qa
 vim -E -c "CocInstall coc-snippets" -c qa
+vim -E -c "CocInstall coc-explorer" -c qa
 
 echo "Done with vim setup"
