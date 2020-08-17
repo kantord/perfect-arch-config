@@ -51,7 +51,7 @@ map <C-K><C-B> :CocCommand explorer<cr>
 "let NERDTreeShowLineNumbers=1
 " Open NERDTree in the directory of the current file (or /home if no file is open)
 "function! NERDTreeToggleInCurDir()
-   If NERDTree is open in the current buffer
+   "If NERDTree is open in the current buffer
   "if (exists("t:NERDTreeBufName") && bufwinnr(t:NERDTreeBufName) != -1)
     "exe ":NERDTreeClose"
   "else
@@ -261,6 +261,7 @@ hi default link CocHighlightWrite CocHighlightText
 hi Directory cterm=bold
 hi CurrentWord cterm=bold
 hi CurrentWordTwins cterm=bold
+hi MatchParen cterm=bold ctermbg=Black ctermfg=White
 
 let g:eighties_enabled = 1
 let g:eighties_minimum_width = 80
