@@ -1,5 +1,6 @@
 {
   "typescript.validate.enable": false,
   "tsserver.log": "normal",
-  "tsserver.trace.server": "verbose"
+  "tsserver.trace.server": "verbose",
+  "javascript.validate.enable": false
 }
