@@ -110,3 +110,6 @@ alias tl="task list"
 alias td="task done"
 
 export BAT_THEME="ansi-dark"
+
+setopt promptsubst
+PS1=$'${(r:$COLUMNS::\u2500:)}'$PS1
