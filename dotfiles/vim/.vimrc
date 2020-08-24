@@ -310,6 +310,7 @@ endfunction
 
 
 map <C-a> :TigBlame<CR>
+nnoremap <leader><C-A> :TigOpenProjectRootDir<CR>
 map <C-s> :call Status()<CR>
 map <C-c> :call Commit()<CR>
 :Silent :!stty -ixon -ixoff
