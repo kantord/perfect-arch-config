@@ -12,6 +12,7 @@
 --exclude=dist
 --exclude=data
 --exclude=tags
+--exclude=stats.json
 --exclude=*.min.*
 --exclude=*.spec.*
 --exclude=*.test.*
