@@ -27,7 +27,7 @@ Plug 'ap/vim-css-color'
 Plug 'tell-k/vim-autopep8'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-"Plug 'ludovicchabant/vim-gutentags'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'tpope/vim-fugitive'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'francoiscabrol/ranger.vim'
@@ -38,7 +38,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'dkarter/bullets.vim'
-Plug 'wellle/context.vim'
+"Plug 'wellle/context.vim'
 Plug 'majutsushi/tagbar'
 Plug 'iberianpig/tig-explorer.vim'
 
