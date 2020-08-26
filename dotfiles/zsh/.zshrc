@@ -113,3 +113,6 @@ export BAT_THEME="ansi-dark"
 
 setopt promptsubst
 PS1=$'${(r:$COLUMNS::\u2500:)}'$PS1
+
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh

@@ -50,6 +50,7 @@ firefox-tridactyl
 firefox-ublock-origin
 firefox-vim-vixen
 flex
+fzf
 gawk
 gcc
 gcc-fortran
