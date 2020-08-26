@@ -74,7 +74,7 @@ do
 			TOTAL_BLOCKS=1
 		fi
 		let EXTRA_BLOCKS="$TOTAL_BLOCKS - 1"
-		HOUR=`echo $meeting_start | cut -f1 -d':'`
+		HOUR=`echo $meeting_start | cut -f1 -d':' | sed 's/^0//'`
 		MINUTE=`echo $meeting_start | cut -f1 -d':'`
 		let MEETING_TIME="2*HOUR+1"
 		let MEETING_END_TIME="MEETING_TIME+EXTRA_BLOCKS"
