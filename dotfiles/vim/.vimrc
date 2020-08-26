@@ -457,3 +457,5 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 let $FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --layout reverse --margin=1,4 --preview 'bat --color=always --theme base16 --style=header,grid --line-range :300 {}'"
 
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9 } }
+
+set laststatus=2
