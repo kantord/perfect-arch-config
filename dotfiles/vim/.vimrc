@@ -45,7 +45,6 @@ Plug 'iberianpig/tig-explorer.vim'
 
 " coc extensions
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}
 Plug 'iamcco/coc-vimlsp', {'do': 'yarn install --frozen-lockfile'}
@@ -102,7 +101,7 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 set mouse=a
 
 " Run prettier automatically
-autocmd BufWritePost *.js,*.jsx,*.svelte call prettier#run(1)
+autocmd BufWritePost *.js,*.jsx,*.svelte,*.ts,*.tsx call prettier#run(1)
 
 " Use system clipboard for
 set clipboard=unnamedplus
