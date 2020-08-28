@@ -52,6 +52,7 @@ Plug 'iamcco/coc-vimlsp', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
 Plug 'weirongxu/coc-explorer', {'do': 'yarn install --frozen-lockfile'}
 Plug 'amiralies/coc-flow', {'do': 'yarn install --frozen-lockfile'}
+Plug 'coc-extensions/coc-svelte', {'do': 'yarn install --frozen-lockfile'}
 
 Plug 'ruanyl/vim-gh-line'
 
@@ -461,3 +462,5 @@ let $FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --layout reverse --ma
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9 } }
 
 set laststatus=2
+
+let g:gh_gitlab_domain='https://gitlab.skypicker.com'
