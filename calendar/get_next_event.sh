@@ -20,7 +20,7 @@ next_summary=`echo "📅 In $time_difference_formatted:" $next_event_title | sed
 calendar_summary=`echo "$now_title""$next_summary"`
 
 day_summary=""
-EVENTS_TODAY=`khal list today -f "{start-date};={start-time};{end-time};{title}" | sed '/Tomorrow/q' | grep "=" | cut -f2 -d"=" | grep -v "No meetings day /blocker/"`
+EVENTS_TODAY=`khal list today -f "{start-date};={start-time};{end-time};{title}" | sed '/Tomorrow/q' | grep "=" | cut -f2 -d"=" | grep -v "No meetings day /blocker/" | grep -v "^;"`
 let FIRST_HOUR=7
 let LAST_HOUR=23
 let START="2*FIRST_HOUR"
@@ -69,6 +69,10 @@ do
 		SEC1=`date +%s -d ${meeting_start}`
 		SEC2=`date +%s -d ${meeting_end}`
 		DIFFSEC=`expr ${SEC2} - ${SEC1}`
+		if test -z "$DIFFSEC" 
+		then
+		      continue
+		fi
 		let TOTAL_BLOCKS="$DIFFSEC / 1800"
 		if [ "$TOTAL_BLOCKS" -eq "0" ]; then
 			TOTAL_BLOCKS=1
