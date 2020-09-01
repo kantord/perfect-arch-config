@@ -118,5 +118,5 @@ source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 
 gch() {
- git checkout "$(git branch --list | fzf| tr -d '[:space:]')"
+ git checkout "$(git branch -r | fzf| tr -d '[:space:]')"
 }
