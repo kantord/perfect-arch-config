@@ -116,3 +116,7 @@ PS1=$'${(r:$COLUMNS::\u2500:)}'$PS1
 
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
+
+gch() {
+ git checkout “$(git branch — all | fzf| tr -d ‘[:space:]’)”
+}
