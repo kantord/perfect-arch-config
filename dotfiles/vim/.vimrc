@@ -41,6 +41,7 @@ Plug 'dkarter/bullets.vim'
 "Plug 'wellle/context.vim'
 Plug 'majutsushi/tagbar'
 Plug 'iberianpig/tig-explorer.vim'
+Plug 'metakirby5/codi.vim'
 
 " coc extensions
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}

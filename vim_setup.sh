@@ -13,3 +13,5 @@ echo "Done with vim setup"
 echo "set runtimepath+=~/.vim,~/.vim/after" > ~/.config/nvim/init.vim
 echo "set packpath+=~/.vim" >> ~/.config/nvim/init.vim
 echo "source ~/.vimrc" >> ~/.config/nvim/init.vim
+
+sudo npm install -g tsun
