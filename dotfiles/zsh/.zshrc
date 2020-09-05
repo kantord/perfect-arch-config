@@ -121,5 +121,10 @@ gch() {
  git checkout "$(git branch -r | fzf| tr -d '[:space:]')"
 }
 
-alias gpp="git push origin `git branch --show-current`"
-alias gff="git push origin `git branch --show-current --force-with-lease`"
+gpp() {
+  git push origin `git branch --show-current`
+}
+
+function gff() {
+  git push origin `git branch --show-current --force-with-lease`
+}
