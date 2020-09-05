@@ -120,3 +120,6 @@ source /usr/share/fzf/completion.zsh
 gch() {
  git checkout "$(git branch -r | fzf| tr -d '[:space:]')"
 }
+
+alias gpp="git push origin `git branch --show-current`"
+alias gff="git push origin `git branch --show-current --force-with-lease`"
