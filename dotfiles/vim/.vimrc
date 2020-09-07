@@ -53,6 +53,8 @@ Plug 'coc-extensions/coc-svelte', {'do': 'yarn install --frozen-lockfile'}
 Plug 'liuchengxu/vim-which-key'
 
 Plug 'ruanyl/vim-gh-line'
+Plug 'mhinz/vim-startify'
+Plug 'krolow/readmestart.vim'
 
 call plug#end()
 
@@ -120,18 +122,18 @@ let g:ctrlp_show_hidden = 1
 "- Git-Gutter -"
 " stolen from here https://gitlab.com/Sacules/dotfiles/blob/master/nvim/.config/nvim/init.vim
 " Better glyphs
-let g:gitgutter_sign_added='➕'
-let g:gitgutter_sign_modified='✍️'
-let g:gitgutter_sign_removed='🚮'
-let g:gitgutter_sign_removed_first_line='🚮'
-let g:gitgutter_sign_modified_removed='✍️'
+let g:gitgutter_sign_added=''
+let g:gitgutter_sign_modified=''
+let g:gitgutter_sign_removed=''
+let g:gitgutter_sign_removed_first_line=''
+let g:gitgutter_sign_modified_removed=''
 let g:gitgutter_override_sign_column_highlight = 0
 
 " Removing background for a e s t h e t i c s
-hi! GitGutterAdd ctermbg=NONE
-hi! GitGutterChange ctermbg=NONE
-hi! GitGutterDelete ctermbg=NONE
-hi! GitGutterChangeDelete ctermbg=NONE
+hi! GitGutterAdd ctermbg=NONE ctermfg=Green
+hi! GitGutterChange ctermbg=NONE ctermfg=Blue
+hi! GitGutterDelete ctermbg=NONE ctermfg=Red
+hi! GitGutterChangeDelete ctermbg=NONE ctermfg=Yellow
 
 " Remove background
 hi LineNr ctermbg=NONE

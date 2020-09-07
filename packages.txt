@@ -104,6 +104,7 @@ jq
 jsoncpp
 keybase-gui
 khal
+lazygit
 ledger
 less
 libreoffice
