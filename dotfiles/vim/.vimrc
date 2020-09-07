@@ -5,7 +5,6 @@ call plug#begin('~/.vim/plugged')
 " Install plugins here
 "
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree'
 Plug 'heavenshell/vim-prettier'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
@@ -19,7 +18,6 @@ Plug 'tmhedberg/matchit'
 Plug 'easymotion/vim-easymotion'
 Plug 'nvie/vim-flake8'
 Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'sheerun/vim-polyglot'
 Plug 'burner/vim-svelte'
 Plug 'dominikduda/vim_current_word'
@@ -62,22 +60,6 @@ call plug#end()
 " coc-explorer instead of NERDTree
 map <C-K><C-B> :CocCommand explorer<cr>
 
-
-" NERDTree settings
-"let NERDTreeShowLineNumbers=1
-" Open NERDTree in the directory of the current file (or /home if no file is open)
-"function! NERDTreeToggleInCurDir()
-   "If NERDTree is open in the current buffer
-  "if (exists("t:NERDTreeBufName") && bufwinnr(t:NERDTreeBufName) != -1)
-    "exe ":NERDTreeClose"
-  "else
-    "exe ":NERDTreeFind"
-  "endif
-"endfunction
-
-"map <C-K><C-B> :call NERDTreeToggleInCurDir()<cr>
-"let NERDTreeShowHidden=1
-"let NERDTreeIgnore = ['\.pyc$', '\.cache', '__pycache__', '.git', 'env', 'env2', 'env3', 'venv', 'node_modules']
 
 " Smart way to move between windows
 map <C-j> <C-W>j
@@ -168,10 +150,6 @@ set hlsearch
 " Better searching
 set ignorecase
 set smartcase
-
-let g:NERDTreeWinSize = 28
-let g:NERDTreeMinimalUI = 1
-
 
 set scrolloff=8 " The screen will only scroll when the cursor is 8 characters from the top/bottom.
 set ffs=unix,dos,mac " Prioritize unix as the standard file type.
