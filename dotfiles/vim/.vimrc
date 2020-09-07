@@ -121,6 +121,7 @@ let g:ctrlp_show_hidden = 1
 
 "- Git-Gutter -"
 " stolen from here https://gitlab.com/Sacules/dotfiles/blob/master/nvim/.config/nvim/init.vim
+" icons https://www.nerdfonts.com/cheat-sheet
 " Better glyphs
 let g:gitgutter_sign_added=''
 let g:gitgutter_sign_modified=''
@@ -186,8 +187,8 @@ set statusline+=\ %f
 set statusline+=%#VertSplit#
 set statusline+=\ ─\ %p%%\ 
 
-let g:ale_sign_error = '✗'
-let g:ale_sign_warning = '✗'
+let g:ale_sign_error = ''
+let g:ale_sign_warning = ''
 highlight clear ALEErrorSign
 highlight clear ALEWarningSign
 hi ALEErrorSign ctermfg=Red
