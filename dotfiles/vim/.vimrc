@@ -50,6 +50,7 @@ Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
 Plug 'weirongxu/coc-explorer', {'do': 'yarn install --frozen-lockfile'}
 Plug 'amiralies/coc-flow', {'do': 'yarn install --frozen-lockfile'}
 Plug 'coc-extensions/coc-svelte', {'do': 'yarn install --frozen-lockfile'}
+
 Plug 'liuchengxu/vim-which-key'
 
 Plug 'ruanyl/vim-gh-line'
