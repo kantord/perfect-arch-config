@@ -3,5 +3,8 @@
   "tsserver.log": "normal",
   "tsserver.trace.server": "verbose",
   "javascript.validate.enable": false,
-  "explorer.icon.enableNerdfont": true
+  "explorer.icon.enableNerdfont": true,
+  "diagnostic.errorSign": "",
+  "diagnostic.warningSign": "",
+  "diagnostic.infoSign": ""
 }
