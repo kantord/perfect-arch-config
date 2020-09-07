@@ -6,5 +6,8 @@
   "explorer.icon.enableNerdfont": true,
   "diagnostic.errorSign": "",
   "diagnostic.warningSign": "",
-  "diagnostic.infoSign": ""
+  "diagnostic.infoSign": "",
+  "cSpell.userWords": [
+    "kiwicom"
+  ]
 }
