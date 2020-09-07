@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 "
 " Install plugins here
 "
+"
 Plug 'scrooloose/nerdcommenter'
 Plug 'heavenshell/vim-prettier'
 Plug 'pangloss/vim-javascript'
@@ -40,6 +41,7 @@ Plug 'dkarter/bullets.vim'
 Plug 'majutsushi/tagbar'
 Plug 'iberianpig/tig-explorer.vim'
 Plug 'metakirby5/codi.vim'
+Plug 'kizza/actionmenu.nvim'
 
 " coc extensions
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
@@ -50,6 +52,14 @@ Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
 Plug 'weirongxu/coc-explorer', {'do': 'yarn install --frozen-lockfile'}
 Plug 'amiralies/coc-flow', {'do': 'yarn install --frozen-lockfile'}
 Plug 'coc-extensions/coc-svelte', {'do': 'yarn install --frozen-lockfile'}
+Plug 'fannheyward/coc-marketplace', {'do': 'yarn install --frozen-lockfile'}
+Plug 'iamcco/coc-webpack', {'do': 'yarn install --frozen-lockfile'}
+Plug 'iamcco/coc-spell-checker', {'do': 'yarn install --frozen-lockfile'}
+
+
+" Install browser extension here
+" https://github.com/voldikss/browser-source-provider
+Plug 'voldikss/coc-browser', {'do': 'yarn install --frozen-lockfile'}
 
 Plug 'liuchengxu/vim-which-key'
 
@@ -450,3 +460,26 @@ nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 
 
 highlight WhichKeyFloating ctermfg=White
+
+
+let s:code_actions = []
+
+func! ActionMenuCodeActions() abort
+  if coc#util#has_float()
+    call coc#util#float_hide()
+  endif
+
+  let s:code_actions = CocAction('codeActions')
+  let l:menu_items = map(copy(s:code_actions), { index, item -> item['title'] })
+  call actionmenu#open(l:menu_items, 'ActionMenuCodeActionsCallback')
+endfunc
+
+func! ActionMenuCodeActionsCallback(index, item) abort
+  if a:index >= 0
+    let l:selected_code_action = s:code_actions[a:index]
+    let l:response = CocAction('doCodeAction', l:selected_code_action)
+  endif
+endfunc
+
+nnoremap <silent><nowait> <space>a  :call ActionMenuCodeActions()<CR>
+nnoremap <silent><nowait> <space>d  :<C-u>CocList diagnostics<cr>
