@@ -9,5 +9,33 @@
   "diagnostic.infoSign": "",
   "cSpell.userWords": [
     "kiwicom"
-  ]
+  ],
+  "browser.enable": {
+    "type": "boolean",
+    "default": true,
+    "description": "whether to enable coc-browser"
+  },
+  "browser.shortcut": {
+    "type": "string",
+    "default": "web"
+  },
+  "browser.capacity": {
+    "type": "number",
+    "default": 5,
+    "description": "temp file count to storage the words, 1~10"
+  },
+  "browser.priority": {
+    "type": "number",
+    "default": 5
+  },
+  "browser.minLength": {
+    "type": "number",
+    "default": 4,
+    "description": "Dismiss these words whose length is smaller than this option's value"
+  },
+  "browser.maxLength": {
+    "type": "number",
+    "default": 20,
+    "description": "Dismiss these words whose length is larger than this option's value"
+  }
 }
