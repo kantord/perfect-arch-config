@@ -66,6 +66,7 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'ruanyl/vim-gh-line'
 Plug 'mhinz/vim-startify'
 Plug 'krolow/readmestart.vim'
+Plug 'victorze/foo'
 
 call plug#end()
 
