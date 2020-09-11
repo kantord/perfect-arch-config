@@ -1,0 +1,6 @@
+[submodule "calendar/status-one-liner"]
+	path = calendar/status-one-liner
+	url = git@github.com:kantord/status-one-liner.git
+[submodule "status-one-liner"]
+	path = status-one-liner
+	url = git@github.com:kantord/status-one-liner.git

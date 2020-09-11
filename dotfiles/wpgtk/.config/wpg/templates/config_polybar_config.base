@@ -467,7 +467,7 @@ margin-bottom = 5
 label-background = #ff{color8.strip}
 label-padding = 1
 type = custom/script
-exec = ~/repos/perfect-arch-config/calendar/get_next_event.sh
+exec = ~/repos/perfect-arch-config/status-one-liner/status-one-liner.sh
 interval = 0.5
 
 [module/ibus]
