@@ -201,6 +201,7 @@ the_silver_searcher
 thunderbird
 tig
 tk
+tldr
 transmission-gtk
 ttf-dejavu
 ttf-iosevka

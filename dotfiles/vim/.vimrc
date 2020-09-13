@@ -42,6 +42,7 @@ Plug 'majutsushi/tagbar'
 Plug 'iberianpig/tig-explorer.vim'
 Plug 'metakirby5/codi.vim'
 Plug 'kizza/actionmenu.nvim'
+Plug 'vim-test/vim-test'
 
 " coc extensions
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
@@ -212,7 +213,6 @@ let &t_SR = "\<Esc>[4 q"
 let &t_EI = "\<Esc>[2 q"
 
 let mapleader = "\<Space>"
-map <Leader> <Plug>(easymotion-prefix)
 
 " Disable arrow movement, resize splits instead.
 nnoremap <Up>    :resize +2<CR>
@@ -484,3 +484,12 @@ endfunc
 
 nnoremap <silent><nowait> <space>a  :call ActionMenuCodeActions()<CR>
 nnoremap <silent><nowait> <space>d  :<C-u>CocList diagnostics<cr>
+
+nmap <silent> <leader>tn :TestNearest<CR>
+nmap <silent> <leader>tf :TestFile<CR>
+nmap <silent> <leader>ts :TestSuite<CR>
+nmap <silent> <leader>tl :TestLast<CR>
+nmap <silent> <leader>tg :TestVisit<CR>
+
+let test#strategy = "vimterminal"
+let g:test#javascript#runner = 'jest'
