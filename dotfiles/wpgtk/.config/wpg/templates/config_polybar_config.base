@@ -467,7 +467,7 @@ margin-bottom = 5
 label-background = #ff{color8.strip}
 label-padding = 1
 type = custom/script
-exec = ~/repos/perfect-arch-config/status-one-liner/status-one-liner.sh
+exec = ~/repos/perfect-arch-config/status-one-liner/status-one-liner.sh pomodoro,notification,calendar/upcoming,calendar/summary
 interval = 0.5
 
 [module/ibus]

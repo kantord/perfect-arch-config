@@ -16,3 +16,4 @@
 ./stow.sh profile
 ./stow.sh ctags
 ./stow.sh ranger
+./stow.sh status-one-liner
