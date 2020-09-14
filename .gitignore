@@ -19,3 +19,4 @@ dotfiles/wpgtk/.config/wpg/.current
 /dotfiles/rofi/.config/rofi/theme.rasi
 /yay/
 *.pyc
+dotfiles/vim/.vim/.netrwhist
