@@ -32,7 +32,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'francoiscabrol/ranger.vim'
 "Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'jiangmiao/auto-pairs'
+"Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'dkarter/bullets.vim'
@@ -56,6 +56,7 @@ Plug 'fannheyward/coc-marketplace', {'do': 'yarn install --frozen-lockfile'}
 Plug 'iamcco/coc-webpack', {'do': 'yarn install --frozen-lockfile'}
 Plug 'iamcco/coc-spell-checker', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
 
 
 " Install browser extension here
@@ -274,13 +275,13 @@ let g:eighties_minimum_width = 80
 set nofoldenable
 
 
-let g:ale_linter_aliases = {'svelte': ['css', 'javascript']}
-let g:ale_linters = {'svelte': ['stylelint', 'eslint'], 'javascript': ['eslint'], 'python': ['flake8', 'pylint']}
-let g:ale_fixers = {'svelte': ['eslint', 'prettier', 'prettier_standard'], 'javascript': ['prettier', 'eslint'], 'python': ['autopep8', 'yapf'], 'json': ['jq'], 'typescript': ['eslint']}
-let g:ale_lint_on_save = 1
-let g:ale_fix_on_save = 1
-let g:ale_lint_on_enter = 1
-let g:ale_lint_on_text_changed = 'never'
+"let g:ale_linter_aliases = {'svelte': ['css', 'javascript']}
+"let g:ale_linters = {'svelte': ['stylelint', 'eslint'], 'javascript': ['eslint'], 'python': ['flake8', 'pylint']}
+"let g:ale_fixers = {'svelte': ['eslint', 'prettier', 'prettier_standard'], 'python': ['autopep8', 'yapf'], 'json': ['jq']}
+"let g:ale_lint_on_save = 1
+"let g:ale_fix_on_save = 1
+"let g:ale_lint_on_enter = 1
+"let g:ale_lint_on_text_changed = 'never'
 
 
 
