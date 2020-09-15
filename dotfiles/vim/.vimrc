@@ -296,10 +296,6 @@ function! g:Blame()
     :Silent :!tig blame %
 endfunction
 
-function! g:Status()
-    :Silent :!tig status %
-endfunction
-
 function! g:Commit()
     :Silent :!git-cz
 endfunction
@@ -308,7 +304,7 @@ endfunction
 
 map <C-a> :TigBlame<CR>
 nnoremap <leader><C-A> :TigOpenProjectRootDir<CR>
-map <C-s> :call Status()<CR>
+map <C-s> :TigStatus<CR>
 map <C-c> :call Commit()<CR>
 :Silent :!stty -ixon -ixoff
 
