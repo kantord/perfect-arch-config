@@ -6,7 +6,6 @@ call plug#begin('~/.vim/plugged')
 "
 "
 Plug 'scrooloose/nerdcommenter'
-Plug 'heavenshell/vim-prettier'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'mattn/emmet-vim'
@@ -56,6 +55,7 @@ Plug 'coc-extensions/coc-svelte', {'do': 'yarn install --frozen-lockfile'}
 Plug 'fannheyward/coc-marketplace', {'do': 'yarn install --frozen-lockfile'}
 Plug 'iamcco/coc-webpack', {'do': 'yarn install --frozen-lockfile'}
 Plug 'iamcco/coc-spell-checker', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
 
 
 " Install browser extension here
@@ -97,9 +97,6 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""' 
 
 set mouse=a
-
-" Run prettier automatically
-autocmd BufWritePost *.js,*.jsx,*.svelte,*.ts,*.tsx call prettier#run(1)
 
 " Use system clipboard for
 set clipboard=unnamedplus
