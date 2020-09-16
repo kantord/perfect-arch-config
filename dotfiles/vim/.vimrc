@@ -42,6 +42,7 @@ Plug 'iberianpig/tig-explorer.vim'
 Plug 'metakirby5/codi.vim'
 Plug 'kizza/actionmenu.nvim'
 Plug 'vim-test/vim-test'
+Plug 'brooth/far.vim'
 
 " coc extensions
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
