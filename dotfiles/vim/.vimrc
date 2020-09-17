@@ -62,7 +62,7 @@ Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
 
 " Install browser extension here
 " https://github.com/voldikss/browser-source-provider
-Plug 'voldikss/coc-browser', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'voldikss/coc-browser', {'do': 'yarn install --frozen-lockfile'}
 
 Plug 'liuchengxu/vim-which-key'
 
@@ -457,27 +457,6 @@ nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 
 highlight WhichKeyFloating ctermfg=White
 
-
-let s:code_actions = []
-
-func! ActionMenuCodeActions() abort
-  if coc#util#has_float()
-    call coc#util#float_hide()
-  endif
-
-  let s:code_actions = CocAction('codeActions')
-  let l:menu_items = map(copy(s:code_actions), { index, item -> item['title'] })
-  call actionmenu#open(l:menu_items, 'ActionMenuCodeActionsCallback')
-endfunc
-
-func! ActionMenuCodeActionsCallback(index, item) abort
-  if a:index >= 0
-    let l:selected_code_action = s:code_actions[a:index]
-    let l:response = CocAction('doCodeAction', l:selected_code_action)
-  endif
-endfunc
-
-nnoremap <silent><nowait> <space>a  :call ActionMenuCodeActions()<CR>
 nnoremap <silent><nowait> <space>d  :<C-u>CocList diagnostics<cr>
 
 nmap <silent> <leader>tn :TestNearest<CR>
@@ -488,3 +467,6 @@ nmap <silent> <leader>tg :TestVisit<CR>
 
 let test#strategy = "vimterminal"
 let g:test#javascript#runner = 'jest'
+
+" xmap <leader>a  <Plug>(coc-codeaction-selected)
+" nmap <leader>a  <Plug>(coc-codeaction-selected)
