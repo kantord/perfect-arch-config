@@ -1,0 +1,6 @@
+*.snapshot
+node_modules
+.yarn
+dist
+__sapper__
+__next__

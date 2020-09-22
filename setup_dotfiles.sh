@@ -17,3 +17,4 @@
 ./stow.sh ctags
 ./stow.sh ranger
 ./stow.sh status-one-liner
+./stow.sh ignore
