@@ -212,6 +212,7 @@ usbutils
 util-linux
 vdirsyncer
 vi
+vimb
 virtualbox-guest-utils
 vlc
 w3m

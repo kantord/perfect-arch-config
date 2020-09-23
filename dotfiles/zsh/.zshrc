@@ -128,3 +128,5 @@ function gpp() {
 function gff() {
   git push origin `git branch --show-current` --force-with-lease
 }
+
+alias tt="tig status"

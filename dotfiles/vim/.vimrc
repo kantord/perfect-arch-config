@@ -43,6 +43,7 @@ Plug 'metakirby5/codi.vim'
 Plug 'kizza/actionmenu.nvim'
 Plug 'vim-test/vim-test'
 Plug 'brooth/far.vim'
+Plug 'markonm/traces.vim'
 
 " coc extensions
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
