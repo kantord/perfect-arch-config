@@ -45,6 +45,8 @@ Plug 'vim-test/vim-test'
 Plug 'brooth/far.vim'
 Plug 'markonm/traces.vim'
 Plug 'ledger/vim-ledger'
+Plug 'deviantfero/wpgtk.vim'
+Plug 'majutsushi/tagbar'
 
 " coc extensions
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
@@ -76,8 +78,14 @@ Plug 'cormacrelf/vim-colors-github'
 call plug#end()
 
 
-" coc-explorer instead of NERDTree
+" Overview mode
+function OverviewMode()
+   :CocCommand explorer
+   :TagbarToggle
+endfunction
+map <C-K><C-K> :exec OverviewMode()<CR>
 map <C-K><C-B> :CocCommand explorer<cr>
+map <C-K><C-N> :TagbarToggle<cr>
 
 
 " Smart way to move between windows
@@ -115,11 +123,11 @@ let g:user_emmet_settings = {
 let g:neosnippet#enable_completed_snippet = 1
 
 " Transparent background
-colorscheme default-light
+colorscheme wpgtkAlt
 hi Normal guibg=NONE ctermbg=NONE
 
 "set cursorline
-"hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE
+hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE
 
 let g:ctrlp_show_hidden = 1
 
