@@ -97,7 +97,7 @@ bindsym $mod+semicolon split h
 bindsym $mod+v split v
 
 # go to window easily
-bindsym $mod+f exec i3-easyfocus \
+bindsym $mod+f exec i3-easyfocus --all \
   --font "-misc-dejavu sans mono-bold-r-normal--50-0-0-0-m-0-ascii-0" \
   --color-urgent-bg "{color1.strip}" \
   --color-focused-bg "{color1.strip}" \
