@@ -48,6 +48,18 @@ Plug 'ledger/vim-ledger'
 Plug 'deviantfero/wpgtk.vim'
 Plug 'majutsushi/tagbar'
 
+" Denite
+Plug 'neoclide/coc-denite'
+Plug 'chemzqm/denite-extra'
+Plug 'raghur/fruzzy', {'do': { -> fruzzy#install()}}
+if has('nvim')
+  Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/denite.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
 " coc extensions
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
@@ -83,9 +95,7 @@ function OverviewMode()
    :CocCommand explorer
    :TagbarToggle
 endfunction
-map <C-K><C-K> :exec OverviewMode()<CR>
-map <C-K><C-B> :CocCommand explorer<cr>
-map <C-K><C-N> :TagbarToggle<cr>
+map <C-K><C-B> :exec OverviewMode()<CR>
 
 
 " Smart way to move between windows
@@ -371,13 +381,6 @@ function! s:run_action(line)
   execute "normal ".key
 endfunction
 
-function! VimActions(...)
-  let input = readfile('/home/kdani/.vim_actions')
-  call fzf#run(fzf#wrap({'source': input, 'sink':    s:function('s:run_action')}))
-endfunction
-
-command! -bar -bang VimActions                           call VimActions(<bang>0)
-
 let g:rainbow_active = 1
 
 let g:tagalong_verbose = 1
@@ -478,5 +481,30 @@ nmap <silent> <leader>tg :TestVisit<CR>
 let test#strategy = "vimterminal"
 let g:test#javascript#runner = 'jest'
 
-" xmap <leader>a  <Plug>(coc-codeaction-selected)
-" nmap <leader>a  <Plug>(coc-codeaction-selected)
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+" denite
+
+" Denite mappings
+autocmd FileType denite call s:denite_my_settings()
+function! s:denite_my_settings() abort
+  nnoremap <silent><buffer><expr> <CR>
+  \ denite#do_map('do_action')
+  nnoremap <silent><buffer><expr> d
+  \ denite#do_map('do_action', 'delete')
+  nnoremap <silent><buffer><expr> p
+  \ denite#do_map('do_action', 'preview')
+  nnoremap <silent><buffer><expr> q
+  \ denite#do_map('quit')
+  nnoremap <silent><buffer><expr> i
+  \ denite#do_map('open_filter_buffer')
+  nnoremap <silent><buffer><expr> <Space>
+  \ denite#do_map('toggle_select').'j'
+endfunction
+
+" Use fuzzy matching for denite
+call denite#custom#source('_', 'matchers', ['matcher/fruzzy'])
+let g:fruzzy#usenative = 1
+
+map <C-L> :Denite coc-command coc-diagnostic coc-symbols commands command_history -start-filter <CR>

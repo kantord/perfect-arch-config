@@ -1,18 +1,18 @@
 * {{
-    background-color:      Transparent;
+    background-color:      {color0};
     border-color:          Transparent;
     text-color:           White;
-    font:            "Source Code Pro 9";
+    font:            "Source Code Pro 14";
     transparency:	"background";
     padding: 1px;
 }}
 
 #window {{
-    anchor:     south;
-    location:   south;
-    width:      100%;
-    padding:    0;
-    x-offset:   -20px;
+    anchor:     west;
+    location:   west;
+    width:      30%;
+    padding:    16px;
+    x-offset: 	20px;
     children:   [ horibox ];
 }}
 
@@ -22,23 +22,29 @@
 }}
 
 #listview {{
-    layout:     horizontal;
+    layout:     vertical;
+    dynamic: true;
+    cycle: true;
+    fixed-columns: true;
+    columns: 1;
+    lines: 10;
     spacing:    8px;
-    lines:      100;
 }}
 
 #entry {{
     text-color: 	Transparent;
     expand:     false;
-    width:      40px;
+    width:      0px;
 }}
 
 #element {{
-    background-color: {color8};
+   padding: 6px;
+    text-color: {color15};
 }}
 
 #element selected {{
-    background-color: {color9};
-    text-color: {color0};
+    children: [element-icon, element-text];
+    background-color: #{color3.strip}99;
+    text-color: {color15};
 }}
 
