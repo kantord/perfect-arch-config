@@ -39,7 +39,7 @@ bindsym $mod+F4 exec --no-startup-id "$tools/restart_gui.sh grayscale &>> /tmp/d
 bindsym $mod+F7 exec $tools/monitor_mode_picker.sh
 bindsym $mod+minus exec ~/repos/i3-env/i3-env ~/repos/i3-yarn/i3-yarn
 bindsym $mod+p exec i3-env-rofi
-bindsym $mod+c exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+bindsym $mod+c exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{{cmd}}'
 bindsym $mod+Return exec ~/repos/i3-env/i3-env termite
 bindsym $mod+q exec splatmoji type
 bindsym $mod+m exec $tools/i3_msg_rofi.sh
@@ -96,8 +96,15 @@ bindsym $mod+semicolon split h
 # split in vertical orientation
 bindsym $mod+v split v
 
-# enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+# go to window easily
+bindsym $mod+f exec i3-easyfocus \
+  --font "-misc-dejavu sans mono-bold-r-normal--50-0-0-0-m-0-ascii-0" \
+  --color-urgent-bg "{color1.strip}" \
+  --color-focused-bg "{color1.strip}" \
+  --color-unfocused-bg "{color1.strip}" \
+  --color-urgent-fg "{color15.strip}" \
+  --color-focused-fg "{color15.strip}" \
+  --color-unfocused-fg "{color15.strip}"
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking

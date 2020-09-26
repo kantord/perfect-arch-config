@@ -225,8 +225,10 @@ xfsprogs
 xorg-server
 xorg-xbacklight
 xorg-xev
+xorg-xfontsel
 xorg-xinit
 xorg-xkill
+xorg-xlsfonts
 xorg-xprop
 xorg-xsetroot
 xorg-xwininfo
