@@ -172,6 +172,7 @@ redshift
 reiserfsprogs
 ripgrep
 rofi
+rofi-bluetooth-git
 rofi-calc
 rsync
 ruby
