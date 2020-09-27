@@ -133,7 +133,7 @@ let g:user_emmet_settings = {
 let g:neosnippet#enable_completed_snippet = 1
 
 " Transparent background
-colorscheme wpgtkAlt
+colorscheme wpgtk
 hi Normal guibg=NONE ctermbg=NONE
 
 "set cursorline
@@ -507,4 +507,4 @@ endfunction
 call denite#custom#source('_', 'matchers', ['matcher/fruzzy'])
 let g:fruzzy#usenative = 1
 
-map <C-L> :Denite coc-command coc-diagnostic coc-symbols commands command_history -start-filter <CR>
+map <leader><L> :Denite coc-command coc-diagnostic coc-symbols commands command_history -start-filter <CR>
