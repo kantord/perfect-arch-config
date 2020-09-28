@@ -4,3 +4,6 @@
 [submodule "status-one-liner"]
 	path = status-one-liner
 	url = git@github.com:kantord/status-one-liner.git
+[submodule "compton-grayscale-reading-mode"]
+	path = compton-grayscale-reading-mode
+	url = git@github.com:kantord/compton-grayscale-reading-mode.git
