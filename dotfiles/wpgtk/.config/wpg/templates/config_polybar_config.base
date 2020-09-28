@@ -61,7 +61,7 @@ font-2 = "Source Code Pro:pixelsize=9;1"
 
 modules-left = i3
 modules-center = calendar_and_notification
-modules-right = pulseaudio battery ibus date time
+modules-right = task pulseaudio battery ibus date time
 
 tray-position = none
 tray-padding = 2
@@ -468,6 +468,13 @@ label-background = #ff{color8.strip}
 label-padding = 1
 type = custom/script
 exec = ~/repos/perfect-arch-config/status-one-liner/status-one-liner.sh pomodoro,notification,calendar/upcoming,calendar/summary
+interval = 0.5
+
+[module/task]
+label-background = #ff{color8.strip}
+label-padding = 1
+type = custom/script
+exec = ~/repos/perfect-arch-config/status-one-liner/status-one-liner.sh task/count
 interval = 0.5
 
 [module/ibus]
