@@ -18,3 +18,4 @@
 ./stow.sh ranger
 ./stow.sh status-one-liner
 ./stow.sh ignore
+./stow.sh taskwarrior
