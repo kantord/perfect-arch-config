@@ -3,3 +3,4 @@ node_modules
 tags
 *.pyc
 tags.lock
+.i3-env-autorun

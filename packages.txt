@@ -32,6 +32,7 @@ device-mapper
 dex
 dhcpcd
 dialog
+diction
 diffutils
 dmenu-pango-imlib
 e2fsprogs
@@ -88,10 +89,12 @@ i3-easyfocus
 i3-env
 i3-gaps
 i3-gnome-pomodoro-git
+i3-layout-manager-git
 i3status
 ibus
 ibus-m17n
 imagemagick
+indent
 inetutils
 inkscape
 iproute2
@@ -149,6 +152,7 @@ pavucontrol
 pciutils
 peek
 perl
+perl-anyevent-i3
 pkgconf
 polybar
 procps-ng
