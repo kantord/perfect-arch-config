@@ -33,11 +33,12 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Escape exec $tools/i3-env-desktop.sh
 bindsym $mod+F1 exec $tools/shortcuts/shortcut_menu.sh
+bindsym $mod+F2 exec i3-layout-manager
 bindsym $mod+F5 exec $tools/wallpaper_picker.sh
 bindsym $mod+F6 exec bash -c "wpg -m && killall -USR1 termite && /home/kdani/repos/perfect-arch-config/set_lockscreen.sh"
 bindsym $mod+F4 exec --no-startup-id "$tools/restart_gui.sh grayscale &>> /tmp/date_logs
 bindsym $mod+F7 exec $tools/monitor_mode_picker.sh
-bindsym $mod+F12 exec rofi-bluetooth
+bindsym $mod+F8 exec rofi-bluetooth
 bindsym $mod+minus exec ~/repos/i3-env/i3-env ~/repos/i3-yarn/i3-yarn
 bindsym $mod+p exec i3-env-rofi
 bindsym $mod+c exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{{cmd}}'
@@ -148,6 +149,11 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
+
+
+# Go to previous workspace
+bindsym $mod+o workspace back_and_forth
+
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
