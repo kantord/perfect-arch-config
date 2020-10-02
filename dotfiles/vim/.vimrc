@@ -47,6 +47,7 @@ Plug 'markonm/traces.vim'
 Plug 'ledger/vim-ledger'
 Plug 'deviantfero/wpgtk.vim'
 Plug 'majutsushi/tagbar'
+Plug 'vimwiki/vimwiki'
 
 " Denite
 Plug 'neoclide/coc-denite'
@@ -133,7 +134,7 @@ let g:user_emmet_settings = {
 let g:neosnippet#enable_completed_snippet = 1
 
 " Transparent background
-colorscheme wpgtk
+colorscheme wpgtkAlt
 hi Normal guibg=NONE ctermbg=NONE
 
 "set cursorline
