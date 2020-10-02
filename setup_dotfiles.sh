@@ -19,3 +19,4 @@
 ./stow.sh status-one-liner
 ./stow.sh ignore
 ./stow.sh taskwarrior
+./stow.sh kitty
