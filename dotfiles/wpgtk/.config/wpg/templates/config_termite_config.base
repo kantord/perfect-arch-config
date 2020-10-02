@@ -4,7 +4,7 @@
 #bold_is_bright = true
 #clickable_url = true
 #dynamic_title = true
-font = Iosevka Nerd Font Light 10
+font = Iosevka Nerd Font Regular 12
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
@@ -49,7 +49,7 @@ scrollback_lines = 10000
 #background = #3f3f3f
 
 # 20% background transparency (requires a compositor)
-background = {color8.rgba}
+background = {color0.rgba}
 
 # If unset, will reverse foreground and background
 ;highlight = #2f2f2f
