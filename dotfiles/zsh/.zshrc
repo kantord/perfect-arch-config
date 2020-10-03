@@ -106,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 source /usr/share/nvm/init-nvm.sh
 
 
-alias tl="task list"
+alias tl="task overdue"
 alias td="task done"
 
 export BAT_THEME="ansi-dark"

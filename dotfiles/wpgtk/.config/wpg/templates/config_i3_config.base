@@ -35,14 +35,14 @@ bindsym $mod+Escape exec $tools/i3-env-desktop.sh
 bindsym $mod+F1 exec $tools/shortcuts/shortcut_menu.sh
 bindsym $mod+F2 exec i3-layout-manager
 bindsym $mod+F5 exec $tools/wallpaper_picker.sh
-bindsym $mod+F6 exec bash -c "wpg -m && killall -USR1 termite && /home/kdani/repos/perfect-arch-config/set_lockscreen.sh"
+bindsym $mod+F6 exec bash -c "wpg -m && /home/kdani/repos/perfect-arch-config/set_lockscreen.sh"
 bindsym $mod+F4 exec --no-startup-id "$tools/restart_gui.sh grayscale &>> /tmp/date_logs
 bindsym $mod+F7 exec $tools/monitor_mode_picker.sh
 bindsym $mod+F8 exec rofi-bluetooth
 bindsym $mod+minus exec ~/repos/i3-env/i3-env ~/repos/i3-yarn/i3-yarn
 bindsym $mod+p exec ~/repos//i3-env/i3-env-rofi
 bindsym $mod+c exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{{cmd}}'
-bindsym $mod+Return exec ~/repos/i3-env/i3-env termite
+bindsym $mod+Return exec ~/repos/i3-env/i3-env kitty
 bindsym $mod+q exec splatmoji type
 bindsym $mod+m exec $tools/i3_msg_rofi.sh
 bindsym $mod+Insert exec $tools/password-management/rofipassmenu.sh
@@ -416,7 +416,7 @@ exec --no-startup-id redshift -l geoclue2 &
 exec --no-startup-id polybar -r example &
 
 # Floating Calculator
-bindsym $mod+Shift+P exec termite --class "Floating Calculator" -e "ipython" &
+bindsym $mod+Shift+P exec kitty --class "Floating Calculator" -e "ipython" &
 for_window [class="^Floating Calculator$"] floating enable
 for_window [class="Gvim"] floating enable
 for_window [tiling] move position center
