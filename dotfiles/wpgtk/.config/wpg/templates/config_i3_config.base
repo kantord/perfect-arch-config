@@ -405,10 +405,11 @@ bindsym $mod+r mode "resize"
 gaps inner 20
 gaps bottom 20
 new_window none
-new_window pixel 1
-new_float pixel 1
+new_window pixel 2
+new_float pixel 2
 smart_borders on
 
+exec i3-gnome-pomodoro daemon 1 2 9 10 --nagbar &
 exec --no-startup-id compton --config $tools/dotfiles/compton/.config/compton/compton.conf &
 exec --no-startup-id dex -ae i3
 exec --no-startup-id $tools/custom_keyboard.sh
@@ -449,4 +450,3 @@ exec --no-startup-id $tools/start_polybar.sh &
 exec --no-startup-id $tools/restart_gui.sh &
 exec --no-startup-id sleep 1.2; $tools/wp_init.sh &
 exec --no-startup-id ibus-daemon -d -r &
-exec --no-startup-id greenclip daemon &
