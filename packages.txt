@@ -181,6 +181,7 @@ ripgrep
 rofi
 rofi-bluetooth-git
 rofi-calc
+rofi-pass
 rsync
 ruby
 screen
