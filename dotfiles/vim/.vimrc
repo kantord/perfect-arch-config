@@ -30,6 +30,7 @@ Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
 Plug 'tpope/vim-fugitive'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim'
 "Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 "Plug 'jiangmiao/auto-pairs'
@@ -37,7 +38,6 @@ Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'dkarter/bullets.vim'
 "Plug 'wellle/context.vim'
-Plug 'majutsushi/tagbar'
 Plug 'iberianpig/tig-explorer.vim'
 Plug 'metakirby5/codi.vim'
 Plug 'kizza/actionmenu.nvim'
@@ -48,6 +48,7 @@ Plug 'ledger/vim-ledger'
 Plug 'deviantfero/wpgtk.vim'
 Plug 'majutsushi/tagbar'
 Plug 'vimwiki/vimwiki'
+Plug 'iamcco/coc-actions'
 
 " Denite
 Plug 'neoclide/coc-denite'
@@ -94,7 +95,7 @@ call plug#end()
 " Overview mode
 function OverviewMode()
    :CocCommand explorer
-   :TagbarToggle
+   ":TagbarToggle
 endfunction
 map <C-K><C-B> :exec OverviewMode()<CR>
 
@@ -137,9 +138,6 @@ let g:neosnippet#enable_completed_snippet = 1
 colorscheme wpgtkAlt
 hi Normal guibg=NONE ctermbg=NONE
 
-"set cursorline
-hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE
-
 let g:ctrlp_show_hidden = 1
 
 :set number relativenumber
@@ -169,10 +167,9 @@ hi! GitGutterChange ctermbg=NONE ctermfg=Blue
 hi! GitGutterDelete ctermbg=NONE ctermfg=Red
 hi! GitGutterChangeDelete ctermbg=NONE ctermfg=Yellow
 
-" Remove background
-hi LineNr ctermbg=NONE
+" Line number looks
+hi LineNr ctermbg=NONE ctermfg=9
 hi SignColumn ctermbg=NONE
-hi VertSplit ctermbg=NONE
 hi CursorLineNr ctermbg=NONE ctermfg=7
 
 
@@ -209,10 +206,9 @@ set autoread " Reload file when it has been changed externally.
 " Custom built status-bar
 set fillchars+=vert:│,
 set fillchars+=stl:─,stlnc:─
-autocmd ColorScheme * highlight VertSplit cterm=NONE ctermfg=Green ctermbg=NONE
-hi VertSplit cterm=NONE
-hi StatusLine ctermbg=NONE cterm=NONE guibg=red
-hi StatusLineNC ctermbg=NONE cterm=NONE guibg=green
+highlight VertSplit ctermfg=9 ctermbg=NONE cterm=NONE
+hi StatusLine ctermbg=NONE cterm=NONE guibg=red ctermfg=9
+hi StatusLineNC ctermbg=NONE cterm=NONE guibg=green ctermfg=9
 
 set statusline=────
 set statusline+=%#LineNr#
@@ -246,10 +242,6 @@ autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 noexpandtab
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 
 
-" Color scheme fixes
-hi LineNr ctermfg=Gray
-hi CursorLineNr ctermfg=White
-
 " Flag useless whitespace
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
@@ -261,10 +253,10 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 
 hi default CocUnderline    cterm=underline 
-hi default CocErrorSign    ctermfg=LightRed     
-hi default CocWarningSign  ctermfg=LightRed   
-hi default CocInfoSign     ctermfg=LightRed  
-hi default CocHintSign     ctermfg=LightRed    
+hi default CocErrorSign    ctermfg=9     
+hi default CocWarningSign  ctermfg=9   
+hi default CocInfoSign     ctermfg=9  
+hi default CocHintSign     ctermfg=9    
 hi default CocSelectedText ctermfg=Red     
 hi default CocCodeLens     ctermfg=Black    
 hi default link CocErrorFloat       CocErrorSign
@@ -332,7 +324,7 @@ map <C-c> :call Commit()<CR>
 let g:fzf_preview_window = 'right:35%'
 nmap <silent> <leader>h :History<CR>
 nmap <silent> <C-P> :GFiles<CR>
-nmap <silent> <leader>p :GFiles<CR>
+nmap <silent> <leader>p :Files<CR>
 nmap <silent> <leader>g :GFiles?<CR>
 nmap <silent> <leader>c :Commits<CR>
 nmap <silent> <leader>o :Tags<CR>
@@ -340,47 +332,18 @@ nmap <silent> <leader>s :Snippets<CR>
 nmap <leader>g :Rg<CR>
 nmap <leader>* :Rg <C-R><C-W><CR>
 
-" ACTION: Find: Usages of tag under the cursor	
 nmap <leader>u :Tags ^<C-R><C-W><CR>
 
-" ACTION: Go to: Definition
 nmap <silent> gd <Plug>(coc-definition)
 
-" ACTION: Go to: Type definition
 nmap <silent> gy <Plug>(coc-type-definition)
 
-" ACTION: Go to: Implementation
 nmap <silent> gi <Plug>(coc-implementation)
 
-" ACTION: Go to: References
 nmap <silent> gr <Plug>(coc-references)
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
-
-
-" Generate ~/.vim_actions
-:call system('/home/kdani/repos/perfect-arch-config/dotfiles/vim/generate_vim_actions.sh')
-
-let s:TYPE = {'dict': type({}), 'funcref': type(function('call')), 'string': type(''), 'list': type([])}
-
-if v:version >= 704
-  function! s:function(name)
-    return function(a:name)
-  endfunction
-else
-  function! s:function(name)
-    " By Ingo Karkat
-    return function(substitute(a:name, '^s:', matchstr(expand('<sfile>'), '<SNR>\d\+_\zefunction$'), ''))
-  endfunction
-endif
-
-function! s:run_action(line)
-  let key = matchstr(a:line, '\t.*$')
-  redraw
-  "call normal(key)
-  execute "normal ".key
-endfunction
 
 let g:rainbow_active = 1
 
@@ -482,9 +445,6 @@ nmap <silent> <leader>tg :TestVisit<CR>
 let test#strategy = "vimterminal"
 let g:test#javascript#runner = 'jest'
 
-xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
-
 " denite
 
 " Denite mappings
@@ -509,3 +469,12 @@ call denite#custom#source('_', 'matchers', ['matcher/fruzzy'])
 let g:fruzzy#usenative = 1
 
 map <leader><L> :Denite coc-command coc-diagnostic coc-symbols commands command_history -start-filter <CR>
+
+set nowrap
+
+" Remap for do codeAction of selected region
+function! s:cocActionsOpenFromSelected(type) abort
+  execute 'CocCommand actions.open ' . a:type
+endfunction
+xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
+nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
