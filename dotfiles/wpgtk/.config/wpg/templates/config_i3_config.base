@@ -45,7 +45,7 @@ bindsym $mod+c exec rofi -modi "clipboard:greenclip print" -show clipboard -run-
 bindsym $mod+Return exec ~/repos/i3-env/i3-env kitty
 bindsym $mod+q exec splatmoji type
 bindsym $mod+m exec $tools/i3_msg_rofi.sh
-bindsym $mod+Insert exec $tools/password-management/rofipassmenu.sh
+bindsym $mod+Insert exec rofi-pass
 bindsym $mod+Shift+w exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
 
 bindsym $mod+n exec betterlockscreen -l
