@@ -108,6 +108,9 @@ bindsym $mod+f exec i3-easyfocus --all \
   --color-focused-fg "{color15.strip}" \
   --color-unfocused-fg "{color15.strip}"
 
+# toggle fullscreen mode
+bindsym $mod+u fullscreen toggle
+
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
