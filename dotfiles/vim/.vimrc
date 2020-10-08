@@ -49,6 +49,7 @@ Plug 'deviantfero/wpgtk.vim'
 Plug 'majutsushi/tagbar'
 Plug 'vimwiki/vimwiki'
 Plug 'iamcco/coc-actions'
+Plug 'dbmrq/vim-ditto'
 
 " Denite
 Plug 'neoclide/coc-denite'
@@ -478,3 +479,9 @@ function! s:cocActionsOpenFromSelected(type) abort
 endfunction
 xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
 nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
+
+autocmd BufWritePre {**/__test__/*,**/__tests__/*,*.test.*} :%! sed 's/it(\(.*\)should \?/it(\1/'
+
+" Vertical column
+set colorcolumn=79
+highlight ColorColumn ctermbg=8
