@@ -50,6 +50,7 @@ Plug 'majutsushi/tagbar'
 Plug 'vimwiki/vimwiki'
 Plug 'iamcco/coc-actions'
 Plug 'dbmrq/vim-ditto'
+Plug 'wikitopian/hardmode'
 
 " Denite
 Plug 'neoclide/coc-denite'
