@@ -485,4 +485,4 @@ autocmd BufWritePre {**/__test__/*,**/__tests__/*,*.test.*} :%! sed 's/it(\(.*\)
 
 " Vertical column
 set colorcolumn=79
-highlight ColorColumn ctermbg=8
+highlight ColorColumn ctermbg=8 ctermfg=7
