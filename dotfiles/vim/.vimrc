@@ -51,6 +51,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'iamcco/coc-actions'
 Plug 'dbmrq/vim-ditto'
 Plug 'wikitopian/hardmode'
+Plug 'termhn/i3-vim-nav'
 
 " Denite
 Plug 'neoclide/coc-denite'
@@ -486,3 +487,9 @@ autocmd BufWritePre {**/__test__/*,**/__tests__/*,*.test.*} :%! sed 's/it(\(.*\)
 " Vertical column
 set colorcolumn=79
 highlight ColorColumn ctermbg=8 ctermfg=7
+
+" i3 integration
+nnoremap <silent> <c-l> :call Focus('right', 'l')<CR>
+nnoremap <silent> <c-h> :call Focus('left', 'h')<CR>
+nnoremap <silent> <c-k> :call Focus('up', 'k')<CR>
+nnoremap <silent> <c-j> :call Focus('down', 'j')<CR>

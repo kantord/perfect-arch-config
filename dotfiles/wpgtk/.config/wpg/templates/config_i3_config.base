@@ -73,6 +73,10 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
+#bindsym --release $mod+h exec --no-startup-id "i3-vim-nav h"
+#bindsym --release $mod+j exec --no-startup-id "i3-vim-nav j"
+#bindsym --release $mod+k exec --no-startup-id "i3-vim-nav k"
+#bindsym --release $mod+l exec --no-startup-id "i3-vim-nav l"
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left

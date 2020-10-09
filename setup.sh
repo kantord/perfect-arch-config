@@ -61,3 +61,6 @@ systemctl start cronie.service
 
 # Install devicons for ranger
 rm -rf ~/.config/ranger/plugins/ranger_devicons && git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+
+# Install go dependencies
+go get -u github.com/termhn/i3-vim-nav
