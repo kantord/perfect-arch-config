@@ -73,6 +73,10 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
+#bindsym --release $mod+h exec --no-startup-id "i3-vim-nav h"
+#bindsym --release $mod+j exec --no-startup-id "i3-vim-nav j"
+#bindsym --release $mod+k exec --no-startup-id "i3-vim-nav k"
+#bindsym --release $mod+l exec --no-startup-id "i3-vim-nav l"
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -107,6 +111,9 @@ bindsym $mod+f exec i3-easyfocus --all \
   --color-urgent-fg "{color15.strip}" \
   --color-focused-fg "{color15.strip}" \
   --color-unfocused-fg "{color15.strip}"
+
+# toggle fullscreen mode
+bindsym $mod+u fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
