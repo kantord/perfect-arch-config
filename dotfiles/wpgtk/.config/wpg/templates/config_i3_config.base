@@ -405,8 +405,8 @@ bindsym $mod+r mode "resize"
 gaps inner 20
 gaps bottom 20
 new_window none
-new_window pixel 2
-new_float pixel 2
+new_window pixel 3
+new_float pixel 3
 smart_borders on
 
 exec i3-gnome-pomodoro daemon 1 2 9 10 --nagbar &
@@ -440,7 +440,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightne
 
 
 # Fancy stuff
-client.focused          #{color1.strip} #{color8.strip}C7 {color15} #00DA8E #{color1.strip}
+client.focused          #{color0.strip} #{color8.strip}C7 {color15} #00DA8E #{color1.strip}
 client.focused_inactive        #{color8.strip}88 #{color8.strip}00 {color15} #292d2e #{color8.strip}88
 client.unfocused        #{color1.strip} #{color8.strip}00 {color15} #292d2e #{color8.strip}88
 client.urgent          #{color2.strip} #{color2.strip}CC {color8} #00DA8E #{color2.strip}
