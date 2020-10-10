@@ -171,6 +171,7 @@ python-greenlet
 python-jedi
 python-pip
 python-pipenv
+python-pipx
 python-requests-oauthlib
 qbittorrent
 qt5-styleplugins
