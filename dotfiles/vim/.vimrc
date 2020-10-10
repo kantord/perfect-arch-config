@@ -442,7 +442,7 @@ nmap <silent> <leader>ts :TestSuite<CR>
 nmap <silent> <leader>tl :TestLast<CR>
 nmap <silent> <leader>tg :TestVisit<CR>
 
-let test#strategy = "vimterminal"
+let test#strategy = "basic"
 let g:test#javascript#runner = 'jest'
 
 " denite
