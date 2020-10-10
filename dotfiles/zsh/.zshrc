@@ -130,3 +130,4 @@ function gff() {
 }
 
 alias tt="tig status"
+export EDITOR=nvim
