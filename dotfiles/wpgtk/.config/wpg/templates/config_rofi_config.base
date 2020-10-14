@@ -20,6 +20,8 @@ rofi.ssh-command:                    {{terminal}} -e {{ssh-client}} {{host}}
 rofi.run-command:                    {{cmd}}
 rofi.parse-hosts:                    true
 rofi.matching:                       fuzzy
+rofi.sort-method:                    fzf
+rofi.sort:                    	     true
 rofi.separator-style:                none
 rofi.scrollbar-width:                0
 rofi.kb-mode-next:                   Shift+Right,Control+Tab,Alt+l
