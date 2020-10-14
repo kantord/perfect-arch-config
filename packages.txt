@@ -47,8 +47,8 @@ file
 filesystem
 findutils
 firefox
-firefox-extension-textern-native-git
 firefox-tridactyl
+firefox-tridactyl-native
 firefox-ublock-origin
 firefox-vim-vixen
 flex
@@ -172,6 +172,7 @@ python-jedi
 python-pip
 python-pipenv
 python-pipx
+python-poetry
 python-requests-oauthlib
 qbittorrent
 qt5-styleplugins
