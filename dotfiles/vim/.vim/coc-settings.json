@@ -13,10 +13,7 @@
   "diagnostic.errorSign": "",
   "diagnostic.warningSign": "",
   "diagnostic.infoSign": "",
-  "cSpell.userWords": [
-    "Nerdfont",
-    "kiwicom"
-  ],
+  "cSpell.userWords": ["Nerdfont", "kiwicom"],
   "prettier.onlyUseLocalVersion": true,
   "coc.preferences.formatOnType": false,
   "prettier.eslintIntegration": true,
