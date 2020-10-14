@@ -52,6 +52,7 @@ Plug 'iamcco/coc-actions'
 Plug 'dbmrq/vim-ditto'
 Plug 'wikitopian/hardmode'
 Plug 'termhn/i3-vim-nav'
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
 " Denite
 Plug 'neoclide/coc-denite'
@@ -493,3 +494,13 @@ nnoremap <silent> <c-l> :call Focus('right', 'l')<CR>
 nnoremap <silent> <c-h> :call Focus('left', 'h')<CR>
 nnoremap <silent> <c-k> :call Focus('up', 'k')<CR>
 nnoremap <silent> <c-j> :call Focus('down', 'j')<CR>
+
+if exists('g:started_by_firenvim')
+  set noshowmode
+  set noruler
+  set laststatus=0
+  set noshowcmd
+  colorscheme github
+  set background=light
+  set nonumber
+endif
