@@ -53,6 +53,7 @@ Plug 'dbmrq/vim-ditto'
 Plug 'wikitopian/hardmode'
 Plug 'termhn/i3-vim-nav'
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+Plug 'svermeulen/vim-yoink'
 
 " Denite
 Plug 'neoclide/coc-denite'
@@ -262,7 +263,7 @@ hi default CocWarningSign  ctermfg=9
 hi default CocInfoSign     ctermfg=9  
 hi default CocHintSign     ctermfg=9    
 hi default CocSelectedText ctermfg=Red     
-hi default CocCodeLens     ctermfg=Black    
+hi default CocCodeLens     ctermfg=8
 hi default link CocErrorFloat       CocErrorSign
 hi default link CocWarningFloat     CocWarningSign
 hi default link CocInfoFloat        CocInfoSign
@@ -273,7 +274,7 @@ hi default link CocInfoHighlight    CocUnderline
 hi default link CocHintHighlight    CocUnderline
 hi default link CocListMode ModeMsg
 hi default link CocListPath Comment
-hi CocFloating ctermbg=Black
+hi CocFloating ctermbg=8
 hi default link CocHighlightText  CursorColumn
 
 hi default link CocHoverRange     Search
@@ -327,7 +328,7 @@ map <C-c> :call Commit()<CR>
 
 let g:fzf_preview_window = 'right:35%'
 nmap <silent> <leader>h :History<CR>
-nmap <silent> <C-P> :GFiles<CR>
+nmap <silent> <C-G> :GFiles<CR>
 nmap <silent> <leader>p :Files<CR>
 nmap <silent> <leader>g :GFiles?<CR>
 nmap <silent> <leader>c :Commits<CR>
@@ -504,3 +505,11 @@ if exists('g:started_by_firenvim')
   set background=light
   set nonumber
 endif
+
+
+" Clipboard management
+nmap <c-n> <plug>(YoinkPostPasteSwapBack)
+nmap <c-p> <plug>(YoinkPostPasteSwapForward)
+
+nmap p <plug>(YoinkPaste_p)
+nmap P <plug>(YoinkPaste_P)
