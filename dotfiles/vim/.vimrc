@@ -33,7 +33,6 @@ Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'
 "Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-"Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'dkarter/bullets.vim'
@@ -54,6 +53,10 @@ Plug 'wikitopian/hardmode'
 Plug 'termhn/i3-vim-nav'
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 Plug 'svermeulen/vim-yoink'
+Plug 'justinmk/vim-sneak'
+Plug 'rstacruz/vim-hyperstyle'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-sleuth'
 
 " Denite
 Plug 'neoclide/coc-denite'
@@ -80,7 +83,6 @@ Plug 'fannheyward/coc-marketplace', {'do': 'yarn install --frozen-lockfile'}
 Plug 'iamcco/coc-webpack', {'do': 'yarn install --frozen-lockfile'}
 Plug 'iamcco/coc-spell-checker', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
 
 
 " Install browser extension here
