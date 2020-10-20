@@ -28,6 +28,7 @@ cronie
 cryptsetup
 ctags
 darktable
+ddccontrol
 deja-dup
 device-mapper
 dex
