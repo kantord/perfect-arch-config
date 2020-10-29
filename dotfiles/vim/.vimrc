@@ -53,10 +53,13 @@ Plug 'wikitopian/hardmode'
 Plug 'termhn/i3-vim-nav'
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 Plug 'svermeulen/vim-yoink'
-Plug 'justinmk/vim-sneak'
+" Plug 'justinmk/vim-sneak'
 Plug 'rstacruz/vim-hyperstyle'
-Plug 'tpope/vim-endwise'
+"Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-sleuth'
+Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
 " Denite
 Plug 'neoclide/coc-denite'
@@ -515,3 +518,9 @@ nmap <c-p> <plug>(YoinkPostPasteSwapForward)
 
 nmap p <plug>(YoinkPaste_p)
 nmap P <plug>(YoinkPaste_P)
+
+nmap <Leader>wp :Files ~/vimwiki/<CR>
+
+" Focus mode
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
