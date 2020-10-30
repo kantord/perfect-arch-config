@@ -526,4 +526,6 @@ nmap <Leader>wp :Files ~/vimwiki/<CR>
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
-nmap <a-k> :GitMessenger<CR>
+" Preview history of the line
+nmap <a-k> <Plug>(git-messenger)
+let g:git_messenger_include_diff="current"
