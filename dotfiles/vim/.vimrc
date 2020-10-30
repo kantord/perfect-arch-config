@@ -60,6 +60,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'rhysd/git-messenger.vim'
 
 " Denite
 Plug 'neoclide/coc-denite'
@@ -524,3 +525,5 @@ nmap <Leader>wp :Files ~/vimwiki/<CR>
 " Focus mode
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
+
+nmap <a-k> :GitMessenger<CR>
