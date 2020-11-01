@@ -47,7 +47,6 @@ Plug 'ledger/vim-ledger'
 Plug 'deviantfero/wpgtk.vim'
 Plug 'majutsushi/tagbar'
 Plug 'vimwiki/vimwiki'
-Plug 'iamcco/coc-actions'
 Plug 'dbmrq/vim-ditto'
 Plug 'wikitopian/hardmode'
 Plug 'termhn/i3-vim-nav'
@@ -87,6 +86,8 @@ Plug 'fannheyward/coc-marketplace', {'do': 'yarn install --frozen-lockfile'}
 Plug 'iamcco/coc-webpack', {'do': 'yarn install --frozen-lockfile'}
 Plug 'iamcco/coc-spell-checker', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-stylelint', {'do': 'yarn install --frozen-lockfile'}
+Plug 'iamcco/coc-actions'
 
 
 " Install browser extension here
@@ -529,3 +530,12 @@ autocmd! User GoyoLeave Limelight!
 " Preview history of the line
 nmap <a-k> <Plug>(git-messenger)
 let g:git_messenger_include_diff="current"
+function! s:setup_git_messenger_popup() abort
+    " Your favorite configuration here
+
+    " For example, set go back/forward history to <C-o>/<C-i>
+    nmap <buffer><C-o> o
+    nmap <buffer><C-i> O
+endfunction
+autocmd FileType gitmessengerpopup call <SID>setup_git_messenger_popup()
+

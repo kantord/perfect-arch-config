@@ -108,7 +108,6 @@ jfsutils
 jpegoptim
 jq
 jsoncpp
-keybase-gui
 khal
 kitty
 lazygit
