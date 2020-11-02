@@ -60,6 +60,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'rhysd/git-messenger.vim'
+Plug 'AndrewRadev/splitjoin.vim'
 
 " Denite
 Plug 'neoclide/coc-denite'
