@@ -45,7 +45,7 @@
     "typescript",
     "typescriptreact"
   ],
-"suggest.completionItemKindLabels": {
+  "suggest.completionItemKindLabels": {
     "function": "\uf794",
     "method": "\uf6a6",
     "variable": "\uf71b",
