@@ -29,3 +29,5 @@ include /usr/share/doc/task/rc/dark-16.theme
 #include /usr/share/doc/task/rc/solarized-light-256.theme
 #include /usr/share/doc/task/rc/no-color.theme
 
+report.simple.sort=project+\/,entry+
+report.overdue.sort=project+\/,entry+
