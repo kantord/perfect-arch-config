@@ -40,7 +40,12 @@ bindsym $mod+F4 exec --no-startup-id "$tools/restart_gui.sh grayscale &>> /tmp/d
 bindsym $mod+F7 exec $tools/monitor_mode_picker.sh
 bindsym $mod+F8 exec rofi-bluetooth
 bindsym $mod+minus exec ~/repos/i3-env/i3-env ~/repos/i3-yarn/i3-yarn
-bindsym $mod+p exec ~/repos//i3-env/i3-env-rofi
+bindsym $mod+p exec ~/repos/i3-env/i3-env-rofi
+bindsym Mod1+Tab exec rofi -show "window"
+# bindsym --release Mod1+h exec --no-startup-id xdotool key --clearmodifiers Left
+# bindsym --release Mod1+j exec --no-startup-id xdotool key --clearmodifiers Down
+# bindsym --release Mod1+k exec --no-startup-id xdotool key --clearmodifiers Up
+# bindsym --release Mod1+l exec --no-startup-id xdotool key --clearmodifiers Right
 bindsym $mod+c exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{{cmd}}'
 bindsym $mod+Return exec ~/repos/i3-env/i3-env kitty
 bindsym $mod+q exec splatmoji type
@@ -160,6 +165,8 @@ bindsym $mod+0 workspace number $ws10
 
 # Go to previous workspace
 bindsym $mod+o workspace back_and_forth
+bindsym $mod+i workspace next
+bindsym $mod+Shift+i workspace prev
 
 
 # move focused container to workspace
@@ -409,12 +416,12 @@ mode "resize-9" {{
 
 bindsym $mod+r mode "resize"
 
+smart_gaps on
 gaps inner 20
-gaps bottom 20
 new_window none
 new_window pixel 3
 new_float pixel 3
-smart_borders on
+smart_borders no_gaps
 
 exec i3-gnome-pomodoro daemon 1 2 9 10 --nagbar &
 exec --no-startup-id compton --config $tools/dotfiles/compton/.config/compton/compton.conf &

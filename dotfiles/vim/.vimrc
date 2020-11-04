@@ -89,6 +89,7 @@ Plug 'iamcco/coc-spell-checker', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-stylelint', {'do': 'yarn install --frozen-lockfile'}
 Plug 'iamcco/coc-actions'
+Plug 'neoclide/coc-yank'
 
 
 " Install browser extension here

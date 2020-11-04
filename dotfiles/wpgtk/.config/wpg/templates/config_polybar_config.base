@@ -17,8 +17,8 @@
 ;==========================================================
 
 [colors]
-;background = ${{xrdb:color0:#222}}
-background = #00{color0.strip}
+background = ${{xrdb:color8:#222}}
+;background = #dd{color8.strip}
 background-alt = #444
 ;foreground = ${{xrdb:color7:#222}}
 foreground = {color15}
@@ -35,7 +35,7 @@ offset-x = 0
 offset-y = 0
 radius = 0
 fixed-center = false
-bottom = true
+bottom = false
 
 background = ${{colors.background}}
 foreground = ${{colors.foreground}}
@@ -65,12 +65,12 @@ modules-right = task pulseaudio battery ibus date time
 
 tray-position = none
 tray-padding = 2
-;tray-background = #0063ff
+tray-background = #0063ff
 
 ;wm-restack = bspwm
 wm-restack = i3
 
-override-redirect = true
+override-redirect = false
 
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
