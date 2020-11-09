@@ -61,6 +61,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'rhysd/git-messenger.vim'
 Plug 'AndrewRadev/splitjoin.vim'
+" Shows number of search matches and position of current match
+Plug 'osyo-manga/vim-anzu'
 
 " Denite
 Plug 'neoclide/coc-denite'
@@ -88,8 +90,9 @@ Plug 'iamcco/coc-webpack', {'do': 'yarn install --frozen-lockfile'}
 Plug 'iamcco/coc-spell-checker', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-stylelint', {'do': 'yarn install --frozen-lockfile'}
-Plug 'iamcco/coc-actions'
-Plug 'neoclide/coc-yank'
+Plug 'iamcco/coc-actions', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-yank', {'do': 'yarn install --frozen-lockfile'}
+
 
 
 " Install browser extension here
