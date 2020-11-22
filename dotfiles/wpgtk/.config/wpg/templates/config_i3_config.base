@@ -438,7 +438,8 @@ for_window [tiling] move position center
 for_window [class="^Peek"] floating enable
 
 # Screenshots
-bindsym --release $mod+Print exec scrot -s -e 'mv $f ~/pics/screenshots'
+# bindsym --release $mod+Print exec scrot -s -e 'mv $f ~/pics/screenshots'
+bindsym --release $mod+Print exec maim ~/pics/screenshots/$(date -I'minutes').png -s -b 10 -r wiggle
 bindsym $mod+Shift+Print exec scrot -u -e 'mv $f ~/pics/screenshots'
 
 

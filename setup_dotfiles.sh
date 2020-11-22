@@ -20,3 +20,5 @@
 ./stow.sh ignore
 ./stow.sh taskwarrior
 ./stow.sh kitty
+./stow.sh tig
+./stow.sh slop
