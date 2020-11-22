@@ -47,22 +47,25 @@ Plug 'ledger/vim-ledger'
 Plug 'deviantfero/wpgtk.vim'
 Plug 'majutsushi/tagbar'
 Plug 'vimwiki/vimwiki'
+Plug '907th/vim-auto-save'
 Plug 'dbmrq/vim-ditto'
-Plug 'wikitopian/hardmode'
 Plug 'termhn/i3-vim-nav'
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 Plug 'svermeulen/vim-yoink'
-" Plug 'justinmk/vim-sneak'
+"Plug 'justinmk/vim-sneak'
 Plug 'rstacruz/vim-hyperstyle'
 "Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-sleuth'
-Plug 'jiangmiao/auto-pairs'
+"Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'rhysd/git-messenger.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 " Shows number of search matches and position of current match
 Plug 'osyo-manga/vim-anzu'
+"Plug 'ruanyl/coverage.vim'
+Plug 'yggdroot/indentline'
+Plug 'raimondi/delimitmate'
 
 " Denite
 Plug 'neoclide/coc-denite'
@@ -92,6 +95,7 @@ Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-stylelint', {'do': 'yarn install --frozen-lockfile'}
 Plug 'iamcco/coc-actions', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-yank', {'do': 'yarn install --frozen-lockfile'}
+Plug 'fannheyward/coc-react-refactor', {'do': 'yarn install --frozen-lockfile'} 
 
 
 
@@ -105,6 +109,9 @@ Plug 'ruanyl/vim-gh-line'
 Plug 'mhinz/vim-startify'
 Plug 'krolow/readmestart.vim'
 Plug 'cormacrelf/vim-colors-github'
+" The bang version will try to download the prebuilt binary if cargo does not exist.
+Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
+Plug 'voldikss/vim-floaterm'
 
 call plug#end()
 
@@ -325,15 +332,22 @@ function! g:Blame()
     :Silent :!tig blame %
 endfunction
 
+
+function! g:GitStatus()
+    FloatermNew tig status
+endfunction
+
+
+
 function! g:Commit()
-    :Silent :!git-cz
+    FloatermNew git-cz
 endfunction
 
 
 
 map <C-a> :TigBlame<CR>
 nnoremap <leader><C-A> :TigOpenProjectRootDir<CR>
-map <C-s> :TigStatus<CR>
+map <C-s> :call GitStatus()<CR>
 map <C-c> :call Commit()<CR>
 :Silent :!stty -ixon -ixoff
 
@@ -463,8 +477,15 @@ let test#strategy = "basic"
 let g:test#javascript#runner = 'jest'
 
 " denite
+let s:denite_options = {
+      \ 'split': 'floating',
+      \ }
+fun s:set_denite_options()
+  call denite#custom#option('_', s:denite_options)
+endfun
+call s:set_denite_options()
 
-" Denite mappings
+" Define mappings
 autocmd FileType denite call s:denite_my_settings()
 function! s:denite_my_settings() abort
   nnoremap <silent><buffer><expr> <CR>
@@ -481,11 +502,14 @@ function! s:denite_my_settings() abort
   \ denite#do_map('toggle_select').'j'
 endfunction
 
-" Use fuzzy matching for denite
-call denite#custom#source('_', 'matchers', ['matcher/fruzzy'])
-let g:fruzzy#usenative = 1
+call denite#custom#var('file_rec', 'command', ['rg', '--files'])
+call denite#custom#var('grep', 'command', ['rg'])
+call denite#custom#var('grep', 'recursive_opts', [])
+call denite#custom#var('grep', 'final_opts', [])
+call denite#custom#var('grep', 'separator', ['--'])
+call denite#custom#var('greo', 'default_opts', ['--vimgrep', '--no-heading'])
 
-map <leader><L> :Denite coc-command coc-diagnostic coc-symbols commands command_history -start-filter <CR>
+nmap <silent> <leader>j :DeniteProjectDir tag file/rec coc-command coc-diagnostic <CR>
 
 set nowrap
 
@@ -526,7 +550,13 @@ nmap <c-p> <plug>(YoinkPostPasteSwapForward)
 nmap p <plug>(YoinkPaste_p)
 nmap P <plug>(YoinkPaste_P)
 
+" Vimwiki
 nmap <Leader>wp :Files ~/vimwiki/<CR>
+let g:auto_save = 0
+augroup ft_vimwiki
+  au!
+  au FileType vimwiki let b:auto_save = 1
+augroup END
 
 " Focus mode
 autocmd! User GoyoEnter Limelight
@@ -544,3 +574,21 @@ function! s:setup_git_messenger_popup() abort
 endfunction
 autocmd FileType gitmessengerpopup call <SID>setup_git_messenger_popup()
 
+
+" Sneak config
+"map f <Plug>Sneak_f
+"map F <Plug>Sneak_F
+"map t <Plug>Sneak_t
+"map T <Plug>Sneak_T
+"let g:sneak#label = 1
+ "2-character Sneak (default)
+"nmap b <Plug>Sneak_s
+"nmap b <Plug>Sneak_S
+ "visbal-mode
+"xmap b <Plug>Sneak_s
+"xmap b <Plug>Sneak_S
+ "opebator-pending-mode
+"omap b <Plug>Sneak_s
+"omap b <Plug>Sneak_S
+"nmap b <Plug>SneakLabel_s
+"nmap b <Plug>SneakLabel_S
