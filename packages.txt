@@ -21,7 +21,6 @@ bluez-utils
 bzip2
 cheese
 cloc
-compton-tryone-git
 coreutils
 cowsay
 cronie
@@ -74,6 +73,7 @@ gnome-control-center
 gnome-settings-daemon
 gnome-terminal
 google-chrome
+gpaint
 gpointing-device-settings
 greenclip
 grep
@@ -90,6 +90,7 @@ htop
 i3-easyfocus
 i3-env
 i3-gaps
+i3-gaps-rounded-git
 i3-gnome-pomodoro-git
 i3-layout-manager-git
 i3status
@@ -125,6 +126,7 @@ lshw
 lvm2
 lxappearance-gtk3
 m4
+maim
 make
 man-db
 man-pages
@@ -156,6 +158,7 @@ pciutils
 peek
 perl
 perl-anyevent-i3
+picom-jonaburg-git
 pkgconf
 polybar
 procps-ng
@@ -187,14 +190,17 @@ rofi-pass
 rsync
 ruby
 screen
+screenkey
 scrot
 sed
 shadow
 shotwell
 signal-desktop
 slack-desktop
+slop
 s-nail
 splatmoji-git
+stalonetray
 statnot
 stow
 sudo
@@ -228,6 +234,7 @@ virtualbox-guest-utils
 vlc
 vscode
 w3m
+watchman
 wget
 which
 wpa_supplicant
