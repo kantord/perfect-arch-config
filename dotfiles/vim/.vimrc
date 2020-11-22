@@ -592,3 +592,7 @@ autocmd FileType gitmessengerpopup call <SID>setup_git_messenger_popup()
 "omap b <Plug>Sneak_S
 "nmap b <Plug>SneakLabel_s
 "nmap b <Plug>SneakLabel_S
+
+
+" Floaterm settings
+let g:floaterm_autoclose = 1
