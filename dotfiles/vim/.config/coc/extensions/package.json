@@ -3,6 +3,7 @@
     "coc-actions": ">=1.4.3",
     "coc-bookmark": ">=1.2.6",
     "coc-browser": ">=1.2.8",
+    "coc-emoji": ">=1.2.3",
     "coc-explorer": ">=0.11.3",
     "coc-flow": ">=0.1.3",
     "coc-json": ">=1.3.2",
