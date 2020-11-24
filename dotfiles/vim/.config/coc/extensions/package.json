@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "coc-actions": ">=1.4.2",
+    "coc-bookmark": ">=1.2.6",
+    "coc-explorer": ">=0.7.27",
+    "coc-json": ">=1.2.6",
+    "coc-marketplace": ">=1.5.0",
+    "coc-python": ">=1.2.12",
+    "coc-snippets": ">=2.1.28",
+    "coc-tsserver": ">=1.5.4"
+  }
+}
