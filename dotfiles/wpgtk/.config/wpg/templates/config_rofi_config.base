@@ -37,7 +37,7 @@ rofi.fake-transparency:		     true
 rofi.theme: /home/kdani/.config/rofi/theme.rasi
 
 rofi.kb-row-up:                      Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab,Control+p
-rofi.kb-row-down:                    Down,Control+j,Control+n
+rofi.kb-row-down:                    Down,Control+j,Control+n,Alt+Tab
 rofi.kb-accept-entry:                Control+m,Return,KP_Enter
 rofi.kb-remove-to-eol:               Control+Shift+e
 rofi.kb-mode-next:                   Shift+Right,Control+Tab,Control+l
