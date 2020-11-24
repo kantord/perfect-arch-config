@@ -66,6 +66,7 @@ Plug 'osyo-manga/vim-anzu'
 "Plug 'ruanyl/coverage.vim'
 Plug 'yggdroot/indentline'
 Plug 'raimondi/delimitmate'
+Plug 'mg979/vim-visual-multi'
 
 " Denite
 Plug 'neoclide/coc-denite'
@@ -78,26 +79,6 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
-
-" coc extensions
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}
-Plug 'iamcco/coc-vimlsp', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
-Plug 'weirongxu/coc-explorer', {'do': 'yarn install --frozen-lockfile'}
-Plug 'amiralies/coc-flow', {'do': 'yarn install --frozen-lockfile'}
-Plug 'coc-extensions/coc-svelte', {'do': 'yarn install --frozen-lockfile'}
-Plug 'fannheyward/coc-marketplace', {'do': 'yarn install --frozen-lockfile'}
-Plug 'iamcco/coc-webpack', {'do': 'yarn install --frozen-lockfile'}
-Plug 'iamcco/coc-spell-checker', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-stylelint', {'do': 'yarn install --frozen-lockfile'}
-Plug 'iamcco/coc-actions', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-yank', {'do': 'yarn install --frozen-lockfile'}
-Plug 'fannheyward/coc-react-refactor', {'do': 'yarn install --frozen-lockfile'} 
-
-
 
 " Install browser extension here
 " https://github.com/voldikss/browser-source-provider
@@ -520,7 +501,7 @@ endfunction
 xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
 nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
 
-autocmd BufWritePre {**/__test__/*,**/__tests__/*,*.test.*} :%! sed 's/it(\(.*\)should \?/it(\1/'
+"autocmd BufWritePre {**/__test__/*,**/__tests__/*,*.test.*} :%! sed 's/it(\(.*\)should \?/it(\1/'
 
 " Vertical column
 set colorcolumn=79
@@ -574,25 +555,4 @@ function! s:setup_git_messenger_popup() abort
 endfunction
 autocmd FileType gitmessengerpopup call <SID>setup_git_messenger_popup()
 
-
-" Sneak config
-"map f <Plug>Sneak_f
-"map F <Plug>Sneak_F
-"map t <Plug>Sneak_t
-"map T <Plug>Sneak_T
-"let g:sneak#label = 1
- "2-character Sneak (default)
-"nmap b <Plug>Sneak_s
-"nmap b <Plug>Sneak_S
- "visbal-mode
-"xmap b <Plug>Sneak_s
-"xmap b <Plug>Sneak_S
- "opebator-pending-mode
-"omap b <Plug>Sneak_s
-"omap b <Plug>Sneak_S
-"nmap b <Plug>SneakLabel_s
-"nmap b <Plug>SneakLabel_S
-
-
-" Floaterm settings
-let g:floaterm_autoclose = 1
+source ~/.vim/config/floating_terminal.vim

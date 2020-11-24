@@ -7,3 +7,5 @@
 3. mkdir ~/repos
 4. Install yay
 5. cd repos; git clone https://github.com/kantord/perfect-arch-config.git
+
+## VIM
