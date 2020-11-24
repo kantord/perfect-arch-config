@@ -67,6 +67,7 @@ Plug 'osyo-manga/vim-anzu'
 Plug 'yggdroot/indentline'
 Plug 'raimondi/delimitmate'
 Plug 'mg979/vim-visual-multi'
+Plug 'antoinemadec/coc-fzf'
 
 " Denite
 Plug 'neoclide/coc-denite'
