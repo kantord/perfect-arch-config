@@ -20,3 +20,4 @@ dotfiles/wpgtk/.config/wpg/.current
 /yay/
 *.pyc
 dotfiles/vim/.vim/.netrwhist
+dotfiles/autorandr
