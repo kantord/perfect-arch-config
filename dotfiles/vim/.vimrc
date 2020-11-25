@@ -94,6 +94,7 @@ Plug 'cormacrelf/vim-colors-github'
 " The bang version will try to download the prebuilt binary if cargo does not exist.
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 Plug 'voldikss/vim-floaterm'
+Plug 'machakann/vim-highlightedyank'
 
 call plug#end()
 

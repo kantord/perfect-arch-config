@@ -19,3 +19,7 @@ the window list using a fuzzy finder.
 ### Autocompletion from the browser
 Install this browser extension
 https://github.com/voldikss/browser-source-provider
+
+### Yanking
+
+Thanks to `vim-highlightedyank`, the yanked region is highlighted.
