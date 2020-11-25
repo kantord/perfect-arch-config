@@ -40,6 +40,7 @@ e2fsprogs
 efibootmgr
 espeak
 fakeroot
+fd
 feh
 festival
 festival-us

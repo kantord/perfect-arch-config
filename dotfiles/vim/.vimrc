@@ -97,6 +97,9 @@ Plug 'voldikss/vim-floaterm'
 Plug 'machakann/vim-highlightedyank'
 Plug 'inside/vim-search-pulse'
 
+" Recent files for denite
+Plug 'Shougo/neomru.vim'
+
 call plug#end()
 
 
@@ -440,41 +443,70 @@ let test#strategy = "basic"
 let g:test#javascript#runner = 'jest'
 
 " denite
-let s:denite_options = {
+call denite#custom#option('_', {
+      \ 'prompt': '',
       \ 'split': 'floating',
-      \ }
-fun s:set_denite_options()
-  call denite#custom#option('_', s:denite_options)
-endfun
-call s:set_denite_options()
+      \ 'highlight_matched_char': 'Underlined',
+      \ 'highlight_matched_range': 'NormalFloat',
+      \ 'wincol': &columns / 6,
+      \ 'winwidth': &columns * 2 / 3,
+      \ 'winrow': &lines / 6,
+      \ 'winheight': &lines * 2 / 3,
+      \ 'max_dynamic_update_candidates': 100000
+      \ })
 
-" Define mappings
-autocmd FileType denite call s:denite_my_settings()
-function! s:denite_my_settings() abort
+call denite#custom#var('file/rec', 'command',
+      \ ['fd', '-H', '--full-path'])
+call denite#custom#source(
+    	\ 'file/rec', 'matchers', ['matcher/fruzzy'])
+call denite#custom#var('grep', 'command', ['rg'])
+call denite#custom#var('grep', 'default_opts',
+      \ ['--vimgrep', '--smart-case', '--no-heading'])
+call denite#custom#var('grep', 'recursive_opts', [])
+call denite#custom#var('grep', 'pattern_opt', ['--regexp'])
+call denite#custom#var('grep', 'separator', ['--'])
+call denite#custom#var('grep', 'final_opts', [])
+
+autocmd FileType denite call s:denite_settings()
+
+function! s:denite_settings() abort
   nnoremap <silent><buffer><expr> <CR>
-  \ denite#do_map('do_action')
+        \ denite#do_map('do_action')
+  nnoremap <silent><buffer><expr> <C-v>
+        \ denite#do_map('do_action', 'vsplit')
   nnoremap <silent><buffer><expr> d
-  \ denite#do_map('do_action', 'delete')
+        \ denite#do_map('do_action', 'delete')
   nnoremap <silent><buffer><expr> p
-  \ denite#do_map('do_action', 'preview')
+        \ denite#do_map('do_action', 'preview')
+  nnoremap <silent><buffer><expr> <Esc>
+        \ denite#do_map('quit')
   nnoremap <silent><buffer><expr> q
-  \ denite#do_map('quit')
+        \ denite#do_map('quit')
   nnoremap <silent><buffer><expr> i
-  \ denite#do_map('open_filter_buffer')
-  nnoremap <silent><buffer><expr> <Space>
-  \ denite#do_map('toggle_select').'j'
+        \ denite#do_map('open_filter_buffer')
 endfunction
 
-call denite#custom#var('file_rec', 'command', ['rg', '--files'])
-call denite#custom#var('grep', 'command', ['rg'])
-call denite#custom#var('grep', 'recursive_opts', [])
-call denite#custom#var('grep', 'final_opts', [])
-call denite#custom#var('grep', 'separator', ['--'])
-call denite#custom#var('greo', 'default_opts', ['--vimgrep', '--no-heading'])
+autocmd FileType denite-filter call s:denite_filter_my_settings()
 
-nmap <silent> <leader>j :DeniteProjectDir tag file/rec coc-command coc-diagnostic <CR>
+function! s:denite_filter_my_settings() abort
+	  inoremap <silent><buffer> <C-j>
+	  \ <Esc><C-w>p:call cursor(line('.')+1,0)<CR><C-w>pA
+	  inoremap <silent><buffer> <C-k>
+	  \ <Esc><C-w>p:call cursor(line('.')-1,0)<CR><C-w>pA
+  inoremap <silent><buffer><expr> <CR>
+        \ denite#do_map('do_action')
+endfunction
 
-set nowrap
+
+"nnoremap <C-p> :<C-u>Denite file/rec -start-filter<CR>
+"nnoremap <leader>s :<C-u>Denite buffer<CR>
+"nnoremap <leader>8 :<C-u>DeniteCursorWord grep:.<CR>
+"nnoremap <leader>/ :<C-u>Denite -start-filter -filter-updatetime=0 grep:::!<CR>
+"nnoremap <leader><Space>/ :<C-u>DeniteBufferDir -start-filter -filter-updatetime=0 grep:::!<CR>
+"nnoremap <leader>d :<C-u>DeniteBufferDir file/rec -start-filter<CR>
+"nnoremap <leader>r :<C-u>Denite -resume -cursor-pos=+1<CR>
+"nnoremap <leader><C-r> :<C-u>Denite register:.<CR>
+"nnoremap <leader>g :<C-u>Denite gitstatus<CR>set nowrap
 
 " Remap for do codeAction of selected region
 function! s:cocActionsOpenFromSelected(type) abort
@@ -536,3 +568,4 @@ autocmd FileType gitmessengerpopup call <SID>setup_git_messenger_popup()
 source ~/.vim/config/floating_terminal.vim
 source ~/.vim/config/git.vim
 source ~/.vim/config/matching_parentheses.vim
+source ~/.vim/config/denite.vim
