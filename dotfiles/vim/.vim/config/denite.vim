@@ -1,11 +1,10 @@
 
 " Go to anything using the Enter key
-nnoremap <C-G> :<C-u>DeniteProjectDir file_mru commands coc-command file/rec -start-filter -match-highlight<CR>
+nnoremap <C-G> :<C-u>DeniteProjectDir buffer file_mru commands coc-command file/rec help -start-filter -match-highlight<CR>
 
 
 highlight DeniteFilter ctermbg=4 ctermfg=0
-highlight DeniteMatch ctermbg=1 ctermfg=0
-highlight DeniteSelection ctermbg=4 ctermfg=0
+highlight DeniteMatch ctermbg=1 ctermfg=0 cterm=bold
 
 " denite
 call denite#custom#option('_', {
@@ -15,11 +14,10 @@ call denite#custom#option('_', {
       \ 'winwidth': &columns * 2 / 3,
       \ 'winrow': &lines / 6,
       \ 'winheight': &lines * 2 / 3,
-      \ 'match_highlight': v:true,
       \ 'highlight_filter_background': 'DeniteFilter',
       \ 'highlight_matched_range': 'DeniteMatch',
       \ 'highlight_matched_char': 'DeniteMatch',
-      \ 'highlight_preview_line': 'Search',
+      \ 'highlight_preview_line': 'DeniteMatch',
       \ 'highlight_prompt': 'NormalFloat',
       \ 'highlight_window_background': 'NormalFloat',
       \ 'max_dynamic_update_candidates': 100000
@@ -29,6 +27,8 @@ call denite#custom#var('file/rec', 'command',
       \ ['rg', '--files'])
 call denite#custom#source('_', 'matchers', ['matcher/fruzzy'])
 call denite#custom#source('_', 'sorters', ['sorter/sublime'])
+call denite#custom#source(
+	\ 'file_mru', 'matchers', ['matcher/fuzzy', 'matcher/project_files'])
 "call denite#custom#source(
       "\ 'file/rec', 'matchers', ['matcher/fruzzy'])
 "call denite#custom#var('grep', 'command', ['rg'])
@@ -71,4 +71,4 @@ function! s:denite_filter_my_settings() abort
         \ denite#do_map('quit')
 endfunction
 
-
+let g:fruzzy#usenative = 1
