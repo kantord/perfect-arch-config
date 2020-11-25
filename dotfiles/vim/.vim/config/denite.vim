@@ -26,16 +26,18 @@ call denite#custom#option('_', {
       \ })
 
 call denite#custom#var('file/rec', 'command',
-      \ ['fd', '-H', '--full-path'])
-call denite#custom#source(
-    	\ 'file/rec', 'matchers', ['matcher/fruzzy'])
-call denite#custom#var('grep', 'command', ['rg'])
-call denite#custom#var('grep', 'default_opts',
-      \ ['--vimgrep', '--smart-case', '--no-heading'])
-call denite#custom#var('grep', 'recursive_opts', [])
-call denite#custom#var('grep', 'pattern_opt', ['--regexp'])
-call denite#custom#var('grep', 'separator', ['--'])
-call denite#custom#var('grep', 'final_opts', [])
+      \ ['rg', '--files'])
+call denite#custom#source('_', 'matchers', ['matcher/fruzzy'])
+call denite#custom#source('_', 'sorters', ['sorter/sublime'])
+"call denite#custom#source(
+      "\ 'file/rec', 'matchers', ['matcher/fruzzy'])
+"call denite#custom#var('grep', 'command', ['rg'])
+"call denite#custom#var('grep', 'default_opts',
+      "\ ['--vimgrep', '--smart-case', '--no-heading'])
+"call denite#custom#var('grep', 'recursive_opts', [])
+"call denite#custom#var('grep', 'pattern_opt', ['--regexp'])
+"call denite#custom#var('grep', 'separator', ['--'])
+"call denite#custom#var('grep', 'final_opts', [])
 
 autocmd FileType denite call s:denite_settings()
 
