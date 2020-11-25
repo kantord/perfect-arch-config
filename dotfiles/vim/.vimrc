@@ -14,7 +14,7 @@ Plug 'jeffkreeftmeijer/vim-dim'
 Plug 'yegappan/greplace'
 Plug 'wakatime/vim-wakatime'
 Plug 'airblade/vim-gitgutter'
-Plug 'tmhedberg/matchit'
+Plug 'andymass/vim-matchup'
 Plug 'easymotion/vim-easymotion'
 Plug 'nvie/vim-flake8'
 Plug 'ryanoasis/vim-devicons'
@@ -539,3 +539,4 @@ autocmd FileType gitmessengerpopup call <SID>setup_git_messenger_popup()
 
 source ~/.vim/config/floating_terminal.vim
 source ~/.vim/config/git.vim
+source ~/.vim/config/matching_parentheses.vim
