@@ -183,6 +183,8 @@ hi LineNr ctermbg=NONE ctermfg=9
 hi SignColumn ctermbg=NONE
 hi CursorLineNr ctermbg=NONE ctermfg=7
 
+hi CursorLine ctermbg=6 ctermfg=0 cterm=bold
+
 
 "--- Searching ---"
 " Search as characters are entered
@@ -320,7 +322,7 @@ command! -nargs=+ Silent
 
 let g:fzf_preview_window = 'right:35%'
 nmap <silent> <leader>h :History<CR>
-nmap <silent> <C-G> :GFiles<CR>
+"nmap <silent> <C-G> :GFiles<CR>
 nmap <silent> <leader>p :Files<CR>
 nmap <silent> <leader>g :GFiles?<CR>
 nmap <silent> <leader>c :Commits<CR>
@@ -442,16 +444,26 @@ nmap <silent> <leader>tg :TestVisit<CR>
 let test#strategy = "basic"
 let g:test#javascript#runner = 'jest'
 
+
+highlight DeniteFilter ctermbg=4 ctermfg=0
+highlight DeniteMatch ctermbg=1 ctermfg=0
+highlight DeniteSelection ctermbg=4 ctermfg=0
+
 " denite
 call denite#custom#option('_', {
       \ 'prompt': '',
       \ 'split': 'floating',
-      \ 'highlight_matched_char': 'Underlined',
-      \ 'highlight_matched_range': 'NormalFloat',
       \ 'wincol': &columns / 6,
       \ 'winwidth': &columns * 2 / 3,
       \ 'winrow': &lines / 6,
       \ 'winheight': &lines * 2 / 3,
+      \ 'match_highlight': v:true,
+      \ 'highlight_filter_background': 'DeniteFilter',
+      \ 'highlight_matched_range': 'DeniteMatch',
+      \ 'highlight_matched_char': 'DeniteMatch',
+      \ 'highlight_preview_line': 'Search',
+      \ 'highlight_prompt': 'NormalFloat',
+      \ 'highlight_window_background': 'NormalFloat',
       \ 'max_dynamic_update_candidates': 100000
       \ })
 
@@ -495,18 +507,10 @@ function! s:denite_filter_my_settings() abort
 	  \ <Esc><C-w>p:call cursor(line('.')-1,0)<CR><C-w>pA
   inoremap <silent><buffer><expr> <CR>
         \ denite#do_map('do_action')
+  inoremap <silent><buffer><expr> <Esc>
+        \ denite#do_map('quit')
 endfunction
 
-
-"nnoremap <C-p> :<C-u>Denite file/rec -start-filter<CR>
-"nnoremap <leader>s :<C-u>Denite buffer<CR>
-"nnoremap <leader>8 :<C-u>DeniteCursorWord grep:.<CR>
-"nnoremap <leader>/ :<C-u>Denite -start-filter -filter-updatetime=0 grep:::!<CR>
-"nnoremap <leader><Space>/ :<C-u>DeniteBufferDir -start-filter -filter-updatetime=0 grep:::!<CR>
-"nnoremap <leader>d :<C-u>DeniteBufferDir file/rec -start-filter<CR>
-"nnoremap <leader>r :<C-u>Denite -resume -cursor-pos=+1<CR>
-"nnoremap <leader><C-r> :<C-u>Denite register:.<CR>
-"nnoremap <leader>g :<C-u>Denite gitstatus<CR>set nowrap
 
 " Remap for do codeAction of selected region
 function! s:cocActionsOpenFromSelected(type) abort
@@ -569,3 +573,8 @@ source ~/.vim/config/floating_terminal.vim
 source ~/.vim/config/git.vim
 source ~/.vim/config/matching_parentheses.vim
 source ~/.vim/config/denite.vim
+
+let g:webdevicons_enable = 1
+let g:webdevicons_enable_denite = 1
+
+call denite#custom#option('default', 'highlight_mode_insert', 'PMenu')
