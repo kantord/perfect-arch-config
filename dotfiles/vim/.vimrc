@@ -183,7 +183,7 @@ hi LineNr ctermbg=NONE ctermfg=9
 hi SignColumn ctermbg=NONE
 hi CursorLineNr ctermbg=NONE ctermfg=7
 
-hi CursorLine ctermbg=6 ctermfg=0 cterm=bold
+hi CursorLine ctermbg=6 ctermfg=0 cterm=none
 
 
 "--- Searching ---"
@@ -507,3 +507,5 @@ source ~/.vim/config/git.vim
 source ~/.vim/config/matching_parentheses.vim
 source ~/.vim/config/denite.vim
 
+
+let g:vim_search_pulse_color_list = [1,9]
