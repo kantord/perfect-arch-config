@@ -310,27 +310,6 @@ command! -nargs=+ Silent
 \   execute 'silent <args>'
 \ | redraw!
 
-function! g:Blame()
-    :Silent :!tig blame %
-endfunction
-
-
-function! g:GitStatus()
-    FloatermNew tig status
-endfunction
-
-
-
-function! g:Commit()
-    FloatermNew git-cz
-endfunction
-
-
-
-map <C-a> :TigBlame<CR>
-nnoremap <leader><C-A> :TigOpenProjectRootDir<CR>
-map <C-s> :call GitStatus()<CR>
-map <C-c> :call Commit()<CR>
 :Silent :!stty -ixon -ixoff
 
 
@@ -557,3 +536,4 @@ endfunction
 autocmd FileType gitmessengerpopup call <SID>setup_git_messenger_popup()
 
 source ~/.vim/config/floating_terminal.vim
+source ~/.vim/config/git.vim
