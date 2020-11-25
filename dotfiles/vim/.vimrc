@@ -58,7 +58,6 @@ Plug 'rstacruz/vim-hyperstyle'
 Plug 'tpope/vim-sleuth'
 "Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
 Plug 'rhysd/git-messenger.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 " Shows number of search matches and position of current match
@@ -96,6 +95,7 @@ Plug 'cormacrelf/vim-colors-github'
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 Plug 'voldikss/vim-floaterm'
 Plug 'machakann/vim-highlightedyank'
+Plug 'inside/vim-search-pulse'
 
 call plug#end()
 
@@ -520,10 +520,6 @@ augroup ft_vimwiki
   au!
   au FileType vimwiki let b:auto_save = 1
 augroup END
-
-" Focus mode
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
 
 " Preview history of the line
 nmap <a-k> <Plug>(git-messenger)
