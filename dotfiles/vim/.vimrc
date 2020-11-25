@@ -68,6 +68,7 @@ Plug 'yggdroot/indentline'
 Plug 'raimondi/delimitmate'
 Plug 'mg979/vim-visual-multi'
 Plug 'antoinemadec/coc-fzf'
+Plug 'styled-components/vim-styled-components'
 
 " Denite
 Plug 'neoclide/coc-denite'
