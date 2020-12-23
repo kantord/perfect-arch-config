@@ -1,0 +1,45 @@
+rofi.modi:                           window,run,ssh
+rofi.width:                          80
+rofi.lines:                          8
+rofi.columns:                        2
+rofi.font:                           Source Code Pro 9
+rofi.color-normal:                   argb:00bebcbc, #010101, argb:00bebcbc, argb:55a18321, #010101
+rofi.color-urgent:                   argb:00bebcbc, #d6b48d, argb:00bebcbc, #d6b48d, #010101
+rofi.color-active:                   argb:00bebcbc, #2f4164, argb:00bebcbc, #2f4164, #bebcbc
+rofi.color-window:                   argb:ccbebcbc, #a18321, #7c651a
+rofi.bw:                             0
+rofi.eh:                             1
+rofi.location:                       0
+rofi.padding:                        30
+rofi.yoffset:                        0
+rofi.xoffset:                        0
+rofi.fixed-num-lines:                true
+rofi.terminal:                       rofi-sensible-terminal
+rofi.ssh-client:                     ssh
+rofi.ssh-command:                    {terminal} -e {ssh-client} {host}
+rofi.run-command:                    {cmd}
+rofi.parse-hosts:                    true
+rofi.matching:                       fuzzy
+rofi.sort-method:                    fzf
+rofi.sort:                    	     true
+rofi.separator-style:                none
+rofi.scrollbar-width:                0
+rofi.kb-mode-next:                   Shift+Right,Control+Tab,Alt+l
+rofi.kb-mode-previous:               Shift+Left,Control+Shift+Tab,Alt+h
+rofi.kb-row-up:                      Up,Control+p,Shift+Tab,Shift+ISO_Left_Tab,Alt+k
+rofi.kb-row-down:                    Down,Control+n,Alt+j
+rofi.show-icons: 		     true
+rofi.hide-scrollbar: 		     true
+!rofi.separator-style: 		     solid
+rofi.columns: 			     1
+rofi.fullscreen: 		     false
+rofi.fake-transparency:		     true
+rofi.theme: /home/kdani/.config/rofi/theme.rasi
+
+rofi.kb-row-up:                      Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab,Control+p
+rofi.kb-row-down:                    Down,Control+j,Control+n,Alt+Tab
+rofi.kb-accept-entry:                Control+m,Return,KP_Enter
+rofi.kb-remove-to-eol:               Control+Shift+e
+rofi.kb-mode-next:                   Shift+Right,Control+Tab,Control+l
+rofi.kb-mode-previous:               Shift+Left,Control+Shift+Tab,Control+h
+rofi.kb-remove-char-back:            BackSpace
