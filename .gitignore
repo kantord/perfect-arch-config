@@ -7,7 +7,6 @@ dotfiles/wpgtk/.config/wpg/samples
 dotfiles/wpgtk/.config/wpg/sequences
 dotfiles/wpgtk/.config/wpg/.current
 /dotfiles/termite/.config/termite/config
-/dotfiles/rofi/.config/rofi/config
 /dotfiles/i3/.config/i3/config.bak
 /dotfiles/i3/.config/i3/config.save
 /dotfiles/polybar/.config/polybar/config
@@ -16,7 +15,6 @@ dotfiles/wpgtk/.config/wpg/.current
 /dotfiles/autostart/.config/autostart/keybase_autostart.desktop
 /notifications/statnot_conf.pyc
 /shortcuts/shortcuts.txt
-/dotfiles/rofi/.config/rofi/theme.rasi
 /yay/
 *.pyc
 dotfiles/vim/.vim/.netrwhist
