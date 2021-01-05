@@ -22,3 +22,4 @@
 ./stow.sh kitty
 ./stow.sh tig
 ./stow.sh slop
+./stow.sh spicetify
