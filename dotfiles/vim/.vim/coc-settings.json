@@ -1,9 +1,9 @@
 {
-  "python.jediEnabled": false,
+  "python.jediEnabled": true,
+  "python.linting.pylintEnabled": true,
   "typescript.validate.enable": false,
   "tsserver.log": "normal",
   "tsserver.trace.server": "verbose",
-  "javascript.validate.enable": false,
   "explorer.icon.enableNerdfont": true,
   "explorer.file.column.git.icon.renamed": "",
   "explorer.file.column.git.icon.added": "",
@@ -77,5 +77,6 @@
     "default": "\uf29c"
   },
   "coc.source.emoji.enable": true,
-  "coc.source.emoji.filetypes": null
+  "coc.source.emoji.filetypes": null,
+  "tsserver.enableJavascript": true
 }

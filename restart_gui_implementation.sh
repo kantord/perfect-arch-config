@@ -19,3 +19,6 @@ exec statnot ~/repos/perfect-arch-config/notifications/statnot_conf.py &
 exec unclutter &
 
 exec ~/repos/perfect-arch-config/start_polybar.sh 0 &
+
+# Update spotify looks
+spicetify update

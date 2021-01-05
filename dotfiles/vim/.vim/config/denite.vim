@@ -1,6 +1,6 @@
 
 " Go to anything using the Enter key
-nnoremap <C-G> :<C-u>DeniteProjectDir buffer file_mru commands coc-command file/rec help -start-filter -match-highlight<CR>
+nnoremap <C-G> :<C-u>DeniteProjectDir buffer file_mru coc-workspace commands coc-command file/rec help -start-filter -match-highlight<CR>
 
 
 highlight DeniteFilter ctermbg=4 ctermfg=0
@@ -29,15 +29,6 @@ call denite#custom#source('_', 'matchers', ['matcher/fruzzy'])
 call denite#custom#source('_', 'sorters', ['sorter/sublime'])
 call denite#custom#source(
 	\ 'file_mru', 'matchers', ['matcher/fuzzy', 'matcher/project_files'])
-"call denite#custom#source(
-      "\ 'file/rec', 'matchers', ['matcher/fruzzy'])
-"call denite#custom#var('grep', 'command', ['rg'])
-"call denite#custom#var('grep', 'default_opts',
-      "\ ['--vimgrep', '--smart-case', '--no-heading'])
-"call denite#custom#var('grep', 'recursive_opts', [])
-"call denite#custom#var('grep', 'pattern_opt', ['--regexp'])
-"call denite#custom#var('grep', 'separator', ['--'])
-"call denite#custom#var('grep', 'final_opts', [])
 
 autocmd FileType denite call s:denite_settings()
 

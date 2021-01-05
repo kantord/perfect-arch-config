@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 " Install plugins here
 "
 "
+Plug 'lambdalisue/suda.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
@@ -68,6 +69,9 @@ Plug 'raimondi/delimitmate'
 Plug 'mg979/vim-visual-multi'
 Plug 'antoinemadec/coc-fzf'
 Plug 'styled-components/vim-styled-components'
+Plug 'ap/vim-buftabline'
+Plug 'chaoren/vim-wordmotion'
+Plug 'eugen0329/vim-esearch'
 
 " Denite
 Plug 'neoclide/coc-denite'
@@ -99,6 +103,11 @@ Plug 'inside/vim-search-pulse'
 
 " Recent files for denite
 Plug 'Shougo/neomru.vim'
+
+Plug 'camspiers/animate.vim'
+Plug 'camspiers/lens.vim'
+Plug 'yuttie/comfortable-motion.vim'
+Plug 'pechorin/any-jump.vim'
 
 call plug#end()
 
@@ -509,3 +518,6 @@ source ~/.vim/config/denite.vim
 
 
 let g:vim_search_pulse_color_list = [1,9]
+
+let g:ranger_map_keys = 0
+map <leader>G :Ranger<CR>
