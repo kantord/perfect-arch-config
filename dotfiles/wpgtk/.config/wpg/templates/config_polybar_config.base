@@ -17,9 +17,9 @@
 ;==========================================================
 
 [colors]
-background = ${{xrdb:color8:#222}}
-;background = #dd{color8.strip}
-background-alt = #444
+;background = ${{xrdb:color0:#222}}
+background = #ff{color0.strip}
+background-alt = ${{xrdb:color0:#222}}
 ;foreground = ${{xrdb:color7:#222}}
 foreground = {color15}
 foreground-alt = #555
@@ -30,7 +30,7 @@ alert = #bd2c40
 [bar/example]
 monitor = ${{env:MONITOR}}
 width = 100%
-height = 20
+height = 24
 offset-x = 0
 offset-y = 0
 radius = 0
@@ -43,7 +43,8 @@ foreground = ${{colors.foreground}}
 line-size = 0
 line-color = #f00
 
-border-top-size = 0
+border-top-size = 4
+border-top-color = ${{colors.background}}
 border-bottom-size = 0
 border-left-size = 0
 border-right-size = 0
@@ -55,9 +56,9 @@ padding-right = 3
 module-margin-left = 0
 module-margin-right = 1
 
-font-0 = "FiraCode Nerd Font:pixelsize=9;1"
-font-1 = "Noto Color Emoji:scale=12;pixelsize=8;style=Regular;1"
-font-2 = "Source Code Pro:pixelsize=9;1"
+font-0 = "FiraCode Nerd Font:pixelsize=9:weight=regular;1"
+font-1 = "FiraCode Nerd Font:pixelsize=10:weight=bold;1"
+font-2 = "Noto Color Emoji:scale=12;pixelsize=8;style=Regular;1"
 
 modules-left = i3
 modules-center = calendar_and_notification
@@ -115,10 +116,10 @@ label-unmounted-foreground = ${{colors.foreground-alt}}
 type = internal/bspwm
 
 label-focused = %index%
-label-focused-foreground = {color0}
+label-focused-foreground = #ff{color15.strip}
 label-focused-background = #99{color15.strip}
-label-focused-underline= ${{colors.primary}}
-label-focused-padding = 1
+label-focused-underline= #00{color15.strip}
+label-focused-padding = 2
 
 label-occupied = %index%
 label-occupied-padding = 1
@@ -129,6 +130,7 @@ label-urgent-padding = 1
 
 label-empty = %index%
 label-empty-foreground = ${{colors.foreground-alt}}
+label-empty-underline= #00{color15.strip}
 label-empty-padding = 1
 
 ; Separator in between workspaces
@@ -153,7 +155,8 @@ label-mode-foreground = #000
 
 ; focused = Active workspace on focused monitor
 label-focused = %name%
-label-focused-background = #ff{color9.strip}
+label-focused-font=2
+label-focused-background = #00{color9.strip}
 label-unfocused-background = #ff{color8.strip}
 label-unfocused-foreground = #ff{color15.strip}
 label-focused-foreground = ${{module/bspwm.label-focused-foreground}}
@@ -271,7 +274,7 @@ format-disconnected =
 [module/date]
 type = internal/date
 interval = 5
-label-background = #ff{color8.strip}
+label-background = #ff{color0.strip}
 
 date = " %a %b %d"
 
@@ -287,7 +290,7 @@ label = %date%
 [module/time]
 type = internal/date
 interval = 5
-label-background = #ff{color8.strip}
+label-background = #ff{color0.strip}
 label-padding = 1
 
 date = " %a %b %d"
@@ -303,11 +306,11 @@ label = %time%
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-background = #ff{color8.strip}
+label-background = #ff{color0.strip}
 format-volume-padding = 1
 format-muted-padding = 1
-format-muted-background = #ff{color8.strip}
-format-volume-background = #ff{color8.strip}
+format-muted-background = #ff{color0.strip}
+format-volume-background = #ff{color0.strip}
 
 format-volume = <bar-volume>
 label-volume = 
@@ -327,7 +330,7 @@ bar-volume-foreground-6 = #99{color15.strip}
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-font = 2
-bar-volume-fill = -
+bar-volume-fill = ─
 bar-volume-fill-font = 2
 bar-volume-empty = ·
 bar-volume-empty-font = 2
@@ -376,11 +379,11 @@ format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${{self.format-charging-underline}}
 
 format-full-prefix = " "
-format-full-prefix-foreground = #ff{color8.strip}
-format-full-background = #ff{color8.strip}
-format-discharging-background = #ff{color8.strip}
+format-full-prefix-foreground = #ff{color0.strip}
+format-full-background = #ff{color0.strip}
+format-discharging-background = #ff{color0.strip}
 format-discharging-padding = 1
-format-charging-background = #ff{color8.strip}
+format-charging-background = #ff{color0.strip}
 format-charging-padding = 1
 format-full-padding = 1
 format-full-underline = ${{self.format-charging-underline}}
@@ -393,14 +396,14 @@ ramp-capacity-foreground = ${{colors.foreground-alt}}
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
-animation-charging-foreground = #ff{color8.strip}
+animation-charging-foreground = #ff{color0.strip}
 animation-charging-framerate = 750
 
 animation-discharging-0 = 
 animation-discharging-1 = 
 animation-discharging-2 = 
-animation-discharging-foreground = #ff{color8.strip}
-label-background = #ff{color8.strip}
+animation-discharging-foreground = #ff{color0.strip}
+label-background = #ff{color0.strip}
 animation-discharging-framerate = 750
 
 [module/temperature]
@@ -453,9 +456,9 @@ menu-2-1-exec = menu-open-0
 
 [settings]
 screenchange-reload = true
-;compositing-background = xor
+;compositing-background = soft-light
 ;compositing-background = screen
-;compositing-foreground = source
+;compositing-foreground = color-burn
 ;compositing-border = over
 pseudo-transparency = true
 
@@ -464,14 +467,14 @@ margin-top = 5
 margin-bottom = 5
 
 [module/calendar_and_notification]
-label-background = #ff{color8.strip}
+label-background = #ff{color0.strip}
 label-padding = 1
 type = custom/script
 exec = ~/repos/perfect-arch-config/status-one-liner/status-one-liner.sh pomodoro,notification,calendar/upcoming,calendar/summary
 interval = 0.5
 
 [module/task]
-label-background = #ff{color8.strip}
+label-background = #ff{color0.strip}
 label-padding = 1
 type = custom/script
 exec = ~/repos/perfect-arch-config/status-one-liner/status-one-liner.sh task/strawberries
@@ -481,6 +484,6 @@ interval = 0.5
 type = custom/script
 exec = bash -c 'ibus engine | cut -d":" -f2'
 interval = 0.3
-label-background = #ff{color8.strip}
+label-background = #ff{color0.strip}
 label-padding = 1
 format-prefix=

@@ -416,12 +416,11 @@ mode "resize-9" {{
 
 bindsym $mod+r mode "resize"
 
-smart_gaps on
 gaps inner 20
 new_window none
 new_window pixel 3
 new_float pixel 3
-smart_borders no_gaps
+smart_borders on
 
 exec i3-gnome-pomodoro daemon 1 2 9 10 --nagbar &
 exec --no-startup-id compton --config $tools/dotfiles/compton/.config/compton/compton.conf &
