@@ -477,7 +477,7 @@ interval = 0.5
 label-background = #ff{color0.strip}
 label-padding = 1
 type = custom/script
-exec = ~/repos/perfect-arch-config/status-one-liner/status-one-liner.sh task/strawberries
+exec = ~/repos/perfect-arch-config/status-one-liner/status-one-liner.sh task/count_icon
 interval = 0.5
 
 [module/ibus]
