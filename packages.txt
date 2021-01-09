@@ -54,6 +54,7 @@ firefox-tridactyl-native
 firefox-ublock-origin
 firefox-vim-vixen
 flex
+forticlient
 fzf
 gawk
 gcc
@@ -116,9 +117,12 @@ kitty
 lazygit
 ledger
 less
+libffi
 libreoffice
 libtool
 libu2f-host
+libxml2
+libxslt
 licenses
 linux
 linux-firmware
@@ -139,6 +143,7 @@ nano
 nautilus
 nerd-fonts-fira-code
 nerd-fonts-iosevka
+nerd-fonts-victor-mono
 netctl
 nitrogen
 nodejs
@@ -168,10 +173,12 @@ projectm-pulseaudio
 psmisc
 pulseaudio-alsa
 pulseaudio-bluetooth
+pulseaudio-control
 python
 python2
 python2-greenlet
 python2-pip
+python36
 python-greenlet
 python-jedi
 python-pip
@@ -184,6 +191,7 @@ python-requests-oauthlib
 qbittorrent
 qt5-styleplugins
 ranger
+redis
 redshift
 reiserfsprogs
 ripgrep

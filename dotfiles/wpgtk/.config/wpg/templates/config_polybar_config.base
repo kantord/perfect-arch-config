@@ -30,7 +30,7 @@ alert = #bd2c40
 [bar/example]
 monitor = ${{env:MONITOR}}
 width = 100%
-height = 24
+height = 22
 offset-x = 0
 offset-y = 0
 radius = 0
@@ -62,7 +62,7 @@ font-2 = "Noto Color Emoji:scale=12;pixelsize=8;style=Regular;1"
 
 modules-left = i3
 modules-center = calendar_and_notification
-modules-right = task pulseaudio battery ibus date time
+modules-right = task pulseaudio-control battery ibus date time
 
 tray-position = none
 tray-padding = 2
@@ -487,3 +487,13 @@ interval = 0.3
 label-background = #ff{color0.strip}
 label-padding = 1
 format-prefix=
+
+[module/pulseaudio-control]
+type = custom/script
+tail = true
+exec = pulseaudio-control --icons-volume " , " --icon-muted " " --sink-nicknames-from "device.description" listen --sink-nickname "bluez_sink.2C_41_A1_C9_AA_A8.a2dp_sink:"
+scroll-up = pulseaudio-control --volume-max 130 up
+scroll-down = pulseaudio-control --volume-max 130 down
+click-left = pulseaudio-control togmute
+click-middle = pulseaudio-control togmute
+click-right = pulseaudio-control togmute

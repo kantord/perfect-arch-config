@@ -108,6 +108,7 @@ Plug 'camspiers/animate.vim'
 Plug 'camspiers/lens.vim'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'pechorin/any-jump.vim'
+Plug 'puremourning/vimspector'
 
 call plug#end()
 
