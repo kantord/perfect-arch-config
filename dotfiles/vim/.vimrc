@@ -70,7 +70,7 @@ Plug 'mg979/vim-visual-multi'
 Plug 'antoinemadec/coc-fzf'
 Plug 'styled-components/vim-styled-components'
 Plug 'ap/vim-buftabline'
-Plug 'chaoren/vim-wordmotion'
+"Plug 'chaoren/vim-wordmotion'
 Plug 'eugen0329/vim-esearch'
 
 " Denite
@@ -108,7 +108,8 @@ Plug 'camspiers/animate.vim'
 Plug 'camspiers/lens.vim'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'pechorin/any-jump.vim'
-Plug 'puremourning/vimspector'
+Plug 'puremourning/vimspector.git'
+Plug 'voldikss/vim-codelf'
 
 call plug#end()
 
