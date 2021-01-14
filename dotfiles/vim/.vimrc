@@ -76,6 +76,7 @@ Plug 'eugen0329/vim-esearch'
 " Denite
 Plug 'neoclide/coc-denite'
 Plug 'chemzqm/denite-extra'
+Plug 'nabezokodaikon/denite-converter-basename_to_top'
 Plug 'raghur/fruzzy', {'do': { -> fruzzy#install()}}
 if has('nvim')
   Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
