@@ -430,7 +430,9 @@ exec --no-startup-id polybar -r example &
 
 # Floating Calculator
 bindsym $mod+Shift+P exec kitty --class "Floating Calculator" -e "ipython" &
+bindsym $mod+Shift+Return exec kitty --class "Floating Taskwarrior" zsh -c "task overdue && zsh -i"
 for_window [class="^Floating Calculator$"] floating enable
+for_window [class="^Floating Taskwarrior$"] floating enable
 for_window [class="Gvim"] floating enable
 for_window [tiling] move position center
 for_window [class="^Peek"] floating enable
@@ -438,7 +440,7 @@ for_window [title="Picture-in-Picture"] sticky enable
 
 # Screenshots
 # bindsym --release $mod+Print exec scrot -s -e 'mv $f ~/pics/screenshots'
-bindsym --release $mod+Print exec maim ~/pics/screenshots/$(date -I'minutes').png -s -b 10 -r wiggle
+bindsym --release $mod+Print exec maim ~/pics/screenshots/$(date -I'seconds').png -s -b 10 -r wiggle
 bindsym $mod+Shift+Print exec scrot -u -e 'mv $f ~/pics/screenshots'
 
 
