@@ -1,13 +1,16 @@
 set encoding=utf8
 
 call plug#begin('~/.vim/plugged') 
-"
-" Install plugins here
-"
-"
+" Syntax plugins
+Plug 'othree/yajs.vim'
+Plug 'othree/html5.vim'
+Plug 'HerringtonDarkholme/yats.vim'
+
+" Colorschemes
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+
 Plug 'lambdalisue/suda.vim'
 Plug 'scrooloose/nerdcommenter'
-Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
@@ -72,6 +75,8 @@ Plug 'styled-components/vim-styled-components'
 Plug 'ap/vim-buftabline'
 "Plug 'chaoren/vim-wordmotion'
 Plug 'eugen0329/vim-esearch'
+" Fancy relative numbers:
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 " Denite
 Plug 'neoclide/coc-denite'
@@ -111,6 +116,9 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'pechorin/any-jump.vim'
 Plug 'puremourning/vimspector.git'
 Plug 'voldikss/vim-codelf'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 call plug#end()
 
@@ -483,7 +491,6 @@ if exists('g:started_by_firenvim')
   set noshowcmd
   colorscheme github
   set background=light
-  set nonumber
 endif
 
 
@@ -518,6 +525,8 @@ source ~/.vim/config/floating_terminal.vim
 source ~/.vim/config/git.vim
 source ~/.vim/config/matching_parentheses.vim
 source ~/.vim/config/denite.vim
+source ~/.vim/config/auto_format.vim
+source ~/.vim/config/colors.vim
 
 
 let g:vim_search_pulse_color_list = [1,9]

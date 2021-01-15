@@ -3,7 +3,7 @@
   "python.linting.pylintEnabled": true,
   "typescript.validate.enable": false,
   "tsserver.log": "normal",
-  "tsserver.trace.server": "verbose",
+  "tsserver.trace.server": "off",
   "explorer.icon.enableNerdfont": true,
   "explorer.file.column.git.icon.renamed": "",
   "explorer.file.column.git.icon.added": "",
@@ -14,18 +14,8 @@
   "diagnostic.errorSign": "",
   "diagnostic.warningSign": "",
   "diagnostic.infoSign": "",
-  "cSpell.userWords": [
-    "Multistep",
-    "Nerdfont",
-    "colorsys",
-    "evocolors",
-    "itertools",
-    "kiwicom",
-    "openapi"
-  ],
-  "prettier.onlyUseLocalVersion": true,
-  "coc.preferences.formatOnType": false,
-  "prettier.eslintIntegration": true,
+  "prettier.onlyUseLocalVersion": false,
+  "coc.preferences.formatOnType": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "javascriptreact",
@@ -78,5 +68,8 @@
   },
   "coc.source.emoji.enable": true,
   "coc.source.emoji.filetypes": null,
-  "tsserver.enableJavascript": true
+  "tsserver.enableJavascript": true,
+  "browser.port": 8123,
+  "tsserver.tsdk": ".yarn/sdks/typescript/lib",
+  "tsserver.formatOnType": true
 }

@@ -416,9 +416,8 @@ mode "resize-9" {{
 
 bindsym $mod+r mode "resize"
 
-gaps inner 20
 new_window none
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 1
 smart_borders on
 
 exec i3-gnome-pomodoro daemon 1 2 9 10 --nagbar &

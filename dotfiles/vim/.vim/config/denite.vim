@@ -25,10 +25,14 @@ call denite#custom#option('_', {
 
 call denite#custom#var('file/rec', 'command',
       \ ['rg', '--files'])
+call denite#custom#source('file/rec', 'converters',
+    \ ['converter/basename_to_top'])
 call denite#custom#source('_', 'matchers', ['matcher/fruzzy'])
 call denite#custom#source('_', 'sorters', ['sorter/sublime'])
 call denite#custom#source(
-	\ 'file_mru', 'matchers', ['matcher/fuzzy', 'matcher/project_files'])
+	\ 'file_mru', 'matchers', ['matcher/fuzzy', 'matcher/project_files'], 'args', ['.'])
+call denite#custom#source('file_mru', 'converters',
+    \ ['converter/basename_to_top'])
 
 autocmd FileType denite call s:denite_settings()
 
