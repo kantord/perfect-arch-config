@@ -93,10 +93,10 @@ hsetroot
 htop
 i3-easyfocus
 i3-env
+i3-gaps
 i3-gnome-pomodoro-git
 i3-layout-manager-git
 i3status
-i3-wm
 ibus
 ibus-m17n
 imagemagick

@@ -13,7 +13,7 @@ Plug 'lambdalisue/suda.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'mxw/vim-jsx'
 Plug 'mattn/emmet-vim'
-Plug 'w0rp/ale'
+"Plug 'w0rp/ale'
 Plug 'jeffkreeftmeijer/vim-dim'
 Plug 'yegappan/greplace'
 Plug 'wakatime/vim-wakatime'
@@ -285,30 +285,30 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 " map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 
-hi default CocUnderline    cterm=underline 
-hi default CocErrorSign    ctermfg=9     
-hi default CocWarningSign  ctermfg=9   
-hi default CocInfoSign     ctermfg=9  
-hi default CocHintSign     ctermfg=9    
-hi default CocSelectedText ctermfg=Red     
-hi default CocCodeLens     ctermfg=8
-hi default link CocErrorFloat       CocErrorSign
-hi default link CocWarningFloat     CocWarningSign
-hi default link CocInfoFloat        CocInfoSign
-hi default link CocHintFloat        CocHintSign
-hi default link CocErrorHighlight   CocUnderline
-hi default link CocWarningHighlight CocUnderline
-hi default link CocInfoHighlight    CocUnderline
-hi default link CocHintHighlight    CocUnderline
-hi default link CocListMode ModeMsg
-hi default link CocListPath Comment
-hi CocFloating ctermbg=8
-hi default link CocHighlightText  CursorColumn
+"hi default CocUnderline    cterm=underline 
+"hi default CocErrorSign    ctermfg=9     
+"hi default CocWarningSign  ctermfg=9   
+"hi default CocInfoSign     ctermfg=9  
+"hi default CocHintSign     ctermfg=9    
+"hi default CocSelectedText ctermfg=Red     
+"hi default CocCodeLens     ctermfg=8
+"hi default link CocErrorFloat       CocErrorSign
+"hi default link CocWarningFloat     CocWarningSign
+"hi default link CocInfoFloat        CocInfoSign
+"hi default link CocHintFloat        CocHintSign
+"hi default link CocErrorHighlight   CocUnderline
+"hi default link CocWarningHighlight CocUnderline
+"hi default link CocInfoHighlight    CocUnderline
+"hi default link CocHintHighlight    CocUnderline
+"hi default link CocListMode ModeMsg
+"hi default link CocListPath Comment
+"hi CocFloating ctermbg=8
+"hi default link CocHighlightText  CursorColumn
 
-hi default link CocHoverRange     Search
-hi default link CocCursorRange    Search
-hi default link CocHighlightRead  CocHighlightText
-hi default link CocHighlightWrite CocHighlightText
+"hi default link CocHoverRange     Search
+"hi default link CocCursorRange    Search
+"hi default link CocHighlightRead  CocHighlightText
+"hi default link CocHighlightWrite CocHighlightText
 
 
 

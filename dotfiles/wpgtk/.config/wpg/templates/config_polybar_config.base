@@ -17,10 +17,8 @@
 ;==========================================================
 
 [colors]
-;background = ${{xrdb:color0:#222}}
 background = #ff{color0.strip}
 background-alt = ${{xrdb:color0:#222}}
-;foreground = ${{xrdb:color7:#222}}
 foreground = {color15}
 foreground-alt = #555
 primary = #ffb52a
@@ -156,9 +154,9 @@ label-mode-foreground = #000
 ; focused = Active workspace on focused monitor
 label-focused = %name%
 label-focused-font=2
-label-focused-background = #00{color9.strip}
-label-unfocused-background = #ff{color8.strip}
-label-unfocused-foreground = #ff{color15.strip}
+label-focused-background = #ff{color2.strip}
+label-unfocused-background = ${{colors.background}}
+label-unfocused-foreground = ${{colors.foreground}}
 label-focused-foreground = ${{module/bspwm.label-focused-foreground}}
 label-focused-underline = ${{module/bspwm.label-focused-underline}}
 label-focused-padding = ${{module/bspwm.label-focused-padding}}
