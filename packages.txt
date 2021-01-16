@@ -20,6 +20,7 @@ bluez
 bluez-libs
 bluez-utils
 bzip2
+cava
 cheese
 cloc
 coreutils

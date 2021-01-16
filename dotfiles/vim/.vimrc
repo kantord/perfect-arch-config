@@ -1,4 +1,5 @@
 set encoding=utf8
+set autoread                                                                                                                                                                                    
 
 call plug#begin('~/.vim/plugged') 
 " Syntax plugins
@@ -8,6 +9,7 @@ Plug 'HerringtonDarkholme/yats.vim'
 
 " Colorschemes
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+Plug 'NLKNguyen/papercolor-theme'
 
 Plug 'lambdalisue/suda.vim'
 Plug 'scrooloose/nerdcommenter'
@@ -25,7 +27,9 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
 Plug 'burner/vim-svelte'
 Plug 'dominikduda/vim_current_word'
-Plug 'ap/vim-css-color'
+"Plug 'ap/vim-css-color'
+"Plug 'RRethy/vim-hexokinase'
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'tell-k/vim-autopep8'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -199,11 +203,11 @@ hi! GitGutterDelete ctermbg=NONE ctermfg=Red
 hi! GitGutterChangeDelete ctermbg=NONE ctermfg=Yellow
 
 " Line number looks
-hi LineNr ctermbg=NONE ctermfg=9
-hi SignColumn ctermbg=NONE
-hi CursorLineNr ctermbg=NONE ctermfg=7
+"hi LineNr ctermbg=NONE ctermfg=9
+"hi SignColumn ctermbg=NONE
+"hi CursorLineNr ctermbg=NONE ctermfg=7
 
-hi CursorLine ctermbg=6 ctermfg=0 cterm=none
+"hi CursorLine ctermbg=6 ctermfg=0 cterm=none
 
 
 "--- Searching ---"
@@ -254,7 +258,7 @@ let g:ale_sign_warning = ''
 highlight clear ALEErrorSign
 highlight clear ALEWarningSign
 hi ALEErrorSign ctermfg=Red
-highlight ALEWarning cterm=bold ctermbg=Black ctermfg=Red
+highlight ALEWarning cterm=bold ctermbg=Black ctermfg=Yellow
 highlight ALEError cterm=bold ctermbg=Black ctermfg=Red
 
 let &t_SI = "\<Esc>[6 q"
@@ -312,14 +316,14 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 
 
-hi Directory cterm=bold
-hi CurrentWord cterm=bold
-hi CurrentWordTwins cterm=bold
-hi MatchParen cterm=bold ctermbg=Black ctermfg=White
+"hi Directory cterm=bold
+"hi CurrentWord cterm=bold
+"hi CurrentWordTwins cterm=bold
+"hi MatchParen cterm=bold ctermbg=Black ctermfg=White
 
-let g:eighties_enabled = 1
-let g:eighties_minimum_width = 80
-set nofoldenable
+"let g:eighties_enabled = 1
+"let g:eighties_minimum_width = 80
+"set nofoldenable
 
 
 "let g:ale_linter_aliases = {'svelte': ['css', 'javascript']}

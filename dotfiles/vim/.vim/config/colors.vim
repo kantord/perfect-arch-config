@@ -10,6 +10,8 @@ if (has('termguicolors'))
   set termguicolors
 endif
 
-let g:material_theme_style = 'default' 
-let g:material_terminal_italics = 1
-colorscheme material
+func LoadActiveTheme(timer)
+  source ~/.vim/config/colorscheme.vim
+endfunc
+let load_active_theme_timer = timer_start(2000, 'LoadActiveTheme', {'repeat': -1})
+source ~/.vim/config/colorscheme.vim

@@ -5,16 +5,10 @@
   "tsserver.log": "normal",
   "tsserver.trace.server": "off",
   "explorer.icon.enableNerdfont": true,
-  "explorer.file.column.git.icon.renamed": "",
-  "explorer.file.column.git.icon.added": "",
-  "explorer.file.column.git.icon.copied": "",
-  "explorer.file.column.git.icon.deleted": "",
-  "explorer.file.column.git.icon.modified": "",
-  "explorer.file.column.git.icon.mixed": "",
   "diagnostic.errorSign": "",
   "diagnostic.warningSign": "",
   "diagnostic.infoSign": "",
-  "prettier.onlyUseLocalVersion": false,
+  "diagnostic.enable": true,
   "coc.preferences.formatOnType": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
@@ -39,6 +33,13 @@
     "typescript",
     "typescriptreact"
   ],
+  "eslint.autoFixOnSave": false,
+  "eslint.format.enable": false,
+  "eslint.options": {
+    "rules": {
+      "prettier/prettier": 0
+    }
+  },
   "suggest.completionItemKindLabels": {
     "function": "\uf794",
     "method": "\uf6a6",

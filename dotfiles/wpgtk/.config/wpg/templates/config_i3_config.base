@@ -27,6 +27,22 @@ font pango:Source Code Pro Bold 9
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
+set $coloract "{color15}"
+set $colorin "{color0}"
+set_from_resource $color15 i3wm.color15 "{color15}"
+set_from_resource $split i3wm.color10 "{color10}"
+set_from_resource $coloru i3wm.color2 "{color2}"
+set_from_resource $color0 i3wm.color0 "{color0}"
+set_from_resource $color8 i3wm.color8 "{color8}"
+client.focused          $coloract {color0} $color15 $split  $coloract
+client.focused_inactive $coloract $coloract $color15 $split  $colorin
+client.unfocused        $colorin  $colorin  $color15 $split  $colorin
+client.urgent           $coloru   $coloru   $color15 $coloru $coloru
+client.placeholder      $color0   $color8   $color15 $color0 $color8
+client.background       $color0
+
+
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -420,6 +436,7 @@ new_window none
 for_window [class="^.*"] border pixel 1
 smart_borders on
 
+
 exec i3-gnome-pomodoro daemon 1 2 9 10 --nagbar &
 exec --no-startup-id compton --config $tools/dotfiles/compton/.config/compton/compton.conf &
 exec --no-startup-id dex -ae i3
@@ -452,13 +469,6 @@ bindsym XF86AudioMicMute exec "amixer set Capture toggle"
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
-
-
-# Fancy stuff
-client.focused          #{color0.strip} #{color8.strip}C7 {color15} #00DA8E #{color1.strip}
-client.focused_inactive        #{color8.strip}88 #{color8.strip} {color15} #292d2e #{color8.strip}88
-client.unfocused        #{color1.strip} #{color8.strip} {color15} #292d2e #{color8.strip}88
-client.urgent          #{color2.strip} #{color2.strip}CC {color8} #00DA8E #{color2.strip}
 
 exec --no-startup-id $tools/load_dconf.sh &
 exec --no-startup-id $tools/start_polybar.sh &
