@@ -11,7 +11,10 @@ if (has('termguicolors'))
 endif
 
 func LoadActiveTheme(timer)
-  source ~/.vim/config/colorscheme.vim
+  let seconds_since_changed = localtime() - getftime("/home/kdani/.vim/config/colorscheme.vim")
+  if seconds_since_changed < 10
+    source ~/.vim/config/colorscheme.vim
+  endif
 endfunc
 let load_active_theme_timer = timer_start(2000, 'LoadActiveTheme', {'repeat': -1})
 source ~/.vim/config/colorscheme.vim

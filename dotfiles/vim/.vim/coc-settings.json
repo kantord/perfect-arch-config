@@ -72,5 +72,8 @@
   "tsserver.enableJavascript": true,
   "browser.port": 8123,
   "tsserver.tsdk": ".yarn/sdks/typescript/lib",
-  "tsserver.formatOnType": true
+  "tsserver.formatOnType": true,
+  "diagnostic.filetypeMap": {
+    "markdown": ["write-good", "markdownlint"]
+  }
 }

@@ -16,6 +16,7 @@ then
 
 		# Set vim colorscheme
 		ln -sf $THEME_DIR/colorscheme.vim ~/.vim/config/colorscheme.vim
+		touch ~/.vim/config/colorscheme.vim  # So that vim knows the theme changed
 
 		# Set WPG theme (xresources, GTK, etc.)
 		wpg -a $THEME_DIR/$THEME_NAME.jpeg
