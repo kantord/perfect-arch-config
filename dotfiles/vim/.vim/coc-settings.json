@@ -9,7 +9,7 @@
   "diagnostic.warningSign": "",
   "diagnostic.infoSign": "",
   "diagnostic.enable": true,
-  "coc.preferences.formatOnType": true,
+  "coc.preferences.formatOnType": false,
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "javascriptreact",
@@ -33,13 +33,9 @@
     "typescript",
     "typescriptreact"
   ],
-  "eslint.autoFixOnSave": false,
-  "eslint.format.enable": false,
-  "eslint.options": {
-    "rules": {
-      "prettier/prettier": 0
-    }
-  },
+  "flow.enable": false,
+  "eslint.format.enable": true,
+  "eslint.run": "onType",
   "suggest.completionItemKindLabels": {
     "function": "\uf794",
     "method": "\uf6a6",
@@ -73,7 +69,11 @@
   "browser.port": 8123,
   "tsserver.tsdk": ".yarn/sdks/typescript/lib",
   "tsserver.formatOnType": true,
+  "tsserver.enable": true,
   "diagnostic.filetypeMap": {
-    "markdown": ["write-good", "markdownlint"]
+    "markdown": [
+      "write-good",
+      "markdownlint"
+    ]
   }
 }

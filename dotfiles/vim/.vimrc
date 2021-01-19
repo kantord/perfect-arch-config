@@ -7,6 +7,13 @@ Plug 'othree/yajs.vim'
 Plug 'othree/html5.vim'
 Plug 'HerringtonDarkholme/yats.vim'
 
+"" Markdown 
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
+" Key binding plugins
+Plug 'tpope/vim-rsi'
+Plug 'vimwiki/vimwiki'
+
 " Colorschemes
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'NLKNguyen/papercolor-theme'
@@ -28,8 +35,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'burner/vim-svelte'
 Plug 'dominikduda/vim_current_word'
 "Plug 'ap/vim-css-color'
-"Plug 'RRethy/vim-hexokinase'
-Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'tell-k/vim-autopep8'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -54,7 +60,6 @@ Plug 'markonm/traces.vim'
 Plug 'ledger/vim-ledger'
 Plug 'deviantfero/wpgtk.vim'
 Plug 'majutsushi/tagbar'
-Plug 'vimwiki/vimwiki'
 Plug '907th/vim-auto-save'
 Plug 'dbmrq/vim-ditto'
 Plug 'termhn/i3-vim-nav'
@@ -76,7 +81,8 @@ Plug 'raimondi/delimitmate'
 Plug 'mg979/vim-visual-multi'
 Plug 'antoinemadec/coc-fzf'
 Plug 'styled-components/vim-styled-components'
-Plug 'ap/vim-buftabline'
+"Plug 'ap/vim-buftabline'
+Plug 'bagrat/vim-buffet'
 "Plug 'chaoren/vim-wordmotion'
 Plug 'eugen0329/vim-esearch'
 " Fancy relative numbers:
@@ -531,6 +537,8 @@ source ~/.vim/config/matching_parentheses.vim
 source ~/.vim/config/denite.vim
 source ~/.vim/config/auto_format.vim
 source ~/.vim/config/colors.vim
+source ~/.vim/config/tabline.vim
+source ~/.vim/config/markdown.vim
 
 
 let g:vim_search_pulse_color_list = [1,9]

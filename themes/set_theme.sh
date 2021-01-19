@@ -11,8 +11,8 @@ then
     echo "Setting theme $1"
 
 		# Set kitty terminal theme
-		kitty @ set-colors -a -c ~/.config/kitty/kitty.conf
 		ln -sf $THEME_DIR/kitty.conf ~/.config/kitty/colors.conf
+		kitty @ set-colors -a -c ~/.config/kitty/kitty.conf
 
 		# Set vim colorscheme
 		ln -sf $THEME_DIR/colorscheme.vim ~/.vim/config/colorscheme.vim
