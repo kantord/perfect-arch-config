@@ -22,7 +22,7 @@
 	cp = cherry-pick
 [core]
 	excludesfile = /home/kdani/.gitignore_global
-	editor = nvim
+	editor = gvim
 
 [rebase]
     instructionFormat = %s [%an]
