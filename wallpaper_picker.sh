@@ -7,7 +7,10 @@ if [ -z "$wallpaper" ]
 then
 	echo "Not changing wallpaper because no wallpaper was selected"
 else
+	wallpaper=$(echo $wallpaper | sed 's/\.jpeg$//')
 	echo "Selected $wallpaper"
 	wpg -s $wallpaper
+	cd ~/repos/perfect-arch-config/themes/
+	./set_theme.sh $wallpaper
 fi
 cd -
