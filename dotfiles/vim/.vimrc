@@ -3,28 +3,29 @@ set autoread
 set nowrap
 
 call plug#begin('~/.vim/plugged') 
-" Syntax plugins
+" SYNTAX PLUGINS
 Plug 'othree/yajs.vim'
 Plug 'othree/html5.vim'
 Plug 'HerringtonDarkholme/yats.vim'
 
-"" Markdown 
+"" MARKDOWN 
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
-"Plug 'vimwiki/vimwiki'
+Plug 'vimwiki/vimwiki'
 
-" Key binding plugins
+" KEY BINDING PLUGINS
 Plug 'tpope/vim-rsi'
 
-" Eye candy
+" EYE CANDY
 Plug 'TaDaa/vimade'
+" Rainbow parentheses
+Plug 'luochen1990/rainbow'
 
-" Colorschemes
+" COLORSCHEMES
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'mswift42/vim-themes'
 Plug 'rakr/vim-two-firewatch'
+Plug 'flazz/vim-colorschemes'
 
 Plug 'lambdalisue/suda.vim'
 Plug 'scrooloose/nerdcommenter'

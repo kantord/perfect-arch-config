@@ -35,3 +35,6 @@ set cursorline
 
 " Remove sign column background
 hi SignColumn ctermbg=NONE guibg=NONE
+
+
+let g:rainbow_active = 1
