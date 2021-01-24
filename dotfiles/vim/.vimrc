@@ -1,5 +1,6 @@
 set encoding=utf8
 set autoread                                                                                                                                                                                    
+set nowrap
 
 call plug#begin('~/.vim/plugged') 
 " Syntax plugins
@@ -9,14 +10,21 @@ Plug 'HerringtonDarkholme/yats.vim'
 
 "" Markdown 
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+"Plug 'vimwiki/vimwiki'
 
 " Key binding plugins
 Plug 'tpope/vim-rsi'
-Plug 'vimwiki/vimwiki'
+
+" Eye candy
+Plug 'TaDaa/vimade'
 
 " Colorschemes
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'mswift42/vim-themes'
+Plug 'rakr/vim-two-firewatch'
 
 Plug 'lambdalisue/suda.vim'
 Plug 'scrooloose/nerdcommenter'
@@ -476,11 +484,17 @@ let g:test#javascript#runner = 'jest'
 
 
 " Remap for do codeAction of selected region
-function! s:cocActionsOpenFromSelected(type) abort
-  execute 'CocCommand actions.open ' . a:type
-endfunction
-xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
-nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
+"function! s:cocActionsOpenFromSelected(type) abort
+  "execute 'CocCommand actions.open ' . a:type
+"endfunction
+"xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
+"nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
+
+
+
+nmap <silent> <leader>a :CocAction<CR>
+
+
 
 "autocmd BufWritePre {**/__test__/*,**/__tests__/*,*.test.*} :%! sed 's/it(\(.*\)should \?/it(\1/'
 
@@ -493,16 +507,6 @@ nnoremap <silent> <c-l> :call Focus('right', 'l')<CR>
 nnoremap <silent> <c-h> :call Focus('left', 'h')<CR>
 nnoremap <silent> <c-k> :call Focus('up', 'k')<CR>
 nnoremap <silent> <c-j> :call Focus('down', 'j')<CR>
-
-if exists('g:started_by_firenvim')
-  set noshowmode
-  set noruler
-  set laststatus=0
-  set noshowcmd
-  colorscheme github
-  set background=light
-endif
-
 
 " Clipboard management
 nmap <c-n> <plug>(YoinkPostPasteSwapBack)

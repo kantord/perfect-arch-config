@@ -5,3 +5,4 @@ tags
 tags.lock
 .i3-env-autorun
 .i3-env-current-mode
+.worktrees/

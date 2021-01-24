@@ -18,3 +18,20 @@ func LoadActiveTheme(timer)
 endfunc
 let load_active_theme_timer = timer_start(2000, 'LoadActiveTheme', {'repeat': -1})
 source ~/.vim/config/colorscheme.vim
+
+" Inactive window fading
+let g:vimade = {
+  \ 'enablefocusfading': 1,
+  \ }
+
+" Highlighting current word
+" https://github.com/dominikduda/vim_current_word
+hi CurrentWord cterm=bold term=bold gui=bold
+hi CurrentWordTwins cterm=bold term=bold gui=bold
+
+" Highlight current line
+set cursorline
+
+
+" Remove sign column background
+hi SignColumn ctermbg=NONE guibg=NONE
