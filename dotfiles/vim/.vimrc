@@ -79,6 +79,8 @@ Plug 'rstacruz/vim-hyperstyle'
 "Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-sleuth'
 "Plug 'jiangmiao/auto-pairs'
+" Auto pairs plugin
+"Plug 'cohama/lexima.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'rhysd/git-messenger.vim'
 Plug 'AndrewRadev/splitjoin.vim'
@@ -86,7 +88,8 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'osyo-manga/vim-anzu'
 "Plug 'ruanyl/coverage.vim'
 Plug 'yggdroot/indentline'
-Plug 'raimondi/delimitmate'
+" Auto brackets/delimiters plugin
+"Plug 'raimondi/delimitmate'
 Plug 'mg979/vim-visual-multi'
 Plug 'antoinemadec/coc-fzf'
 Plug 'styled-components/vim-styled-components'
@@ -123,18 +126,25 @@ Plug 'cormacrelf/vim-colors-github'
 " The bang version will try to download the prebuilt binary if cargo does not exist.
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 Plug 'voldikss/vim-floaterm'
+
 Plug 'machakann/vim-highlightedyank'
+
+" Animation for searching 
 Plug 'inside/vim-search-pulse'
 
 " Recent files for denite
 Plug 'Shougo/neomru.vim'
 
 Plug 'camspiers/animate.vim'
+" Automatically resize window
 Plug 'camspiers/lens.vim'
 Plug 'yuttie/comfortable-motion.vim'
+
+" Go to definition and references without LSP
 Plug 'pechorin/any-jump.vim'
-Plug 'puremourning/vimspector.git'
-Plug 'voldikss/vim-codelf'
+"Plug 'puremourning/vimspector.git'
+" Search for useful variable names
+"Plug 'voldikss/vim-codelf'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
@@ -493,6 +503,8 @@ let g:test#javascript#runner = 'jest'
 
 
 
+
+xmap <silent> <leader>a :CocAction<CR>
 nmap <silent> <leader>a :CocAction<CR>
 
 
@@ -544,6 +556,7 @@ source ~/.vim/config/auto_format.vim
 source ~/.vim/config/colors.vim
 source ~/.vim/config/tabline.vim
 source ~/.vim/config/markdown.vim
+source ~/.vim/config/firenvim.vim
 
 
 let g:vim_search_pulse_color_list = [1,9]

@@ -14,6 +14,7 @@ func LoadActiveTheme(timer)
   let seconds_since_changed = localtime() - getftime("/home/kdani/.vim/config/colorscheme.vim")
   if seconds_since_changed < 10
     source ~/.vim/config/colorscheme.vim
+    VimadeRedraw
   endif
 endfunc
 let load_active_theme_timer = timer_start(2000, 'LoadActiveTheme', {'repeat': -1})
@@ -38,3 +39,4 @@ hi SignColumn ctermbg=NONE guibg=NONE
 
 
 let g:rainbow_active = 1
+

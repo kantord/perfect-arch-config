@@ -1,22 +1,19 @@
 {
   "python.jediEnabled": true,
   "python.linting.pylintEnabled": true,
-  "typescript.validate.enable": false,
-  "tsserver.log": "normal",
-  "tsserver.trace.server": "off",
+  "typescript.validate.enable": true,
   "explorer.icon.enableNerdfont": true,
   "diagnostic.errorSign": "",
   "diagnostic.warningSign": "",
   "diagnostic.infoSign": "",
   "diagnostic.enable": true,
-  "coc.preferences.formatOnType": false,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "coc.preferences.formatOnType": true,
   "coc.preferences.formatOnSaveFiletypes": [
-    "javascript",
-    "javascriptreact",
     "typescript",
     "typescriptreact",
     "json",
-    "markdown",
     "svelte",
     "python"
   ],
@@ -33,7 +30,6 @@
     "typescript",
     "typescriptreact"
   ],
-  "flow.enable": false,
   "eslint.format.enable": true,
   "eslint.run": "onType",
   "suggest.completionItemKindLabels": {
@@ -67,7 +63,6 @@
   "coc.source.emoji.filetypes": null,
   "tsserver.enableJavascript": true,
   "browser.port": 8123,
-  "tsserver.tsdk": ".yarn/sdks/typescript/lib",
   "tsserver.formatOnType": true,
   "tsserver.enable": true,
   "diagnostic.filetypeMap": {
