@@ -94,10 +94,10 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
-#bindsym --release $mod+h exec --no-startup-id "i3-vim-nav h"
-#bindsym --release $mod+j exec --no-startup-id "i3-vim-nav j"
-#bindsym --release $mod+k exec --no-startup-id "i3-vim-nav k"
-#bindsym --release $mod+l exec --no-startup-id "i3-vim-nav l"
+#bindsym --release $mod+h exec --no-startup-id "/home/kdani/.vim/plugged/i3-vim-nav/i3-vim-nav h"
+#bindsym --release $mod+j exec --no-startup-id "/home/kdani/.vim/plugged/i3-vim-nav/i3-vim-nav j"
+#bindsym --release $mod+k exec --no-startup-id "/home/kdani/.vim/plugged/i3-vim-nav/i3-vim-nav k"
+#bindsym --release $mod+l exec --no-startup-id "/home/kdani/.vim/plugged/i3-vim-nav/i3-vim-nav l"
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -447,8 +447,10 @@ exec --no-startup-id polybar -r example &
 # Floating Calculator
 bindsym $mod+Shift+P exec kitty --class "Floating Calculator" -e "ipython" &
 bindsym $mod+Shift+Return exec kitty --class "Floating Taskwarrior" zsh -c "task overdue && zsh -i"
+bindsym $mod+b exec kitty --class "Floating Vimwiki" nvim +"set autochdir" +VimwikiIndex
 for_window [class="^Floating Calculator$"] floating enable
 for_window [class="^Floating Taskwarrior$"] floating enable
+for_window [class="^Floating Vimwiki$"] floating enable
 for_window [class="Gvim"] floating enable
 for_window [tiling] move position center
 for_window [class="^Peek"] floating enable

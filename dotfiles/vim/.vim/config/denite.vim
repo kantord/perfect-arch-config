@@ -1,10 +1,11 @@
 
 " Go to anything using the Enter key
-nnoremap <C-G> :<C-u>DeniteProjectDir buffer file_mru coc-workspace commands coc-command file/rec help -start-filter -match-highlight<CR>
+nnoremap <C-G> :<C-u>DeniteProjectDir file_mru commands coc-command file/rec help -start-filter -match-highlight<CR>
+"nnoremap k :<C-u>DeniteProjectDir file_mru commands coc-command file/rec help -start-filter -match-highlight<CR>
 
 
-highlight DeniteFilter ctermbg=4 ctermfg=0
-highlight DeniteMatch ctermbg=1 ctermfg=0 cterm=bold
+"highlight DeniteFilter ctermbg=4 ctermfg=0
+"highlight DeniteMatch ctermbg=1 ctermfg=0 cterm=bold
 
 " denite
 call denite#custom#option('_', {
@@ -14,15 +15,16 @@ call denite#custom#option('_', {
       \ 'winwidth': &columns * 2 / 3,
       \ 'winrow': &lines / 6,
       \ 'winheight': &lines * 2 / 3,
-      \ 'highlight_filter_background': 'DeniteFilter',
-      \ 'highlight_matched_range': 'DeniteMatch',
-      \ 'highlight_matched_char': 'DeniteMatch',
-      \ 'highlight_preview_line': 'DeniteMatch',
-      \ 'highlight_prompt': 'NormalFloat',
-      \ 'highlight_window_background': 'NormalFloat',
+      \ 'source_names': 'hide',
+      \ 'match-highlight': v:true,
+      \ 'highlight_matched_char': 'QuickFixLine',
+      \ 'highlight_matched_range': 'Visual',
+      \ 'highlight_window_background': 'Visual',
+      \ 'highlight_filter_background': 'DiffAdd',
       \ 'max_dynamic_update_candidates': 100000
       \ })
 
+call denite#custom#var('grep', 'command', ['rg'])
 call denite#custom#var('file/rec', 'command',
       \ ['rg', '--files'])
 call denite#custom#source('file/rec', 'converters',
@@ -30,7 +32,7 @@ call denite#custom#source('file/rec', 'converters',
 call denite#custom#source('_', 'matchers', ['matcher/fruzzy'])
 call denite#custom#source('_', 'sorters', ['sorter/sublime'])
 call denite#custom#source(
-	\ 'file_mru', 'matchers', ['matcher/fuzzy', 'matcher/project_files'], 'args', ['.'])
+	\ 'file_mru', 'matchers', ['matcher/fruzzy', 'matcher/project_files'], 'args', ['.'])
 call denite#custom#source('file_mru', 'converters',
     \ ['converter/basename_to_top'])
 

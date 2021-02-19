@@ -32,3 +32,5 @@
 	rebase = false
 [diff]
 	algorithm = patience
+[merge]
+	tool = meld

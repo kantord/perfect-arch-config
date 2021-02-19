@@ -1,24 +1,30 @@
 set encoding=utf8
 set autoread                                                                                                                                                                                    
 set nowrap
+set re=0
 
 call plug#begin('~/.vim/plugged') 
 " SYNTAX PLUGINS
-Plug 'othree/yajs.vim'
-Plug 'othree/html5.vim'
-Plug 'HerringtonDarkholme/yats.vim'
+"Plug 'othree/yajs.vim'
+"Plug 'othree/html5.vim'
+"Plug 'HerringtonDarkholme/yats.vim'
 
 "" MARKDOWN 
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+"Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'vimwiki/vimwiki'
 
 " KEY BINDING PLUGINS
 Plug 'tpope/vim-rsi'
 
+
+Plug 'termhn/i3-vim-nav'
+
 " EYE CANDY
 Plug 'TaDaa/vimade'
 " Rainbow parentheses
-Plug 'luochen1990/rainbow'
+"Plug 'luochen1990/rainbow'
+" Better previews
+Plug 'ncm2/float-preview.nvim'
 
 " COLORSCHEMES
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
@@ -26,6 +32,7 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'mswift42/vim-themes'
 Plug 'rakr/vim-two-firewatch'
 Plug 'flazz/vim-colorschemes'
+Plug 'rakr/vim-one'
 
 Plug 'lambdalisue/suda.vim'
 Plug 'scrooloose/nerdcommenter'
@@ -44,7 +51,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'burner/vim-svelte'
 Plug 'dominikduda/vim_current_word'
 "Plug 'ap/vim-css-color'
-Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
+"Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'tell-k/vim-autopep8'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -98,7 +105,8 @@ Plug 'bagrat/vim-buffet'
 "Plug 'chaoren/vim-wordmotion'
 Plug 'eugen0329/vim-esearch'
 " Fancy relative numbers:
-Plug 'jeffkreeftmeijer/vim-numbertoggle'
+"Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'tpope/vim-eunuch'
 
 " Denite
 Plug 'neoclide/coc-denite'
@@ -298,10 +306,10 @@ nnoremap <Down>  :resize -2<CR>
 nnoremap <Left>  :vertical resize +2<CR>
 nnoremap <Right> :vertical resize -2<CR>
 
-autocmd Filetype html setlocal ts=2 sw=2 expandtab
-autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
-autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 noexpandtab
-autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+"autocmd Filetype html setlocal ts=2 sw=2 expandtab
+"autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+"autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 noexpandtab
+"autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 
 
 " Flag useless whitespace
@@ -513,7 +521,7 @@ nmap <silent> <leader>a :CocAction<CR>
 
 " Vertical column
 set colorcolumn=79
-highlight ColorColumn ctermbg=8 ctermfg=7
+"highlight ColorColumn ctermbg=8 ctermfg=7
 
 " i3 integration
 nnoremap <silent> <c-l> :call Focus('right', 'l')<CR>
@@ -557,9 +565,25 @@ source ~/.vim/config/colors.vim
 source ~/.vim/config/tabline.vim
 source ~/.vim/config/markdown.vim
 source ~/.vim/config/firenvim.vim
+source ~/.vim/config/autoindent.vim
+source ~/.vim/config/sneak.vim
+source ~/.vim/config/esearch.vim
+
 
 
 let g:vim_search_pulse_color_list = [1,9]
 
 let g:ranger_map_keys = 0
 map <leader>G :Ranger<CR>
+
+" Use <C-j> for select text for visual placeholder of snippet.
+vmap <C-j> <Plug>(coc-snippets-select)
+
+" Use <C-j> for jump to next placeholder, it's default of coc.nvim
+let g:coc_snippet_next = '<c-j>'
+
+" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+let g:coc_snippet_prev = '<c-k>'
+
+" Use <C-j> for both expand and jump (make expand higher priority.)
+imap <C-j> <Plug>(coc-snippets-expand-jump)

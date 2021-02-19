@@ -256,6 +256,7 @@ which
 wpa_supplicant
 wpgtk-git
 xboard
+xdotool
 xf86-input-evdev
 xfsprogs
 xorg-server
