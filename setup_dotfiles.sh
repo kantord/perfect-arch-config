@@ -3,7 +3,7 @@
 ./stow.sh zsh
 ./stow.sh compton
 ./stow.sh termite
-./stow.sh vim
+./stow.sh nvim
 ./stow.sh fontconfig
 ./stow.sh autostart
 ./stow.sh git

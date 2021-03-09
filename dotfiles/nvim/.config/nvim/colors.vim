@@ -19,7 +19,7 @@ func LoadActiveTheme(timer)
   endif
 endfunc
 let load_active_theme_timer = timer_start(2000, 'LoadActiveTheme', {'repeat': -1})
-source ~/.vim/config/colorscheme.vim
+source ~/.config/nvim/colorscheme.vim
 
 " Inactive window fading
 let g:vimade = {

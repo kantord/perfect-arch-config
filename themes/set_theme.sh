@@ -15,7 +15,7 @@ then
 		kitty @ set-colors -a -c ~/.config/kitty/kitty.conf
 
 		# Set vim colorscheme
-		ln -sf $THEME_DIR/colorscheme.vim ~/.vim/config/colorscheme.vim
+		ln -sf $THEME_DIR/colorscheme.vim ~/.config/nvim/colorscheme.vim
 		touch ~/.vim/config/colorscheme.vim  # So that vim knows the theme changed
 
 		# Set WPG theme (xresources, GTK, etc.)
