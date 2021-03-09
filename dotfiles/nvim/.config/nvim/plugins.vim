@@ -12,4 +12,9 @@ Plug 'rakr/vim-one'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'junegunn/seoul256.vim'
 
+" NAVIGATION
+Plug 'nvim-lua/popup.nvim' " Required for telescope.nvim
+Plug 'nvim-lua/plenary.nvim' " Required for telescope.nvim
+Plug 'nvim-telescope/telescope.nvim'
+
 call plug#end()
