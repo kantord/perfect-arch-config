@@ -14,6 +14,7 @@ func LoadActiveTheme(timer)
   let seconds_since_changed = localtime() - getftime("/home/kdani/.vim/config/colorscheme.vim")
   if seconds_since_changed < 10
     source ~/.vim/config/colorscheme.vim
+    call LoadThemeCustomization()
     "VimadeRedraw
   endif
 endfunc
@@ -25,18 +26,27 @@ let g:vimade = {
   \ 'enablefocusfading': 1,
   \ }
 
-" Highlighting current word
-" https://github.com/dominikduda/vim_current_word
-hi CurrentWord cterm=bold term=bold gui=bold
-hi CurrentWordTwins cterm=bold term=bold gui=bold
-
-" Highlight current line
-set cursorline
-
-
-" Remove sign column background
-hi SignColumn ctermbg=NONE guibg=NONE
-
 
 let g:rainbow_active = 1
 
+func LoadThemeCustomization()
+  " Highlighting current word
+  " https://github.com/dominikduda/vim_current_word
+  hi CurrentWord cterm=bold term=bold gui=bold
+  hi CurrentWordTwins cterm=bold term=bold gui=bold
+
+  " Highlight current line
+  set cursorline
+
+  " Remove sign column background
+  hi SignColumn ctermbg=NONE guibg=NONE
+
+  " Coc underline customization
+  hi CocUnderline gui=undercurl term=undercurl
+  hi CocErrorHighlight ctermfg=red  guifg=#c4384b gui=undercurl term=undercurl
+  hi CocWarningHighlight ctermfg=yellow guifg=#c4ab39 gui=undercurl term=undercurl
+endfunc
+
+
+
+call LoadThemeCustomization()

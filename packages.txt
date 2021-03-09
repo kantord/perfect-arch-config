@@ -73,6 +73,7 @@ gitstats-git
 glava
 glibc
 gnome
+gnome-calendar
 gnome-control-center
 gnome-settings-daemon
 gnome-terminal
@@ -144,6 +145,7 @@ nano
 nautilus
 nerd-fonts-fira-code
 nerd-fonts-iosevka
+nerd-fonts-jetbrains-mono
 nerd-fonts-victor-mono
 netctl
 nitrogen

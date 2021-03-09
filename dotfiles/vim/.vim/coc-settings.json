@@ -30,6 +30,7 @@
     "typescript",
     "typescriptreact"
   ],
+  "stylelint.enable": true,
   "eslint.format.enable": true,
   "eslint.run": "onType",
   "suggest.completionItemKindLabels": {

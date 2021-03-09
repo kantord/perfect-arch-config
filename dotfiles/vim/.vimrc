@@ -19,6 +19,9 @@ Plug 'tpope/vim-rsi'
 
 Plug 'termhn/i3-vim-nav'
 
+" Git blame in virtual text
+"Plug 'f-person/git-blame.nvim'
+
 " EYE CANDY
 Plug 'TaDaa/vimade'
 " Rainbow parentheses
@@ -33,6 +36,8 @@ Plug 'mswift42/vim-themes'
 Plug 'rakr/vim-two-firewatch'
 Plug 'flazz/vim-colorschemes'
 Plug 'rakr/vim-one'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'junegunn/seoul256.vim'
 
 Plug 'lambdalisue/suda.vim'
 Plug 'scrooloose/nerdcommenter'
@@ -322,7 +327,7 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 " map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 
-"hi default CocUnderline    cterm=underline 
+"hi default CocUnderline    cterm=undercurl
 "hi default CocErrorSign    ctermfg=9     
 "hi default CocWarningSign  ctermfg=9   
 "hi default CocInfoSign     ctermfg=9  
