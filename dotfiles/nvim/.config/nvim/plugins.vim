@@ -17,4 +17,7 @@ Plug 'nvim-lua/popup.nvim' " Required for telescope.nvim
 Plug 'nvim-lua/plenary.nvim' " Required for telescope.nvim
 Plug 'nvim-telescope/telescope.nvim'
 
+" LANGUAGE SERVER SUPPORT
+Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
+
 call plug#end()
