@@ -20,3 +20,5 @@ dotfiles/wpgtk/.config/wpg/.current
 dotfiles/vim/.vim/.netrwhist
 dotfiles/vim/.vim/sessions
 dotfiles/autorandr
+dotfiles/nvim/.config/coc/extensions/db.json
+dotfiles/nvim/.config/coc/memos.json
