@@ -3,10 +3,10 @@ rofi.width:                          80
 rofi.lines:                          8
 rofi.columns:                        2
 rofi.font:                           Source Code Pro 9
-rofi.color-normal:                   argb:00263238, #ffffff, argb:00263238, argb:556888cb, #ffffff
-rofi.color-urgent:                   argb:00263238, #d6b48d, argb:00263238, #d6b48d, #ffffff
-rofi.color-active:                   argb:00263238, #a3f7ff, argb:00263238, #a3f7ff, #263238
-rofi.color-window:                   argb:cc263238, #6888cb, #475d8c
+rofi.color-normal:                   argb:00292d3e, #a6accd, argb:00292d3e, argb:556888cb, #a6accd
+rofi.color-urgent:                   argb:00292d3e, #d6b48d, argb:00292d3e, #d6b48d, #a6accd
+rofi.color-active:                   argb:00292d3e, #a3f7ff, argb:00292d3e, #a3f7ff, #292d3e
+rofi.color-window:                   argb:cc292d3e, #6888cb, #475d8c
 rofi.bw:                             0
 rofi.eh:                             1
 rofi.location:                       0

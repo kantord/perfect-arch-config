@@ -1,4 +1,3 @@
-
 " Go to anything using the Enter key
 nnoremap <C-G> :<C-u>DeniteProjectDir file_mru commands coc-command file/rec help -start-filter -match-highlight<CR>
 "nnoremap k :<C-u>DeniteProjectDir file_mru commands coc-command file/rec help -start-filter -match-highlight<CR>
@@ -17,12 +16,13 @@ call denite#custom#option('_', {
       \ 'winheight': &lines * 2 / 3,
       \ 'source_names': 'hide',
       \ 'match-highlight': v:true,
-      \ 'highlight_matched_char': 'QuickFixLine',
-      \ 'highlight_matched_range': 'Visual',
+      \ 'highlight_matched_char': 'CocBold',
+      \ 'highlight_matched_range': 'CocBold',
       \ 'highlight_window_background': 'Visual',
       \ 'highlight_filter_background': 'DiffAdd',
       \ 'max_dynamic_update_candidates': 100000
       \ })
+
 
 call denite#custom#var('grep', 'command', ['rg'])
 call denite#custom#var('file/rec', 'command',

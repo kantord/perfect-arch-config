@@ -1,1 +1,1 @@
-/home/kdani/repos/perfect-arch-config/themes/material-default/colorscheme.vim
+/home/kdani/repos/perfect-arch-config/themes/material-palenight/colorscheme.vim
