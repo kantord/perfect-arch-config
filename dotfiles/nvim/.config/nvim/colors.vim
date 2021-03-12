@@ -10,25 +10,6 @@ if (has('termguicolors'))
   set termguicolors
 endif
 
-func LoadActiveTheme(timer)
-  let seconds_since_changed = localtime() - getftime("/home/kdani/.vim/config/colorscheme.vim")
-  if seconds_since_changed < 10
-    source ~/.vim/config/colorscheme.vim
-    call LoadThemeCustomization()
-    "VimadeRedraw
-  endif
-endfunc
-let load_active_theme_timer = timer_start(2000, 'LoadActiveTheme', {'repeat': -1})
-source ~/.config/nvim/colorscheme.vim
-
-" Inactive window fading
-let g:vimade = {
-  \ 'enablefocusfading': 1,
-  \ }
-
-
-let g:rainbow_active = 1
-
 func LoadThemeCustomization()
   " Highlighting current word
   " https://github.com/dominikduda/vim_current_word
@@ -43,10 +24,29 @@ func LoadThemeCustomization()
 
   " Coc underline customization
   hi CocUnderline gui=undercurl term=undercurl
-  hi CocErrorHighlight ctermfg=red  guifg=#c4384b gui=undercurl term=undercurl
-  hi CocWarningHighlight ctermfg=yellow guifg=#c4ab39 gui=undercurl term=undercurl
+  hi CocErrorHighlight guisp=red  gui=undercurl term=undercurl
+  hi CocWarningHighlight guisp=yellow gui=undercurl term=undercurl
+
+  " Inactive window fading
+  let g:vimade = {
+    \ 'enablefocusfading': 1,
+    \ }
 endfunc
 
+func LoadActiveTheme()
+  source /home/kdani/.config/nvim/colorscheme.vim
+  call LoadThemeCustomization()
+endfunc
+
+call LoadActiveTheme()
+
+func LoadActiveThemeTimer(timer)
+  let seconds_since_changed = localtime() - getftime("/home/kdani/.config/nvim/colorscheme.vim")
+  if seconds_since_changed < 100
+    echo "Loading theme"
+    call LoadActiveTheme()
+  endif
+endfunc
+let load_active_theme_timer = timer_start(2000, 'LoadActiveThemeTimer', {'repeat': -1})
 
 
-call LoadThemeCustomization()

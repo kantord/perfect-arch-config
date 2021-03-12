@@ -6,3 +6,5 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Use smart case for searching
 set ignorecase smartcase
+
+

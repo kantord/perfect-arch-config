@@ -13,11 +13,26 @@ Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'junegunn/seoul256.vim'
 
 " NAVIGATION
-Plug 'nvim-lua/popup.nvim' " Required for telescope.nvim
-Plug 'nvim-lua/plenary.nvim' " Required for telescope.nvim
-Plug 'nvim-telescope/telescope.nvim'
+Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'neoclide/coc-denite'
+Plug 'chemzqm/denite-extra'
+Plug 'raghur/fruzzy', {'do': { -> fruzzy#install()}}
+Plug 'nabezokodaikon/denite-converter-basename_to_top'
+Plug 'Shougo/neomru.vim' " Recent files for denite
 
 " LANGUAGE SERVER SUPPORT
 Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
+
+" FILE MANAGER
+Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim'  " Needed for ranger
+
+" EYE CANDY
+Plug 'TaDaa/vimade' " fade inactive splits
+Plug 'ryanoasis/vim-devicons'  " fancy icons
+Plug 'itchyny/lightline.vim'  " Fancy status line
+
+" SYNTAX
+Plug 'tpope/vim-sleuth'  " Automatically detect indentation settings in the buffer
 
 call plug#end()
