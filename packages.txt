@@ -64,6 +64,7 @@ gcc-libs
 gedit
 gettext
 gimp
+gimp-plugin-resynthesizer
 git
 git-cola
 github-cli
@@ -80,6 +81,7 @@ gnome-terminal
 gnuchess
 google-chrome
 gpaint
+gphoto2
 gpointing-device-settings
 greenclip
 grep
@@ -244,6 +246,8 @@ ttf-liberation
 unclutter
 usbutils
 util-linux
+v4l2loopback-dkms
+v4l-utils
 vdirsyncer
 vi
 vimb

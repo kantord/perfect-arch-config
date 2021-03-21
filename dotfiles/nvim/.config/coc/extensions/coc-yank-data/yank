@@ -1,0 +1,231 @@
+36c4536996ca5615dcf9911f068786dc|file:///home/kdani/repos/mmb/workspaces/eslint/src/rules/correct-translation-usage.ts|19|26|v|typescript
+	node
+9cf1011f562119ab12d64b5b26b7c83f|file:///home/kdani/repos/mmb/workspaces/eslint/src/rules/correct-translation-usage.ts|22|26|v|typescript
+	KeyFunction
+ba909335ae8e8160edc8877d3e49d267|file:///home/kdani/repos/mmb/workspaces/eslint/src/rules/correct-translation-usage.ts|39|7|v|typescript
+	!isStringLiteral(translateKey)
+bbd33a76cec628ebd2569c2e94d84777|file:///home/kdani/repos/mmb/workspaces/eslint/src/rules/correct-translation-usage.ts|39|1|V|typescript
+	  if (!isStringLiteral(translateKey)) {
+	    return context.report(node, 'The translation key needs to be a string literal');
+	  }
+b8b22deb1f424d77dea898a825d1f483|file:///home/kdani/repos/mmb/workspaces/web-client/src/modules/Invoices/components/InvoicesItem.tsx|1|1|V|typescriptreact
+	=======
+8c81893b199675fb295581e455dc632b|file:///home/kdani/repos/mmb/workspaces/web-client/src/modules/Invoices/components/InvoicesItem.tsx|1|1|V|typescriptreact
+	import InvoiceCategoryName from '../services/InvoiceCategoryName';
+de0d56feefd293fc41c5226beede622d|file:///home/kdani/repos/mmb/workspaces/web-client/src/modules/Invoices/components/InvoicesItem.tsx|1|1|V|typescriptreact
+	>>>>>>> 4c730da (feat(eslint): validate translation usage in <TextNode />)
+697dfb9b235783676b63d2f1ed07cad5|file:///home/kdani/repos/mmb/workspaces/web-client/src/modules/Invoices/components/InvoicesItem.tsx|1|1|V|typescriptreact
+	<<<<<<< HEAD
+dbc1f6a1727442cbe21ca86572566573|file:///home/kdani/repos/mmb/workspaces/web-client/src/modules/Invoices/components/InvoicesItem.tsx|1|1|V|typescriptreact
+	import InvoiceCategoryName from '../services/getInvoiceCategoryTKey';
+1f20f42bd01d3aeb7161de2dd58d3a88|untitled:18|8|7|v|typescript
+	isUnauthenticatedError
+1023c2520bc745494ec185eb7533eda7|untitled:18|9|1|v|typescript
+	  if (error instanceof Error) {
+	    return error.message !== 'No auth token.' && failureCount < 3;
+	  }
+089edc7bcc650850e5262a761d233441|untitled:18|3|46|v|typescript
+	 && failureCount < 3;
+e6bc2a9f5b41e14cf7b0777b4a89e6c7|untitled:18|1|1|v|typescript
+	return 
+afeb26dcbf236beadd48be0fdfa090ed|untitled:18|1|1|V|typescript
+	  return false;
+5891b2ec947aae2598028242a32b98df|untitled:18|1|1|V|typescript
+	  return error.status !== 404 && error.status !== 401 && failureCount < 3;
+a12e889b24dd431dec30f69d4c790cd1|untitled:18|8|27|v|typescript
+	 && error.status !== 401 && failureCount < 3;
+98791cf1431a36e3cb7446117e7f3b80|untitled:18|1|1|v|typescript
+	const isUnauthenticatedError = error =>
+	  (error instanceof Error && error.message !== 'No auth token.') || error.status === 401;
+	
+	export const shouldRetry = (failureCount: number, error: Response | Error): boolean => {
+	  if (error.status === 404) {
+	    return false;
+	  }
+	
+	  if (isUnauthenticatedError(error)) {
+	    return false;
+	  }
+	
+	  return failureCount < 3;
+	};
+e2084c689abc19004bd06e953ba06385|file:///home/kdani/repos/mmb/.gitlab/merge_request_templates/template.md|1|1|V|markdown
+	- [ ] I checked that code has unit tests - at least ~80%
+58aa07f8d6ccde93130e6210a9def980|file:///home/kdani/repos/mmb/.gitlab/merge_request_templates/template.md|1|1|V|markdown
+	- [ ] Unit tests done - at least ~80% 
+3deb734a0e34beaa0e40812c1eca8a6f|file:///home/kdani/repos/mmb/.gitlab/merge_request_templates/template.md|1|1|v|markdown
+	https://kiwi.wiki/frontend/wiki/docs/codingConventions/about#__docusaurus
+91f62bb06c58d0c83dff64232d58047b|untitled:42|2|7|v|typescriptreact
+	RefundMethodSelectionFooter
+0380dd2244a9dd379bdbb65ebd1b96a1|untitled:42|1|1|V|typescriptreact
+	  const router = useRouter();
+828ff2cc40d4ffdfc6f1319606820af3|untitled:42|1|1|V|typescriptreact
+	  const language = usePathLanguage();
+26fe5c7e4a099f383394b18a7a89c067|untitled:42|1|1|V|typescriptreact
+	  const refundRequestMethodPaths = useRefundRequestMethodPaths();
+c0f69e6dcdee3208536d15c1e68f0f99|untitled:42|1|1|v|typescriptreact
+	<FormInputs>
+34b80a092952b8a96f66d8511602a58f|untitled:42|1|1|V|typescriptreact
+	  // isLoading from mutation hook is updated later than isSubmitting, so we should use isSubmitting or isSubmitted from form state.
+91be8dc9be21dd2aaaf496b9c8ab44ae|untitled:42|1|1|V|typescriptreact
+	  // We can leave shouldShowLoading true even after form is successfully submitted because a page redirect is triggered eventually anyway.
+94b641a889fbb6f09e40a877cf67ccca|untitled:42|1|1|V|typescriptreact
+	  const shouldShowLoading = isSubmitting || isSubmitted;
+08361740dde2e34eb29bcc72d6e9be77|untitled:42|1|1|V|typescriptreact
+	  const { mutate } = usePatchRefundRequests();
+e63de6dcaffc568a30035f47b457f394|untitled:42|1|1|V|typescriptreact
+	  const { log } = useLog();
+31988e3adbd5ba93cab3b6f40ccf5c70|untitled:42|9|23|v|typescriptreact
+	refundMethod
+9113bdcbd9a9297d4e29aad1f595218b|untitled:42|9|21|v|typescriptreact
+	{  }: FormInputs
+962699f8dafee36ae5a45d719dcc2716|untitled:42|10|1|V|typescriptreact
+	    const redirectPath =
+	      refundMethod === RefundOfferViewRefundMethodsTypeEnum.Credits
+	        ? refundRequestMethodPaths.successCredits
+	        : refundRequestMethodPaths.successOrigin;
+	    mutate(
+	      // @ts-ignore TODO: fix case when refundMethod is undefined
+	      { refundMethod },
+	      {
+	        onSuccess: () => {
+	          log(createEventLog(Category.REFUND_REQUESTS, APIAction.SUBMIT_SUCCESSFUL), {
+	            page: 'choose a refund method selection',
+	            refundMethod,
+	          });
+	          router.push(redirectPath);
+	        },
+	        onError: () => {
+	          router.push(refundRequestMethodPaths.error);
+	        },
+	      },
+	    );
+c649598f6f673b406344d6315698f886|untitled:42|11|22|v|typescriptreact
+	usePatchRefundRequests
+a2e7e6f9e4ac4635c21a51c778b40fa0|untitled:42|1|1|V|typescriptreact
+	      // @ts-ignore TODO: fix case when refundMethod is undefined
+c14fdba6030f4787fda52a457b09d9bb|untitled:42|1|1|V|typescriptreact
+	      { refundMethod },
+1ef65990064996086c7366a2f7bfc3d8|untitled:42|1|1|v|typescriptreact
+	    const redirectPath =
+	      refundMethod === RefundOfferViewRefundMethodsTypeEnum.Credits
+	        ? refundRequestMethodPaths.successCredits
+	        : refundRequestMethodPaths.successOrigin;
+7e2ba19071fbf8e79bd6a17d49fa339d|untitled:42|13|21|v|typescriptreact
+	{ refundMethod }: FormInputs
+612b7f64bd88be190d7b7d6b8de2b9db|untitled:42|14|1|V|typescriptreact
+	    mutate(
+	      {
+	        onSuccess: () => {
+	          log(createEventLog(Category.REFUND_REQUESTS, APIAction.SUBMIT_SUCCESSFUL), {
+	            page: 'choose a refund method selection',
+	            refundMethod,
+	          });
+	          router.push(redirectPath);
+	        },
+	        onError: () => {
+	          router.push(refundRequestMethodPaths.error);
+	        },
+	      },
+	    );
+2cb694023f2ae8a92be4949f5c9de8e9|untitled:42|11|9|v|typescriptreact
+	{ mutate }
+4ac3986f2badc1480056dffb47b37079|untitled:42|1|1|V|typescriptreact
+	  };
+66e6bbae7b0f7e21d3b6a374416a3d8e|untitled:42|1|1|V|typescriptreact
+	  const watchRefundMethodField = watch('refundMethod');
+89445cbe6554612831394eb5a6df456a|untitled:42|16|29|v|typescriptreact
+	
+	        <ContentMaxWidth>
+	          <ContentPadding>
+	            <Stack>
+	              <AvailableRefundMethods control={control} shouldShowLoading={shouldShowLoading} />
+	              <OrbitText type="secondary">
+	                <TranslateRef
+	                  t="mmb.requests.refunds.refund_method.select.terms_disclaimer"
+	                  render={ref => (
+	                    <TextLink external href={`/${language}/pages/content/legal`}>
+	                      {ref}
+	                    </TextLink>
+	                  )}
+	                />
+	              </OrbitText>
+	            </Stack>
+	          </ContentPadding>
+	        </ContentMaxWidth>
+	      
+8c8c5313df9e6c9591b7552870e308ca|untitled:42|15|45|v|typescriptreact
+	
+	      <SurpressedBackground></SurpressedBackground>
+	      <ContentMaxWidth>
+	        <ContentPadding verticalPadding="spaceMedium">
+	          <FormControls
+	            isSubmitting={shouldShowLoading}
+	            isDisabled={!watchRefundMethodField || shouldShowLoading}
+	            href={refundRequestMethodPaths.home}
+	          />
+	        </ContentPadding>
+	      </ContentMaxWidth>
+	    
+b8471f97a53bd1a526118270d84ab536|untitled:42|1|1|v|typescriptreact
+	  // isLoading from mutation hook is updated later than isSubmitting, so we should use isSubmitting or isSubmitted from form state.
+	  // We can leave shouldShowLoading true even after form is successfully submitted because a page redirect is triggered eventually anyway.
+f05cc449d147c82a7aed1ea79cb7b3c0|untitled:42|1|1|V|typescriptreact
+	    control,
+262193a3ebd69ac3cf75d37026badb4e|untitled:42|1|1|V|typescriptreact
+	    watch,
+8d56311fa05f7d588f281fafd4015494|untitled:42|1|1|V|typescriptreact
+	    formState: { isSubmitting, isSubmitted },
+61fac8a8f1cbd58cf2b1b867565ebcb2|untitled:42|1|1|v|typescriptreact
+	
+	const MySimpleForm = () => {
+	  const {
+	    handleSubmit,
+	  } = useForm();
+	  const myMutation = useMutation( ... etc ...);
+	  const onSubmit = (data) => myMutation.mutate(data)
+	
+	  return (
+	    <form onSubmit={handleSubmit(onSubmit)}>
+	    { /* ... etc ... */ }
+	    </form>
+	  );
+	};
+ade99e424b9cd135b58a38a6d4180948|file:///home/kdani/repos/mmb/workspaces/web-client/src/common/components/Page/Page.tsx|1|1|V|typescriptreact
+	}: RendererProps<TData, TError>): JSX.Element {
+	  const queryResult = query();
+	  const { error } = queryResult;
+	
+	  if (
+	    error instanceof MissingAuthenticationTokenError ||
+	    (error instanceof Response && error.status === 401)
+	  ) {
+	    return <LoadingPage />;
+	  }
+	
+	  return errorHandler({ render, queryResult });
+	}
+1426098413af0f67583344ea7c2ace61|file:///home/kdani/repos/mmb/workspaces/web-client/src/common/components/Page/Page.tsx|1|1|V|typescriptreact
+	  ) {
+	    return <LoadingPage />;
+	  }
+390150efe27ed4aba72ddee51d1f75a4|file:///home/kdani/.config/nvim/coc-settings.json|1|1|V|json
+	  "codeLens.subseparator":
+660c8245806b245b4be559b203816bbd|file:///home/kdani/.config/nvim/coc-settings.json|2|3|V|json
+	  "codeLens.enable": true,
+1ef5b559637c8926b072cd2d86578b7c|file:///home/kdani/.config/nvim/coc-settings.json|1|1|V|json
+	  "codeLens": {
+479ad8af069be2a8049963b8faafcda3|file:///home/kdani/.config/nvim/coc-settings.json|1|1|V|json
+	    "enable": true
+2a8a1a2a149f5d230e9e435bb7f862ee|file:///home/kdani/.config/nvim/coc-settings.json|1|1|V|json
+	  },
+045e5a341f67aac6e3ea5be726f758d5|file:///home/kdani/repos/perfect-arch-config/themes/gruvbox/colorscheme.vim|1|1|V|vim
+	let g:material_theme_style = 'default' 
+0772e19a992bcfbbf0bf26f046eb1e70|file:///home/kdani/repos/perfect-arch-config/themes/gruvbox/colorscheme.vim|1|1|V|vim
+	let g:material_terminal_italics = 1
+b326b5062b2f0e69046810717534cb09|file:///home/kdani/repos/perfect-arch-config/dotfiles/wpgtk/.config/wpg/templates/config_polybar_config.base|461|23|v|
+	true
+1960dbcc2bd39a22b0519ab59db5ebac|file:///home/kdani/.config/nvim/coc-settings.json|1|1|V|json
+	  "typescript.implementationsCodeLens.enable":
+b757b752f91c8b75b0cdc1b2219408b2|file:///home/kdani/.config/nvim/coc-settings.json|1|1|V|json
+	  "codelen
