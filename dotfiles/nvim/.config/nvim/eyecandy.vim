@@ -16,6 +16,9 @@ set cmdheight=2
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
+" Enable word wrapping
+set wrap linebreak nolist
+
 " CoC documentation
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
