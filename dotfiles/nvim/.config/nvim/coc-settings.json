@@ -1,5 +1,4 @@
 {
-  "codeLens.enable": true,
   "eslint.run": "onSave",
   "eslint.codeActionsOnSave.mode": "problems",
   "eslint.format.enable":true,
@@ -7,6 +6,7 @@
   "diagnostic.warningSign": "",
   "diagnostic.infoSign": "",
   "cSpell.userWords": [
+    "Unmount",
     "prio"
   ]
 }

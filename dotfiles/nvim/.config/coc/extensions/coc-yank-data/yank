@@ -229,3 +229,116 @@ b326b5062b2f0e69046810717534cb09|file:///home/kdani/repos/perfect-arch-config/do
 	  "typescript.implementationsCodeLens.enable":
 b757b752f91c8b75b0cdc1b2219408b2|file:///home/kdani/.config/nvim/coc-settings.json|1|1|V|json
 	  "codelen
+f90eb2feceaa2b08b6432af6792d2012|file:///home/kdani/.config/nvim/coc-settings.json|1|1|V|json
+	  "git
+bc9f7cf5b9dbbd7ae7d8e708538d29f5|file:///home/kdani/repos/LibreLingo/apps/web/src/routes/license.svelte|1|1|V|svelte
+	MarkDownPage
+27012e469c45c9af3ca2198222418f45|file:///home/kdani/repos/LibreLingo/apps/web/src/routes/devtools.svelte|1|1|v|svelte
+	<script lang="typescript" context="module">
+0d85ad8897db24a1e5b42d2ecad10af5|file:///home/kdani/repos/perfect-arch-config/dotfiles/nvim/.config/nvim/plugins.vim|1|1|V|vim
+	leafOfTree/vim-svelte-plugin
+9ca826e149be5e6bc22bf2ad9c9e0344|file:///home/kdani/repos/perfect-arch-config/dotfiles/nvim/.config/nvim/plugins.vim|1|1|V|vim
+	" SVELTE SUPPORT
+15fe0f44240188475b77b7f6fa169038|file:///home/kdani/repos/perfect-arch-config/dotfiles/nvim/.config/nvim/plugins.vim|1|1|V|vim
+	Plug 'leafOfTree/vim-svelte-plugin'
+ff3420905f2b6d121b1018c106718fdc|file:///home/kdani/repos/perfect-arch-config/dotfiles/nvim/.config/nvim/plugins.vim|1|1|V|vim
+	Plug 'easymotion/vim-easymotion'
+4c7e3cc310035f011de3704270a82f66|file:///run/user/1000/firenvim/github.com_kantord-LibreLingo-issues-1175_TEXTAREA-id-issue-837176902-body.txt|5|1|V|markdown
+	A clear and concise description of what you want to happen.
+34d8fa0aa16f86ed4ed6e1feb010e773|file:///run/user/1000/firenvim/github.com_kantord-LibreLingo-issues-1175_TEXTAREA-id-issue-837176902-body.txt|1|1|V|markdown
+	**Describe alternatives you've considered**
+79ef796216a973fd76d0ddd598b4848f|file:///run/user/1000/firenvim/github.com_kantord-LibreLingo-issues-1175_TEXTAREA-id-issue-837176902-body.txt|1|1|V|markdown
+	A clear and concise description of any alternative solutions or features you've considered.
+5eba9ab9e2f5657a4edf60bc1592b90c|file:///run/user/1000/firenvim/github.com_kantord-LibreLingo-issues-1175_TEXTAREA-id-issue-837176902-body.txt|1|1|V|markdown
+	**Additional context**
+79e36e3dfd1b3a27b2e2013cc94f97ea|file:///run/user/1000/firenvim/github.com_kantord-LibreLingo-issues-1175_TEXTAREA-id-issue-837176902-body.txt|1|1|V|markdown
+	Add any other context or screenshots about the feature request here.
+2df1705c75d1af3811d69716e1fcbbe6|file:///run/user/1000/firenvim/github.com_kantord-LibreLingo-issues-1175_TEXTAREA-id-issue-837176902-body.txt|1|1|V|markdown
+	- You should not need to have nodejs/npm/etc installed in order to install the binary version
+0058e06271a4a35c0b00973c65a8ca8e|file:///run/user/1000/firenvim/github.com_kantord-LibreLingo-issues-1175_TEXTAREA-id-issue-837176902-body.txt|1|1|V|markdown
+	- The solution should be cross-platform
+b9ee0884e73d81bec9aa5d99c6034c67|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/tests/test_list_missing_audios.py|3|1|v|python
+	
+	def test_returns_hello_world():
+	    assert list_missing_audios() == "Hello World"
+4f908c36747a1aaaf2aafb754e8e3cc5|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/tests/test_list_missing_audios.py|4|10|v|python
+	returns_hello_world
+5e7c683623bdabaeae97f8157e80f85c|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/tests/test_list_missing_audios.py|5|37|v|python
+	"Hello World"
+c2edb986eba5cb7fdab10e18787d2622|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/tests/test_list_missing_audios.py|1|1|V|python
+	from librelingo_fakes import fakes
+a64933f4b8edf5fae56c5f115130b501|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/tests/test_list_missing_audios.py|1|1|v|python
+	from librelingo_fakes import fakes
+	
+	from librelingo_audios.list_missing_audios import list_missing_audios
+	
+	
+	def test_an_empty_course_does_not_have_any_audios():
+	    assert list(list_missing_audios(fakes.courseEmpty)) == []
+2d3d1f96312c55602443851d2f038553|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/librelingo_audios/list_missing_audios.py|2|5|V|python
+	    return "Hello World"
+4677b06704d38b801325e236d8df837f|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/librelingo_audios/list_missing_audios.py|1|1|v|python
+	def list_missing_audios(course):
+	    return []
+5a1948e2939aebff9e6da0339bb9eefb|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/tests/test_list_missing_audios.py|4|1|v|python
+	
+	
+	def test_an_empty_course_does_not_have_any_audios():
+	    assert list(list_missing_audios(fakes.courseEmpty)) == []
+6b43df2dd011012bdfd682edfce568bb|file:///home/kdani/repos/LibreLingo/docs/creating_a_python_language_learning_app_using_librelingo_courses.md|272|10|v|markdown
+	an_empty_course_does_not_have_any_audios
+e87ca73510c555a372f97f8b595c6ad4|file:///home/kdani/repos/LibreLingo/docs/creating_a_python_language_learning_app_using_librelingo_courses.md|273|43|v|markdown
+	courseEmpty
+10ae9fc7d453b0dd525d0edf2ede7961|file:///home/kdani/repos/LibreLingo/docs/creating_a_python_language_learning_app_using_librelingo_courses.md|273|12|v|markdown
+	list
+7f5f6d9990db57995eefad66e3d8b4c7|file:///home/kdani/repos/LibreLingo/docs/creating_a_python_language_learning_app_using_librelingo_courses.md|272|1|v|markdown
+	def test_a_course_with_2_phrases_needs_2_audios():
+	    assert len(list(list_missing_audios(fakes.course1))) == 2
+b99dec1f6365a8867c9e4158a342aedc|file:///home/kdani/repos/LibreLingo/docs/creating_a_python_language_learning_app_using_librelingo_courses.md|272|1|v|markdown
+	def test_a_course_with_2_phrases_needs_2_audios():
+	    assert len(list(list_missing_audios(fakes.course1))) == 2
+	
+aa5fe38237462a91625299a3d7b9c861|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/librelingo_audios/list_missing_audios.py|1|1|v|python
+	def list_missing_audios(course):
+	    if not course.modules:
+	        return []
+	
+	    return ["foo", 42]
+93e35a9212a209b8c1537c62dd8cc0a4|file:///home/kdani/repos/LibreLingo/docs/creating_a_python_language_learning_app_using_librelingo_courses.md|257|1|v|markdown
+	```ipython
+	In [41]: count = 0
+	
+	In [42]: for module in fakes.course1.modules:
+	    ...:     for skill in module.skills:
+	    ...:         count += len(skill.phrases)
+	    ...: 
+	
+	In [43]: count
+	Out[43]: 2
+	```
+58a6fa6295d8085fb5bc2ec48de17293|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/tests/test_list_missing_audios.py|11|1|V|python
+	    assert len(list(list_missing_audios(fakes.course1))) == 2
+93bec03796f42620d98b58dc7ea6f1d9|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/tests/test_list_missing_audios.py|1|1|V|python
+	    assert list(list_missing_audios(fakes.courseEmpty)) == []
+47519269a849029470c365ad36acfcd6|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/tests/test_list_missing_audios.py|5|1|v|python
+	
+	def test_a_course_with_0_phrases_needs_zero_audios():
+	    assert len(list(list_missing_audios(fakes.course2))) == 0
+c7bc58dd53ea4e509a8f9410cda68f26|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/librelingo_audios/list_missing_audios.py|1|1|V|python
+	    if not course.modules:
+ffc392691b0c989a7eb85f36905e7445|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/librelingo_audios/list_missing_audios.py|1|1|V|python
+	        return []
+5e95f623b4398fce46fc5ccef80ba0a4|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/librelingo_audios/list_missing_audios.py|1|1|V|python
+	    return ["foo", 42]
+8577b985fbe4082fd42ed971132d708a|file:///home/kdani/repos/LibreLingo/docs/creating_a_python_language_learning_app_using_librelingo_courses.md|1|1|v|markdown
+	easily 
+ee626c4eedbba3a1851461ee3eb79e0a|file:///home/kdani/repos/LibreLingo/docs/creating_a_python_language_learning_app_using_librelingo_courses.md|354|57|v|markdown
+	 tho:h
+a443fe4a9d5c477bef037250b5159509|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/librelingo_audios/list_missing_audios.py|1|1|v|python
+	def list_missing_audios(course):
+	    for module in course.modules:
+	        for skill in module.skills:
+	            for phrase in skill.phrases:
+	                yield None
+a0e1b40bdb64b00a82cd496a40934792|file:///run/user/1000/firenvim/docs.google.com_hsrDrx3TDmK2ZuUfcCxOUcA-viewform_V-2-DIV-1-DIV-1-DIV-2-TEXTAREA-1.txt|1|1|V|text
+	moving existing modules to MMB2 sounds exciting 
