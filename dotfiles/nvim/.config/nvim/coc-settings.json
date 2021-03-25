@@ -1,0 +1,13 @@
+{
+  "eslint.run": "onSave",
+  "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.format.enable":true,
+  "diagnostic.errorSign": "",
+  "diagnostic.warningSign": "",
+  "diagnostic.infoSign": "",
+  "cSpell.userWords": [
+    "Unmount",
+    "prio",
+    "splitster"
+  ]
+}

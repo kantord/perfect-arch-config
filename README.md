@@ -16,9 +16,8 @@ the window list using a fuzzy finder.
 
 ## VIM
 
-### Autocompletion from the browser
-Install this browser extension
-https://github.com/voldikss/browser-source-provider
+### Indentation settings
+Indentation settings are heuristically detected using `tpope/vim-sleuth`.
 
 ### Yanking
 
