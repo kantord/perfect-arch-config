@@ -342,3 +342,384 @@ a443fe4a9d5c477bef037250b5159509|file:///home/kdani/repos/LibreLingo/apps/librel
 	                yield None
 a0e1b40bdb64b00a82cd496a40934792|file:///run/user/1000/firenvim/docs.google.com_hsrDrx3TDmK2ZuUfcCxOUcA-viewform_V-2-DIV-1-DIV-1-DIV-2-TEXTAREA-1.txt|1|1|V|text
 	moving existing modules to MMB2 sounds exciting 
+d41a7bc6433b5997be98b90283748423|file:///run/user/1000/firenvim/gitlab.skypicker.com_frontend-mmb-merge-requests-340_TEXTAREA-id-note-body.txt|1|1|V|text
+	set wrap linebreak nolist
+6e256d655703d85fa331a18d43e7dbbe|file:///run/user/1000/firenvim/app.slack.com_client-T024Z3H2Y-threads_-1-DIV-1-DIV-1-DIV-1-DIV-1-DIV-1.txt|1|1|V|text
+	yes, we can see trends from the historical data, but I was assuming that the purpose of it wasn't to measure trends but to know how people feel about it subjetively.
+13fc4fc6bd6159bcdf6fe40fcb97c74f|file:///run/user/1000/firenvim/gitlab.skypicker.com_end-mmb-merge-requests-344-diffs_TEXTAREA-id-note-note.txt|6|6|v|text
+	workspaces/web-client/cypress/features/
+2d33f2594b5798e30aea3f1d59780a75|file:///run/user/1000/firenvim/gitlab.skypicker.com_end-mmb-merge-requests-344-diffs_TEXTAREA-id-note-note.txt|20|1|v|text
+	find workspaces/web-client/cypress/features/ -type f -name "*.feature" -printf "%P\n" | sed 's/\..*$//'
+24c4db2786cad204b912e83f4b13d8f4|file:///run/user/1000/firenvim/gitlab.skypicker.com_end-mmb-merge-requests-344-diffs_TEXTAREA-id-note-body.txt|1|100|v|text
+	 and it's also running faster due to it being a queue system. (i. e. the workers take the tasks when they finish, so all workers are busy until the whole process is done)
+4123ce70528edbb806efdd7a7487cf4a|file:///run/user/1000/firenvim/gitlab.skypicker.com_end-mmb-merge-requests-344-diffs_TEXTAREA-id-note-body.txt|1|1|V|text
+	Also, with this implementation if I un
+7fb510a0bab57c52d1f2a25ce50e1a57|file:///run/user/1000/firenvim/gitlab.skypicker.com_end-mmb-merge-requests-344-diffs_TEXTAREA-id-note-body.txt|1|1|V|text
+	Also with this implementation, if I understand correctly, we 
+dbc45b61b91ee0236bd60aab95dd88fd|untitled:3|3|1|v|sh
+	./scripts/updatePypiReadmeFiles.sh -B
+e636c542bf016c9611f361eabec642c4|untitled:3|3|1|v|sh
+	yarn ci-tests
+78ada7052013cff9b143d5886fdb2dd4|untitled:3|15|8|v|sh
+	./scripts/updatePypiReadmeFiles.sh
+1082889b7c000ba45957f7fe8d97e143|untitled:3|8|22|v|sh
+	PyPi readme files 
+263c45031d6d52433dbf04c487d86ead|untitled:3|11|42|V|sh
+		echo "The following files were outdated:"
+21ba075853d3d69334260df380e7e873|untitled:3|11|22|V|sh
+		git diff --name-only 
+4bc063e8c6fb0e0bb27bd406ff9b86c9|untitled:3|1|1|v|sh
+	#!/bin/bash
+	
+	yarn ci-tests
+	
+	git diff --exit-code --name-only
+	
+	if [ "$?" -eq "0" ]; then
+		echo "🎉 Amazing, Cypress CI task matrix is up to date"
+	else
+		echo "😿 Outdated Cypress CI task matrix detected."
+		echo "Run the following script to automatically update the readme files:"
+		echo
+		echo "yarn ci-tests"
+		exit 1
+	fi
+7b6d95e7e5c1bbf4c139e6b91468b2b6|file:///run/user/1000/firenvim/gitlab.skypicker.com_end-mmb-merge-requests-344-diffs_TEXTAREA-id-note-note.txt|1|1|v|text
+	```bash
+	#!/bin/bash
+	
+	./scripts/updatePypiReadmeFiles.sh -B
+	
+	git diff --exit-code --name-only
+	
+	if [ "$?" -eq "0" ]; then
+		echo "🎉 Amazing, PyPi readme files are up to date"
+	else
+		echo "😿 Outdated PyPi readme files detected."
+		echo "The following files were outdated:"
+		git diff --name-only 
+		echo "Run the following script to automatically update the readme files:"
+		echo
+		echo "./scripts/updatePypiReadmeFiles.sh"
+		exit 1
+	fi
+	
+	```
+dd1b78352056c50ef329cc4e2ba0daee|file:///home/kdani/repos/perfect-arch-config/dotfiles/nvim/.config/nvim/eyecandy.vim|1|1|V|vim
+	:cat
+212b0306580d4f0044d18f9a3edcc832|file:///run/user/1000/firenvim/app.slack.com_read-CCKFSMLG0-1616416847-001800_-1-DIV-1-DIV-1-DIV-1-DIV-1-DIV-1.txt|1|1|v|text
+	
+	
+	
+	
+	
+	
+	
+	
+15a84980b8255f3164d1031926a5f830|file:///home/kdani/repos/perfect-arch-config/dotfiles/nvim/.config/nvim/init.vim|17|1|V|vim
+	source ~/.config/nvim/misc.vim
+bc957e26ff41470c556ee5d09e96880b|file:///home/kdani/repos/perfect-arch-config/dotfiles/nvim/.config/nvim/init.vim|18|23|v|vim
+	misc
+e68ad468c355c710aaf356e229e27cd7|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/scenes/Refunds/components/RefundsDelayDisclaimer.js|1|1|V|javascript
+	  RefundsDelayDisclaimer
+7a7cfe832f47c39610282f63d0eb71d9|file:///home/kdani/repos/frontend/src/mmb/services/abTesting/abTests.js|174|1|V|javascript
+	        a: 50,
+8b533c5db9acdee472669b63f69dd0f5|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/AccountBooking.js|1|1|V|javascript
+	      <h1>Banner comes here</h1>
+cf6de74542bc812c4631419107d3a20f|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/tests/test_list_missing_audios.py|15|5|v|python
+	assert len(
+8ac43dc9fb11d1d7080ba487e3809db6|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/tests/test_list_missing_audios.py|14|1|v|python
+	def test_result_includes_the_phrase_in_the_target_language():
+	    result = list(list_missing_audios(fakes.course1))
+	    assert result[0][1] == fakes.course1.modules[0].skills[0].phrases[0].in_target_language
+6831178a04bfee9f226e080739d98e63|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/librelingo_audios/list_missing_audios.py|1|1|v|python
+	def list_missing_audios(course):
+	    for module in course.modules:
+	        for skill in module.skills:
+	            for phrase in skill.phrases:
+	                yield [None, ""]
+cdf9ca276b7393f5544c866aab9cb5ff|file:///home/kdani/repos/LibreLingo/docs/creating_a_python_language_learning_app_using_librelingo_courses.md|382|74|v|markdown
+	in_target_language[0]
+d6b851e42d19a0fb8926a8d058bb9b68|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/librelingo_audios/list_missing_audios.py|1|1|v|python
+	def list_missing_audios(course):
+	    for module in course.modules:
+	        for skill in module.skills:
+	            for phrase in skill.phrases:
+	                yield [None, "lorem ipsum"]
+8c6a5d39e20a0b80cd6af7a8d55fd247|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/tests/test_list_missing_audios.py|13|1|v|python
+	
+	def test_result_includes_the_phrase_in_the_target_language():
+	    result = list(list_missing_audios(fakes.course1))
+	    assert result[0][1] == fakes.course1.modules[0].skills[0].phrases[0].in_target_language[0]
+29e2a94a7ac7f903c6b860f378cfb024|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/tests/test_list_missing_audios.py|18|1|v|python
+	
+	def test_result_includes_the_phrase_in_the_target_language_2():
+	    result = list(list_missing_audios(fakes.course1))
+	    assert result[1][1] == fakes.course1.modules[0].skills[1].phrases[0].in_target_language[0]
+1d82d4a9eea00c7dc21c4cfac8f23220|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/librelingo_audios/list_missing_audios.py|5|30|v|python
+	"lorem ipsum"
+61ce34e4077d3a355cf8c0ba8fe5055d|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/librelingo_audios/list_missing_audios.py|1|1|v|python
+	def list_missing_audios(course):
+	    for module in course.modules:
+	        for skill in module.skills:
+	            for phrase in skill.phrases:
+	                yield [None, phrase.in_target_language[0]]
+dc301e16627969ac80a4432e0d7e380d|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/librelingo_audios/list_missing_audios.py|6|38|v|python
+	don't have audio.
+93ba13b265eb7a5d14f5f67479ea622e|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/librelingo_audios/list_missing_audios.py|1|1|v|python
+	def list_missing_audios(course):
+	    for module in course.modules:
+	        for skill in module.skills:
+	            for phrase in skill.phrases:
+	                # Returning only the first version because
+	                # the other versions never need audio.
+	                yield [None, phrase.in_target_language[0]]
+6de64ce1b28229cc4c9a6d2981c9f039|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/librelingo_audios/list_missing_audios.py|7|30|v|python
+	phrase.in_target_language[0]
+510803b0cbf255d59f9deb8328ca27ef|file:///home/kdani/repos/LibreLingo/apps/librelingo_audios/librelingo_audios/list_missing_audios.py|1|1|v|python
+	def list_missing_audios(course):
+	    for module in course.modules:
+	        for skill in module.skills:
+	            for phrase in skill.phrases:
+	                # Returning only the first version because
+	                # the other versions never need audio.
+	                text = phrase.in_target_language[0]
+	                yield [None, text]
+63a059b0e780358022f594413a749f65|file:///home/kdani/repos/LibreLingo/apps/librelingo_utils/librelingo_utils/utils.py|53|8|v|python
+	io_id
+5e5a0d0c83bcc0bbb2d1b67ba9367a51|file:///home/kdani/repos/LibreLingo/apps/librelingo_utils/librelingo_utils/__init__.py|9|16|v|python
+	0.1.5
+26f6023fb62bd6a30d1ec1acbd5968ce|file:///home/kdani/repos/LibreLingo/apps/librelingo_utils/librelingo_utils/utils.py|53|5|v|python
+	audio_id
+7bc94a6849a42e43da60bc22e374a75c|file:///home/kdani/repos/LibreLingo/apps/librelingo_json_export/librelingo_json_export/challenge_types.py|1|1|v|python
+	.name
+02f4b6c2b9b79a9b6868ced06242d888|file:///home/kdani/repos/LibreLingo/apps/librelingo_json_export/pyproject.toml|12|22|v|toml
+	0.1.2
+ebcbc67318ed2fa77070496d6d15d838|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|5|10|v|javascript
+	<h1>Banner comes here</h1>
+274d02fea65f2295f724dba95a695812|file:///home/kdani/repos/frontend/src/common/scenes/HelpCenter/components/PhoneNumbers/PhoneNumbersCountry.js|3|1|V|javascript
+	import styled, { css } from "styled-components"
+fa63c89224832f4c30dcaf7ff19ee744|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|1|1|v|javascript
+	, { css }
+319e858420e4ebc8197ea95e4a3ec9e2|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|5|1|v|javascript
+	const EaseOfUseSurveyBannerWrapper = styled.div`
+	  background: red;
+	`
+	
+	export default function EaseOfUseSurveyBanner() {
+	  return (
+	    <EaseOfUseSurveyBannerWrapper>
+	      <h1>Banner comes here</h1>
+	    </EaseOfUseSurveyBannerWrapper>
+	  )
+	}
+e9abb41b2fed46632e391c8dd9826f09|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|1|1|v|javascript
+	// @flow
+	import * as React from "react"
+	import styled from "styled-components"
+	
+	
+37728cd16527680008036c3ac1f71782|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|5|7|v|javascript
+	EaseOfUseSurveyBannerWrapper
+91b84bb6b90cc3ace5b23f4e505f1351|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantB.js|9|25|v|javascript
+	EaseOfUseSurveyBanner
+49b672bfb9867e2e1fd09388bb5c61f6|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|1|1|V|javascript
+	    </EaseOfUseSurveyBannerWrapper>
+c57954f92860aa0d8d485b4df5a4e2b5|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|1|1|V|javascript
+	    <EaseOfUseSurveyBannerWrapper>
+0ebb8cc96213d1c09fcfa1a39fbd808b|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|1|1|V|javascript
+	    <
+515db036a9c3b385a8c493d4ec374f87|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|1|1|V|javascript
+	const EaseOfUseSurveyBannerWrapper = styled.div`
+a64f32e1a12da96f3abd35b27c0c26ed|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|1|1|V|javascript
+	  background: red;
+dfa61ff86b2c1897a2b672dc8a5691d8|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|4|1|V|javascript
+	import VariantA from './VariantA'
+392711887becabfd799273ef54cfe7dd|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|1|1|V|javascript
+	  if 
+030a74a57194794508b600adea022c98|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|12|1|v|javascript
+	    case "a":
+	      return <VariantA />
+990b6b4e36786359a4512703950fb356|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|1|1|V|javascript
+	import styled from "styled-components"
+334c4a4c42fdb79d7ebc3e73b517e6f8|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|8|27|v|javascript
+	none
+cd63855ec1f7c17c58082e8e580287a5|file:///home/kdani/repos/frontend/src/mmb/services/abTesting/abTests.js|161|5|v|javascript
+	MMB2_INVOICES
+4c2e81783b891873b52d851d332bf787|file:///home/kdani/repos/frontend/src/mmb/services/abTesting/abTests.js|151|5|v|javascript
+	FARE_TYPE_RAF_REASON
+30c4b833e0e4705fe70a017873288337|file:///home/kdani/repos/frontend/src/booking/scenes/ReservationForm/components/BillingDetails/BillingDetailsPerson.js|3|1|V|javascript
+	import { useSelector } from "react-redux"
+b4541d05866eea9a8a71438002ea8864|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|1|1|V|javascript
+	  const 
+3b0c448ec638b4cc52deeb67bd9949dc|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/services/splitsterSelectors.js|2|1|V|javascript
+	import { splitsterSelector } from "@kiwicom/frontend-common/services/utils/splitsterSelector"
+c793a3b4cae82c4f8d41aa7083bfa804|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|11|3|V|javascript
+	  console.log("🍎 splitster", splitster)
+f9357bdd0069fbcd014d15ef427ff4f7|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|11|3|v|javascript
+	console.log
+75cb3c8043474982da1b4853875800dd|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|1|1|v|javascript
+	"🍎 splitster", 
+7fccab7b2af65a0d334b44a4318a63dd|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner.js|1|1|V|javascript
+	  throw new Error("🍎 splitster" + splitster)
+df50f0577091607f47944efbe19fc6a4|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/IntroductionHeader.js|1|1|V|javascript
+	We’re asking a small group of people for their opinions about our service.
+cd37164624de8df8694b68e30ceaf69a|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantB.js|1|1|v|javascript
+	// @flow
+	import * as React from "react"
+851adb195d533d0bfaed219634a711f4|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/IntroductionHeader.js|1|1|V|javascript
+	import * as React from "react"
+c19dca6a38c9a847c660c3c5ffa0e299|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantB.js|13|1|V|javascript
+	      <IntroductionHeader />
+6e49a76164b7d70396f2dae7bf075532|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|4|1|V|javascript
+	import IntroductionHeader from "./IntroductionHeader"
+0c89690f3fc025f71fe3f30446326188|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/IntroductionHeader.js|1|1|v|javascript
+	// @flow
+	
+	export default function IntroductionHeader() {
+	  return "We’re asking a small group of people for their opinions about our service."
+	}
+963e58af9a3c7be86f41b6322b84d20f|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|1|1|v|javascript
+	Banner comes here variant A
+d0e45d2970fd40de6457d6252cb2059c|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|12|1|V|javascript
+	      <h1>We’re asking a small group of people for their opinions about our service.</h1>
+aea8e3bc45faedb3383ca8e285e9c13a|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantB.js|1|1|V|javascript
+	      <h1>Banner comes here variant B</h1>
+f74f539fcf46601998e5b17104c7f4c1|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|12|8|v|javascript
+	heading
+6a0ef64937df12931b9c232a711dc25c|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantB.js|4|1|V|javascript
+	import Heading from "@kiwicom/orbit-components/lib/Heading";
+35ef9604195fb81003e8a3c354a5664b|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantB.js|4|1|V|javascript
+	import Heading from "@kiwicom/orbit-components/lib/Heading"
+9dffbf69ffba8bc38bc4e01abf4b1675|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|6|8|v|javascript
+	Text
+139c346a6fb7c1e32a262dcd1066acf4|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|1|1|v|javascript
+	default as 
+9f14fa7eba853294bd391467c20f3358|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|17|1|V|javascript
+	      <Stack>
+1afd32818d1c9525f82aff4c09efd254|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|17|25|v|javascript
+	column
+faf740818ade674462fbcddbe63401a7|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|18|1|v|javascript
+	      <Card>
+	        <CardSection>
+599c996ed893d32fba69e07a3aadb9dd|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|1|1|V|javascript
+	      </Card>
+67e181d2d2a747e1db7cb2ea01acf377|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|1|1|v|javascript
+	
+	  background: red;
+	`
+2b02707d8eec9ee5455dabac93efe508|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|1|1|V|javascript
+	const Wrapper = styled.div`
+e229a672e0df4c202a248ad2e24adab8|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|13|6|v|javascript
+	Wrapper
+866a90153ea5df62b7c7c09c8b787795|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|13|1|V|javascript
+	    <div className="spContainer">
+b082895fab4c56c1aba17dcc672fca3a|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|29|1|V|javascript
+	    </div>
+f4a50440933e6be41ced67ac9e455ad9|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|13|21|v|javascript
+	spContainer
+1895d62439ab126a90bed9f6d6264089|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/EaseOfUseSurveyBanner/VariantA.js|1|1|v|javascript
+	    <div className="Booking">
+	    <div className="spContainer">
+aa59c180a200153a585ab78b07e88850|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/AccountBooking.js|1|1|V|javascript
+	        <EaseOfUseSurveyBanner />
+7d4a4337c32495420b42c6cd5f2a65f2|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/AccountBooking.js|1|1|V|javascript
+	import EaseOfUseSurveyBanner from "./components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner"
+1f021062089992f148dae82d212e0df7|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/Booking.js|31|36|v|javascript
+	./components/EaseOfUseSurveyBanner/EaseOfUseSurveyBanner
+c4f82fc8a072e0d2cec145961a3c0499|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantA.js|12|1|V|javascript
+	    <div>
+95f5ca579622ed582f58a86675a71119|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/Booking.js|164|1|V|javascript
+	        </MoveToBody>
+55ec8553d865d05e218a170a355f610f|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/Booking.js|1|1|V|javascript
+	        <MoveToBody>
+a988638099503f795088974a3680f6b7|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/Booking.js|1|1|V|javascript
+	          <EaseOfUseSurveyBanner />
+68b9eb2a05167a08b6809b1f1f59375b|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantA.js|1|1|v|javascript
+	 spaceAfter="none"
+3feb7639da8e1a23bbb957ef1a748f6f|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantA.js|13|22|v|javascript
+	["close"]
+cb41489543c417e8ac19fa8699955b65|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantA.js|1|1|v|javascript
+	actions={<Button size="small">Button</Button>}
+9a7ac7c72d63556050e892b52974c68c|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantA.js|1|1|v|javascript
+	actions={<div>X</div>}
+37a6259cc0c1dae299a7866489dff0bd|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantA.js|13|68|v|javascript
+	null
+8800e1c9b3e22c44ba59a34db3fe4841|file:///home/kdani/repos/frontend/.git/COMMIT_EDITMSG|1|20|v|gitcommit
+	introduction
+2cf0c63e7666854db12df2680d5bb07c|file:///home/kdani/repos/frontend/.git/COMMIT_EDITMSG|1|31|v|gitcommit
+	of the 
+e69d9769e32cfc2fd084cbb10ddea284|file:///home/kdani/repos/frontend/.git/COMMIT_EDITMSG|1|1|v|gitcommit
+	intro page 
+4e4627e6966d06d21f848e6fc5d19729|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantA.js|12|1|V|javascript
+	    <div>
+	      <Card actions={<Button size="small">Button</Button>}>
+	        <CardSection>
+	          <Stack direction="row">
+	            <Illustration name="Rating" size="small" />
+	            <Stack spacing="none">
+	              <Heading type="title2">
+	                We’re asking a small group of people for their opinions about our service.
+	              </Heading>
+	              <OrbitText type="secondary" spaceAfter="medium">
+	                Do you have a few seconds to answer a short survey?
+	              </OrbitText>
+	              <Button>Start survey</Button>
+	            </Stack>
+	          </Stack>
+	        </CardSection>
+	      </Card>
+	    </div>
+9e016dcc8da5173c65dce594c9c39677|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantB.js|1|1|v|javascript
+	    <Wrapper>
+	      <Heading>We’re asking a small group of people for their opinions about our service.</Heading>
+	    </Wrapper>
+	
+298a41e0c94778ea2f886879cb57eb65|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantB.js|13|12|v|javascript
+	 actions={<Button size="small"
+66bc727c0c29e0021ec3bc3cddcf8738|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantB.js|1|1|v|javascript
+	>Button</Button>}
+c04c75b8fc6e5defbfc9388a4a3827f6|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantA.js|3|1|v|javascript
+	import Heading from "@kiwicom/orbit-components/lib/Heading"
+	import Illustration from "@kiwicom/orbit-components/lib/Illustration"
+	import OrbitText from "@kiwicom/orbit-components/lib/Text"
+	import Button from "@kiwicom/orbit-components/lib/Button"
+	import Stack from "@kiwicom/orbit-components/lib/Stack"
+	import Card, { CardSection } from "@kiwicom/orbit-components/lib/Card"
+4f67984b7d513c0f240a3710c45b0295|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantB.js|12|3|V|javascript
+	  background: yellow;
+3197e5d39b27a07024792b74cd381022|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantB.js|1|1|v|javascript
+	direction="row
+d89286b4f72b29acac206660facc5711|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantB.js|1|1|V|javascript
+	            <Stack spacing="none">
+6ce73491580c45eaf735e5cbf61fe583|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantB.js|1|1|V|javascript
+	            </Stack>
+f792d1afb0399dce47533bead9d71a8a|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantB.js|23|18|v|javascript
+	align
+c4bc48675c72cf24394cb936a52c2c48|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantB.js|31|1|V|javascript
+	            <Stack>
+25ec8c1002655fa6c71f9458f349d881|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantB.js|31|1|v|javascript
+	            <Stack justify="center">
+	              <Button>Start survey</Button>
+	            </Stack>
+a1f7ca48ee3f86d5e1b668912200518b|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantB.js|1|1|V|javascript
+	            <Illustration name="Rating" size="small" />
+32e72bd415ef2a356b10bf3e45f041f9|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantB.js|1|1|V|javascript
+	              <Button>Start survey</Button>
+69ff18b297ac69ad2f50466b4689e580|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/BookingHeader/BookingHeader.js|46|1|v|javascript
+	  // above margins should still apply on 768px. Orbit's tablet has breakpoint at 768px while Stylus and isMobileSelector at 769px.
+	  @media (min-width: calc(${({ theme }: ThemeProps) => theme.orbit.widthBreakpointTablet}+1)px) {
+	    margin: 0;
+	  }
+2f8ca921f36b93506bfeab8caeca02a3|file:///home/kdani/repos/frontend/src/mmb/scenes/AccountBooking/components/Booking/components/EaseOfUseSurveyBanner/VariantB.js|11|1|v|javascript
+	const Wrapper = styled.div`
+	  position: fixed;
+	  left: 14px;
+	  width: 288px;
+	  top: 30%;
+	
+	  // Nonstandard breakpoint. See: https://jira.kiwi.com/browse/MMB-2007
+	  @media (max-width: 1440px) {
+	    display: none;
+	  }
+	`

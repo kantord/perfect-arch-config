@@ -15,4 +15,5 @@ source ~/.config/nvim/git.vim
 source ~/.config/nvim/wiki.vim
 source ~/.config/nvim/eyecandy.vim
 source ~/.config/nvim/misc.vim
+source ~/.config/nvim/firenvim.vim
 
