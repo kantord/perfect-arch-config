@@ -50,6 +50,4 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY &
-xrdb -merge ~/.Xdefaults
-xrdb -merge ~/.Xresources
 exec i3
