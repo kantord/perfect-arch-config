@@ -23,6 +23,7 @@ bzip2
 cava
 cheese
 cloc
+cool-retro-term
 coreutils
 cowsay
 cronie
@@ -118,6 +119,7 @@ jq
 jsoncpp
 khal
 kitty
+languagetool
 lazygit
 ledger
 less
@@ -152,6 +154,7 @@ nerd-fonts-victor-mono
 netctl
 nitrogen
 nodejs
+nodejs-markdownlint-cli
 noto-fonts
 noto-fonts-emoji
 npm
@@ -194,6 +197,8 @@ python-pylint
 python-pynvim
 python-requests-oauthlib
 qbittorrent
+qt5-graphicaleffects
+qt5-quickcontrols
 qt5-styleplugins
 ranger
 redis
@@ -211,6 +216,7 @@ screenkey
 scrot
 sed
 shadow
+shfmt
 shotwell
 signal-desktop
 slack-desktop
@@ -251,6 +257,7 @@ v4l-utils
 vdirsyncer
 vi
 vimb
+vint-git
 virtualbox
 virtualbox-guest-utils
 vlc
@@ -261,6 +268,7 @@ wget
 which
 wpa_supplicant
 wpgtk-git
+write-good
 xboard
 xdotool
 xf86-input-evdev

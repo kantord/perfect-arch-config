@@ -2,12 +2,35 @@
   "eslint.run": "onSave",
   "eslint.codeActionsOnSave.mode": "problems",
   "eslint.format.enable":true,
-  "diagnostic.errorSign": "",
+  "eslint.validate": [
+    "typescript",
+    "javascript",
+    "typescriptreact",
+    "javascriptreact",
+    "svelte"
+  ],
+  "eslint.probe": [
+    "typescript",
+    "javascript",
+    "typescriptreact",
+    "javascriptreact",
+    "svelte"
+  ],
+  "diagnostic.errorSign": "",
   "diagnostic.warningSign": "",
-  "diagnostic.infoSign": "",
+  "diagnostic.infoSign": "",
+  "diagnostic.hintSign": "",
   "cSpell.userWords": [
     "Unmount",
     "prio",
     "splitster"
-  ]
+  ],
+  "diagnostic-languageserver.filetypes": {
+    "vim": "vint",
+    "sh": "shellcheck",
+    "markdown": [ "write-good", "markdownlint" ]
+  },
+  "diagnostic-languageserver.formatters": {
+    "sh": "shfmt"
+  }
 }

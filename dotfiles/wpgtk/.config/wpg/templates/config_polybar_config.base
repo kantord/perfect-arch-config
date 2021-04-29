@@ -274,9 +274,9 @@ type = internal/date
 interval = 5
 label-background = #ff{color0.strip}
 
-date = " %a %b %d"
+date = "%a Week %W, %b %d"
 
-time = %H:%M
+polybartime = %H:%M
 
 format-prefix =
 format-prefix-foreground = ${{colors.foreground-alt}}

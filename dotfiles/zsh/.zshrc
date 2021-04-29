@@ -131,3 +131,7 @@ function gff() {
 
 alias tt="tig status"
 export EDITOR=nvim
+
+# HiDpi support
+export GDK_SCALE=2
+export GDK_DPI_SCALE=0.5

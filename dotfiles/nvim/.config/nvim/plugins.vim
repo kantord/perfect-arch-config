@@ -11,12 +11,15 @@ Plug 'flazz/vim-colorschemes'
 Plug 'rakr/vim-one'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'junegunn/seoul256.vim'
+Plug 'karoliskoncevicius/sacredforest-vim'
 
 " EDITING
 Plug 'mg979/vim-visual-multi'  " Multiple cursors
 Plug 'tpope/vim-rsi'  " Better insert mode
 Plug 'markonm/traces.vim'  " Live preview for replacing
 Plug 'eugen0329/vim-esearch'  " Multi-file edit
+Plug 'matze/vim-move'  " Move selection around using Alt + Direction
+Plug 'junegunn/vim-peekaboo'  " Preview the content of buffers
 
 " NAVIGATION
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
