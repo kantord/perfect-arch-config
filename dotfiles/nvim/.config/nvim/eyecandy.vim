@@ -36,3 +36,13 @@ let g:markdown_syntax_conceal = 0
 
 " Highlight fenced languages in Markdown!
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'javascript', 'typescript']
+
+" Lightline configuration
+let g:lightline = {
+    \ 'enable': {
+    \   'tabline': 0
+    \ },
+    \ }
+
+" Use fancy buffer line
+lua require'bufferline'.setup{}

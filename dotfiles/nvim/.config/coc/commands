@@ -1,4 +1,6 @@
 eslint.executeAutofix
+eslint.lintProject
+python.runLinting
 workspace.showOutput
 eslint.createConfig
 coc-smart-case.searchSelected

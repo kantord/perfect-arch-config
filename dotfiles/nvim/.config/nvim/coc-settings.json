@@ -32,5 +32,8 @@
   },
   "diagnostic-languageserver.formatters": {
     "sh": "shfmt"
-  }
+  },
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "black"
 }

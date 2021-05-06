@@ -12,6 +12,7 @@ Plug 'rakr/vim-one'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'junegunn/seoul256.vim'
 Plug 'karoliskoncevicius/sacredforest-vim'
+Plug 'folke/tokyonight.nvim'
 
 " EDITING
 Plug 'mg979/vim-visual-multi'  " Multiple cursors
@@ -38,6 +39,9 @@ Plug 'osyo-manga/vim-anzu'  " Show number of search matches
 " LANGUAGE SERVER SUPPORT
 Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
 
+" TESTING
+Plug 'vim-test/vim-test'
+
 " FILE MANAGER
 Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'  " Needed for ranger
@@ -45,8 +49,10 @@ Plug 'rbgrouleff/bclose.vim'  " Needed for ranger
 " EYE CANDY
 Plug 'TaDaa/vimade' " fade inactive splits
 Plug 'ryanoasis/vim-devicons'  " fancy icons
+Plug 'kyazdani42/nvim-web-devicons'  " even fancier icons
 Plug 'itchyny/lightline.vim'  " Fancy status line
 Plug 'jeffkreeftmeijer/vim-numbertoggle'  " Fancy line numbers
+Plug 'akinsho/nvim-bufferline.lua'
 
 " SYNTAX
 Plug 'sheerun/vim-polyglot'
@@ -61,6 +67,9 @@ Plug 'tyru/caw.vim'  " toggle comment out code using `gcc`. Insert comment using
 
 " GIT
 Plug 'iberianpig/tig-explorer.vim'  " tig integration
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb' " GitHub support (autocomplete in commit messages etc.)
+Plug 'sindrets/diffview.nvim'
 
 " PERSONAL WIKI
 Plug 'vimwiki/vimwiki'
